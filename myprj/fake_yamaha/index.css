@@ -1,0 +1,84 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    list-style: none;
+}
+
+#page-header.header-mobile {
+    width: 100%;
+}
+
+#page-header {
+    border-bottom: 1px solid #DDD;
+}
+
+#page-header>.brand-logo,
+#page-header .menu-bar {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#page-header .brand-logo a {
+    display: inline-block;
+}
+
+#page-header>div a {
+    display: inline-block;
+}
+
+a {
+    color: #445166;
+    text-decoration: none;
+}
+
+#page-header .brand-logo a img {
+    height: 30px;
+    margin: 15px;
+}
+
+#page-header nav,
+#page-header nav div.menu-bar {
+    top: 0;
+}
+
+#page-header nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+#page-header .menu-bar {
+    position: relative;
+    padding: 0 120px 0 110px;
+    text-align: center;
+}
+
+#page-header .menu-bar>div.container {
+    width: 100%;
+    padding-left: 50px;
+}
+
+.container {
+    padding: 0 32px;
+}
+
+#page-header .menu-bar>div.container>.navbar-nav.navbar-left {
+    float: none !important;
+}
+
+#page-header .menu-list {
+    display: inline-block;
+    color: #48217a;
+}

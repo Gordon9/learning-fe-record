@@ -11,7 +11,7 @@
             box-sizing: border-box;
             background: #ffc600;
             font-family: 'helvetica neue';
-            font-size: 10px;
+            font-size: 20px;
             font-weight: 200;
         }
         
@@ -111,11 +111,17 @@
             font-size: 40px;
             flex: 5;
         }
+        
+        @media only screen and (max-width: 600px) {
+            .panel p {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="panels">
+    <!-- <div class="panels">
         <div class="panel panel1">
             <p>Hey</p>
             <p>Who's</p>
@@ -141,7 +147,37 @@
             <p>Owe</p>
             <p>Me</p>
         </div>
+    </div> -->
+
+
+    <div class="panels">
+        <div class="panel panel1">
+            <p>Hey</p>
+            <p>Let's</p>
+            <p>Dance</p>
+        </div>
+        <div class="panel panel2">
+            <p>Give</p>
+            <p>Take</p>
+            <p>Receive</p>
+        </div>
+        <div class="panel panel3">
+            <p>Experience</p>
+            <p>It</p>
+            <p>Today</p>
+        </div>
+        <div class="panel panel4">
+            <p>Give</p>
+            <p>All</p>
+            <p>You can</p>
+        </div>
+        <div class="panel panel5">
+            <p>Life</p>
+            <p>In</p>
+            <p>Motion</p>
+        </div>
     </div>
+
     <script>
         const panels = document.querySelectorAll('.panel');
 
