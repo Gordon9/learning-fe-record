@@ -7,7 +7,8 @@ body {
 
 p,
 h2,
-h5 {
+h5,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -24,27 +25,36 @@ h5 {
 }
 
 #mainNav {
-    background: #CCCCCC;
+    background: #84684B;
+    min-width: 100%;
+    height: auto;
 }
 
 #mainNav ul {
-    padding: 0;
-    margin: 0;
+    list-style-type: none;
+    display: flex;
 }
 
 #mainNav li {
-    display: inline-block;
-    list-style: none;
-    padding: 5px 10px;
+    flex: auto;
+    padding: 16px 0;
+    border-bottom: 3px solid transparent;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#mainNav li:hover {
+    border-bottom-color: #fff;
+    cursor: pointer;
 }
 
 #mainNav a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 #mainNav li:hover {
-    background: #aaa;
+    border-bottom-color: #fff;
 }
 
 #jumbo {
@@ -111,6 +121,7 @@ h5 {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 4px;
+    position: relative;
 }
 
 #plus h5 {
@@ -120,6 +131,25 @@ h5 {
 
 #plus p {
     padding-bottom: 16px;
+}
+
+.display_more {
+    position: absolute;
+    border-radius: 4px;
+    display: inline-block;
+    background: #fff;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.display_more a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
 }
 
 #fixed {
