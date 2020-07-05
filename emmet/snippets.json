@@ -1,0 +1,14 @@
+{
+    "html": {
+        "snippets": {
+            "nl": "nav.main-nav>ul>li.item$*4",
+            "ull": "ul>li[id=${1} class=${2}]*2"
+        }
+    },
+    "css": {
+        "snippets": {
+            "cb": "color: black",
+            "bsd": "border: 1px solid ${1:red}"
+        }
+    }
+}
