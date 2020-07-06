@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #272727;
+    color: #fff;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+p::before {
+    content: open-quote;
+    font-size: 2rem;
+    color: #20848a;
+}
+
+p::after {
+    content: close-quote;
+    font-size: 2rem;
+    color: #20848a;
+}
+
+a {
+    text-decoration: none;
+    color: #20848a;
+}
+
+a[href$='.pdf']::after {
+    content: ' \f1c1';
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    font-size: .9em;
+}
+
+a[href^='http']::after {
+    content: ' \f35d';
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    font-size: .9em;
+}

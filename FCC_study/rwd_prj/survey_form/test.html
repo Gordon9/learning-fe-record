@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+    <style>
+        body,
+        div,
+        input,
+        label {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .out-div {
+            margin: 50px auto;
+            width: 80%;
+            background: #ccc;
+        }
+        
+        .inner-div {
+            display: flex;
+        }
+        
+        .inner-div input {
+            transform: scale(1.4);
+            align-self: center;
+        }
+        
+        .inner-div label {
+            width: 100%;
+            padding-left: 4px;
+            line-height: 1.6em;
+            font-size: 20px;
+        }
+        
+        .inner-div:hover {
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="out-div">
+        <div class="inner-div">
+            <input type="radio" name="test-name" id="hello">
+            <label for="hello">hello</label>
+        </div>
+        <div class="inner-div">
+            <input type="radio" name="test-name" id="world">
+            <label for="world">world</label>
+        </div>
+        <div class="inner-div">
+            <input type="radio" name="test-name" id="hey">
+            <label for="hey">hey</label>
+        </div>
+    </div>
+</body>
+
+</html>
