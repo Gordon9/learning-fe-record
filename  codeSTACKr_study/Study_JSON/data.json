@@ -1,0 +1,24 @@
+{
+    "user": [{
+            "name": "Gordon",
+            "age": 20,
+            "address": {
+                "street": "123 First St.",
+                "city": "Houston",
+                "state": "TX"
+            },
+            "shoppingList": ["piano", "guitar", "XXX"]
+        },
+        {
+            "name": "Aman",
+            "age": 30,
+            "address": {
+                "street": "543 Second St.",
+                "city": "Dallas",
+                "state": "TX"
+            },
+            "shoppingList": ["Milk", "Apples", "flowers"]
+        }
+    ]
+
+}
