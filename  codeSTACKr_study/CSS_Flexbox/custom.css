@@ -5,8 +5,7 @@
         position: relative;
         font-family: 'Roboto', sans-serif;
     }
-    
-    .flexbox-container::before,
+    /* .flexbox-container::before,
     .flexbox-container::after {
         font-size: 1.5rem;
     }
@@ -39,4 +38,4 @@
         color: #fff;
         transform: rotate(-180deg) translateX(100%);
         padding-top: 10px;
-    }
+    } */
