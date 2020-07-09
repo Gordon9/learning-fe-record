@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid silver;
+    align-items: sele-start;
+    height: 200px;
+    align-content: space-around;
+}
+
+.divMargin {
+    margin-top: 50px;
+    /* display: block; */
+}
+
+.flex-item {
+    background: tomato;
+    width: 100px;
+    /* height: 100px; */
+    height: 60px;
+    padding: 5px;
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap li:nth-child(4) {
+    align-self: flex-end;
+    /* align-items: flex-start; */
+    height: 50px;
+    background: grey;
+}
+
+.wrap li {
+    background: gold;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.wrap-reverse li {
+    background: deepskyblue;
+}

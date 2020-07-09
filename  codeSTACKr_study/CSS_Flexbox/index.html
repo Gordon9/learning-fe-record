@@ -9,39 +9,47 @@
     <style>
         .flexbox-container {
             display: flex;
-            justify-content: space-evenly;
-            align-items: flex-end;
+            height: 95vh;
         }
         
         .flexbox_item {
-            width: 15%;
+            width: 25%;
             background-color: #20848a;
             border: 3px solid #272727;
             color: #fff;
             font-size: 2em;
             padding: 20px;
             margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
         .item-1 {
             min-height: 50px;
+            flex: 1 1 15%;
+            order: 2;
         }
         
         .item-2 {
             min-height: 100px;
+            flex: 1 1 25%;
+            order: 1;
         }
         
         .item-3 {
             min-height: 250px;
+            flex: 5 5 25%;
+            order: 3;
         }
     </style>
 </head>
 
 <body>
     <div class="flexbox-container">
-        <div class="flexbox_item item-1">1</div>
-        <div class="flexbox_item item-2">2</div>
-        <div class="flexbox_item item-3">3</div>
+        <div class="flexbox_item item-1">Main Content</div>
+        <div class="flexbox_item item-2">Left Aside</div>
+        <div class="flexbox_item item-3">Right Aside</div>
     </div>
 </body>
 
