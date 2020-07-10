@@ -24,6 +24,7 @@ body {
 .top-header {
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 #header {
@@ -94,6 +95,15 @@ body {
         height: 140px;
         padding-bottom: 2px;
     }
+    #main-feature span i,
+    #main-feature span {
+        opacity: 0;
+        flex: 0;
+        font-size: 0;
+    }
+    #main-feature div div {
+        text-align: center;
+    }
 }
 
 .home-made {
@@ -126,7 +136,66 @@ body {
 }
 
 #form #submit:hover {
-    /* background-color: green; */
     box-shadow: 0 1px 10px rgba(0, 0, 0, .3);
     transition: all 0.3s ease-in-out;
+}
+
+#main-feature {
+    /* margin: 8em auto; */
+    margin: 6em auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#main-feature i {
+    color: darkorange;
+}
+
+#main-feature>div {
+    min-height: 1em;
+    display: flex;
+    margin: 1em 0;
+}
+
+#main-feature>div span {
+    width: 2.6em;
+    align-self: center;
+    font-size: 2.4em;
+    justify-self: center;
+}
+
+#main-feature h4 {
+    padding-bottom: 3px;
+}
+
+div.fe-permium {
+    flex: 4;
+    font-size: 1.4rem;
+    align-self: center;
+}
+
+div.fe-fast-ship {
+    flex: 4;
+    font-size: 1.4rem;
+    align-self: center;
+}
+
+div.fe-quality-assu {
+    flex: 4;
+    font-size: 1.4rem;
+    align-self: center;
+}
+
+
+/* div.fe-permium p {
+    font-size: 1rem;
+}
+
+div.fe-fast-ship p {
+    font-size: 1rem;
+} */
+
+#main-feature p {
+    font-size: 1rem;
 }
