@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family='Roboto', sans-serif&display=swap") * {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    box-sizing: border-box;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,15 +14,26 @@
 
 body {
     background-color: #eeeeee;
-    padding: 20px 40px;
-    font-size: 18px;
+    /* padding: 20px 40px; */
+    padding: 0 40px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    height: 500vh;
+}
+
+.top-header {
+    position: sticky;
+    top: 0;
 }
 
 #header {
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     /* background-color: gray; */
-    height: 40px;
+    /* height: 40px; */
+    height: 90px;
+    background-color: #eeeeee;
 }
 
 #header-img img {
@@ -51,7 +69,7 @@ body {
 
 @media (max-width: 700px) {
     #header {
-        height: 80px;
+        height: 110px;
     }
     #header-img {
         align-self: center;
@@ -73,11 +91,42 @@ body {
 @media (max-width: 600px) {
     #header {
         flex-direction: column;
+        height: 140px;
+        padding-bottom: 2px;
     }
 }
 
-#form {
-    margin-top: 30px;
+.home-made {
+    margin-top: 1rem;
     text-align: center;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+#form {
+    margin-top: 12px;
+    text-align: center;
+    /* background-color: gray; */
+}
+
+#form #email {
+    padding: 6px;
+    width: 18rem;
+    border-radius: 4px;
+}
+
+#form #submit {
+    margin-top: 10px;
+    padding: 6px 30px;
     background-color: darkcyan;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#form #submit:hover {
+    /* background-color: green; */
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease-in-out;
 }
