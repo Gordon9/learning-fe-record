@@ -16,6 +16,7 @@ body {
     background-color: #eeeeee;
     /* padding: 20px 40px; */
     padding: 0 40px;
+    /* padding: 0 20px; */
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     height: 500vh;
@@ -90,6 +91,9 @@ body {
 /* Small screen */
 
 @media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
     #header {
         flex-direction: column;
         height: 140px;
@@ -103,6 +107,9 @@ body {
     }
     #main-feature div div {
         text-align: center;
+    }
+    .myVideo #video {
+        width: 100%;
     }
 }
 
@@ -187,15 +194,17 @@ div.fe-quality-assu {
     align-self: center;
 }
 
-
-/* div.fe-permium p {
+#main-feature p {
     font-size: 1rem;
 }
 
-div.fe-fast-ship p {
-    font-size: 1rem;
-} */
+.myVideo {
+    display: flex;
+    justify-content: center;
+}
 
-#main-feature p {
-    font-size: 1rem;
+#video {
+    width: 600px;
+    height: 320px;
+    outline: none;
 }
