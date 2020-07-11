@@ -1,10 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family='Roboto', sans-serif&display=swap") * {
-    margin: 0;
-    padding: 0;
-    color: #000;
-    box-sizing: border-box;
-}
-
+@import url("https://fonts.googleapis.com/css2?family='Roboto', sans-serif&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -19,13 +13,14 @@ body {
     /* padding: 0 20px; */
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    height: 500vh;
+    /* height: 500vh; */
 }
 
 .top-header {
     position: sticky;
     top: 0;
     z-index: 100;
+    /* padding: 0 10px; */
 }
 
 #header {
@@ -210,17 +205,11 @@ div.fe-quality-assu {
 }
 
 #type-trombone {
-    margin-top: 80px;
+    margin-top: 4rem;
     /* background: gray; */
     display: flex;
     justify-content: center;
     text-align: center;
-}
-
-@media (max-width: 1000px) {
-    body {
-        padding: 0 10px;
-    }
 }
 
 @media (max-width: 800px) {
@@ -232,6 +221,12 @@ div.fe-quality-assu {
     }
     #type-trombone div:nth-child(2) {
         margin: 10px 0;
+    }
+    #type-trombone .tb-tenor {
+        margin-left: 0;
+    }
+    #type-trombone .tb-valve {
+        margin-right: 0;
     }
 }
 
@@ -285,4 +280,68 @@ div.fe-quality-assu {
 
 .tb-valve {
     /* background-color: darkgreen; */
+}
+
+#myFooter {
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    margin-top: 30px;
+    height: 5rem;
+    /* background-color: #ccc; */
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    width: 64rem;
+}
+
+@media (max-width: 1000px) {
+    #footer {
+        /* background-color: blue; */
+    }
+    body {
+        padding: 0;
+    }
+    #header {
+        margin: 0 0.6rem;
+    }
+    #type-trombone {
+        margin: 4rem 0.6rem;
+    }
+}
+
+#footer ul {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    margin-bottom: 0.4rem;
+}
+
+#footer p {
+    align-self: flex-end;
+    padding-right: 1rem;
+}
+
+#footer li {
+    list-style: none;
+    /* background-color: darkcyan; */
+    margin: 0 8px;
+    /* padding: 20px 4px; */
+    cursor: pointer;
+    align-self: center;
+}
+
+#footer a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#footer a:hover {
+    text-decoration: underline
 }
