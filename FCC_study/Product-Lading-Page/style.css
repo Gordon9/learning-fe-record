@@ -208,3 +208,81 @@ div.fe-quality-assu {
     height: 320px;
     outline: none;
 }
+
+#type-trombone {
+    margin-top: 80px;
+    /* background: gray; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    body {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    #type-trombone {
+        flex-direction: column;
+    }
+    #type-trombone>div {
+        align-self: center;
+    }
+    #type-trombone div:nth-child(2) {
+        margin: 10px 0;
+    }
+}
+
+#type-trombone>div {
+    width: 20em;
+    height: 20em;
+    border-radius: 2px;
+    border: 1px solid #000;
+}
+
+#type-trombone h5 {
+    font-size: 1.2rem;
+    height: 3rem;
+    line-height: 3rem;
+    background-color: #ccc;
+}
+
+#type-trombone .tb-price {
+    font-weight: 900;
+    font-size: 1.6rem;
+    /* background-color: rosybrown; */
+    padding: 10px 0;
+}
+
+#type-trombone p {
+    font-weight: 400;
+    /* background-color: beige; */
+    padding: 6px 0;
+}
+
+#type-trombone button {
+    margin-top: 54px;
+    width: 8rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#type-trombone button:hover {
+    box-shadow: 0 0 5x 15px rgba(0, 0, 0, .3);
+}
+
+.tb-tenor {
+    /* background-color: darkcyan; */
+}
+
+.tb-bass {
+    /* background-color: darkgoldenrod; */
+    margin: 0 20px;
+}
+
+.tb-valve {
+    /* background-color: darkgreen; */
+}
