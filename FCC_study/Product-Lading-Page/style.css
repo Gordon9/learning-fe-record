@@ -8,19 +8,15 @@
 
 body {
     background-color: #eeeeee;
-    /* padding: 20px 40px; */
     padding: 0 40px;
-    /* padding: 0 20px; */
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    /* height: 500vh; */
 }
 
 .top-header {
     position: sticky;
     top: 0;
     z-index: 100;
-    /* padding: 0 10px; */
 }
 
 #header {
@@ -28,12 +24,11 @@ body {
     display: flex;
     justify-content: space-between;
     /* background-color: gray; */
-    /* height: 40px; */
     height: 90px;
     background-color: #eeeeee;
 }
 
-#header-img img {
+.header-img img {
     height: 40px;
     display: inline-block;
 }
@@ -59,27 +54,6 @@ body {
     height: 100%;
     line-height: 40px;
     text-align: center;
-}
-
-
-/* Medium screen */
-
-@media (max-width: 700px) {
-    #header {
-        height: 110px;
-    }
-    #header-img {
-        align-self: center;
-    }
-    #header {
-        justify-content: space-around;
-    }
-    #nav-bar ul {
-        flex-direction: column;
-    }
-    #nav-bar a {
-        line-height: 24px;
-    }
 }
 
 
@@ -275,7 +249,7 @@ div.fe-quality-assu {
 
 .tb-bass {
     /* background-color: darkgoldenrod; */
-    margin: 0 20px;
+    margin: 0 1.4rem;
 }
 
 .tb-valve {
@@ -290,7 +264,6 @@ div.fe-quality-assu {
 #footer {
     margin-top: 30px;
     height: 5rem;
-    /* background-color: #ccc; */
     border-top: 1px solid #ccc;
     display: flex;
     flex-direction: column;
@@ -300,9 +273,6 @@ div.fe-quality-assu {
 }
 
 @media (max-width: 1000px) {
-    #footer {
-        /* background-color: blue; */
-    }
     body {
         padding: 0;
     }
@@ -311,6 +281,28 @@ div.fe-quality-assu {
     }
     #type-trombone {
         margin: 4rem 0.6rem;
+    }
+}
+
+
+/* Medium screen */
+
+@media (max-width: 700px) {
+    #header {
+        height: 110px;
+        margin: 0;
+    }
+    .header-img {
+        align-self: center;
+    }
+    #header {
+        justify-content: space-around;
+    }
+    #nav-bar ul {
+        flex-direction: column;
+    }
+    #nav-bar a {
+        line-height: 24px;
     }
 }
 
@@ -328,9 +320,7 @@ div.fe-quality-assu {
 
 #footer li {
     list-style: none;
-    /* background-color: darkcyan; */
     margin: 0 8px;
-    /* padding: 20px 4px; */
     cursor: pointer;
     align-self: center;
 }
