@@ -103,10 +103,16 @@ section#welcome-section {
     /* background-color: cadetblue; */
     background-color: #303841;
     cursor: pointer;
+    height: 382px;
 }
 
 .container div img {
     width: 100%;
+    height: 320px;
+}
+
+.container .fixed-img-pos {
+    /* width: 320px; */
     height: 320px;
 }
 
@@ -306,6 +312,12 @@ footer {
 }
 
 @media (max-width: 740px) {
+    /* .container div p {
+        color: red;
+    } */
+    /* .container div {
+        height: 382px;
+    } */
     .profile {
         max-width: 27rem;
     }
