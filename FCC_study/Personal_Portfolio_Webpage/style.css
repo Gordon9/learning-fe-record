@@ -222,14 +222,18 @@ p::after {
 }
 
 .profile {
-    max-width: 52rem;
+    /* max-width: 52rem; */
+    max-width: 55rem;
     /* background: gray; */
     margin: 2rem auto;
 }
 
 .profile ul {
     display: grid;
-    grid-template-columns: repeat(5, 9rem);
+    /* grid-template-columns: repeat(5, 9rem); */
+    grid-template-columns: repeat(5, 11rem);
+    /* grid-template-columns: repeat(auto-fill, maxmin(11rem)); */
+    /* grid-template-columns: repeat(5, 1fr); */
     justify-content: center;
     padding: 0;
 }
@@ -238,9 +242,12 @@ p::after {
     list-style: none;
     color: #fff;
     /* background-color: darkcyan; */
-    width: 9rem;
+    /* width: 9rem; */
+    width: 11rem;
+    /* width: auto; */
     height: 4rem;
-    justify-self: center;
+    /* justify-self: center; */
+    /* justify-self: start; */
 }
 
 .profile li a {
@@ -252,6 +259,41 @@ p::after {
     font-size: 1.6rem;
     text-align: center;
     transition: all 0.4s ease-in-out;
+}
+
+.facebook a::before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Brands";
+    content: "\f082";
+    padding-right: 0.3rem;
+}
+
+.github a::before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Brands";
+    content: "\f09b";
+    padding-right: 0.3rem;
+}
+
+.twitter a::before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Brands";
+    content: "\f099";
+    padding-right: 0.3rem;
+}
+
+.send-a-mail a::before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    content: "\f1fa";
+    padding-right: 0.3rem;
+}
+
+.call-me a::before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    content: "\f3cd";
+    padding-right: 0.3rem;
 }
 
 .profile li a:hover {
@@ -325,7 +367,11 @@ footer {
         grid-template-columns: repeat(3, 9rem);
     }
     .profile .send-a-mail {
-        margin-left: 10rem;
+        /* margin-left: 10rem; */
+        margin-left: 5rem;
+    }
+    .profile .call-me {
+        margin-left: 6rem;
     }
 }
 
