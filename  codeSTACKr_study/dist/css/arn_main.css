@@ -410,18 +410,18 @@ body {
     display: block;
   }
   .main-header .menu-icon__line {
-    -webkit-animation: closeMid 0.8s backwards;
-            animation: closeMid 0.8s backwards;
+    -webkit-animation: closeMid 3s backwards;
+            animation: closeMid 3s backwards;
     animation-direction: reverse;
   }
   .main-header .menu-icon__line:before {
-    -webkit-animation: closeTop 0.8s backwards;
-            animation: closeTop 0.8s backwards;
+    -webkit-animation: closeTop 3s backwards;
+            animation: closeTop 3s backwards;
     animation-direction: reverse;
   }
   .main-header .menu-icon__line::after {
-    -webkit-animation: closeBtm 0.8s backwards;
-            animation: closeBtm 0.8s backwards;
+    -webkit-animation: closeBtm 3s backwards;
+            animation: closeBtm 3s backwards;
     animation-direction: reverse;
   }
   .main-header .nav-links {

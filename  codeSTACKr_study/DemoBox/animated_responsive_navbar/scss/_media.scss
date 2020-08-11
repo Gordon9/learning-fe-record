@@ -4,14 +4,14 @@
         .menu-icon {
             display: block;
             &__line {
-                animation: closeMid 0.8s backwards;
+                animation: closeMid 3s backwards;
                 animation-direction: reverse;
                 &:before {
-                    animation: closeTop 0.8s backwards;
+                    animation: closeTop 3s backwards;
                     animation-direction: reverse;
                 }
                 &::after {
-                    animation: closeBtm 0.8s backwards;
+                    animation: closeBtm 3s backwards;
                     animation-direction: reverse;
                 }
             }
