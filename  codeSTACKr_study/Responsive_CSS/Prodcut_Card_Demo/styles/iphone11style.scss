@@ -1,0 +1,97 @@
+@import './reset';
+@import './variables';
+@import './rwd';
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    @include flexCenter();
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background: $body_bg;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 80vh;
+    margin: 50px;
+    background: #fff;
+    .imgBox {
+        @include flexCenter();
+        background: linear-gradient(0deg, #272727 0%, #272727 50%, #595959 100%);
+        height: 100%;
+        position: relative;
+        img {
+            position: absolute;
+            // height: 200%;
+            filter: drop-shadow(0 0 15px #000);
+        }
+    }
+    .details {
+        @include flexCenter();
+        padding: 20px;
+        h2 {
+            font-size: 2.5rem;
+            line-height: 0.8em;
+            color: #444;
+            span {
+                display: block;
+                font-size: 0.4em;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: #999;
+            }
+        }
+        p {
+            min-width: 100%;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        h3 {
+            font-size: 2.5rem;
+            color: #999;
+            float: left;
+        }
+        button {
+            background: #006EDB;
+            color: #fff;
+            float: right;
+            border: none;
+            box-shadow: none;
+            outline: none;
+            padding: 15px 20px;
+            margin-top: 5px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+    }
+}
+
+// Using SCSS variables to store breakpoints
+@media (min-width: $breakpoint-large) {
+    .container {
+        height: 600px;
+        grid-template-columns: repeat(2, 50%);
+        .imgBox img {
+            height: 90%;
+            transform: rotate(-20deg) translate(-50px, -50px);
+            filter: drop-shadow(-6px 10px 8px #000);
+        }
+        .details {
+            height: 100%;
+            padding: 40px;
+        }
+        p {
+            max-width: 80%;
+            margin-left: 10%;
+        }
+    }
+}

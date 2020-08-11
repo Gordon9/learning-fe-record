@@ -8,7 +8,6 @@ body {
 }
 
 .mainNav {
-    /* height: 20px; */
     background: #477da6;
     display: flex;
     justify-content: flex-end;

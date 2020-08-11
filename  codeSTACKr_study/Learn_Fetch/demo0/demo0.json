@@ -1,0 +1,34 @@
+[{
+        "firstame": "Gordon",
+        "lastName": "Tam",
+        "Address": {
+            "Street": "123 street",
+            "City": "Houston",
+            "State": "TX"
+        },
+        "email": "gordnaman@gmail.com",
+        "phone": "333-33-33333"
+    },
+    {
+        "firstame": "Aman",
+        "lastName": "cool",
+        "Address": {
+            "Street": "123 street",
+            "City": "London",
+            "State": "TX"
+        },
+        "email": "aman@gmail.com",
+        "phone": "2222-2-222"
+    },
+    {
+        "firstame": "no-one",
+        "lastName": "shuan",
+        "Address": {
+            "Street": "12223 street",
+            "City": "Houston",
+            "State": "TX"
+        },
+        "email": "shuan@gmail.com",
+        "phone": "4444-33-33333"
+    }
+]

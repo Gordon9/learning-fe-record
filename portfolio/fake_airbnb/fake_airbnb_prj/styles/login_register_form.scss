@@ -1,0 +1,27 @@
+@import './reset';
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: #ccc;
+}
+
+header {
+    @include flexCenter();
+    li {
+        list-style: none;
+        width: 50%;
+        text-align: center;
+        &:hover {
+            background: lightblue;
+        }
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        color: #000;
+    }
+}

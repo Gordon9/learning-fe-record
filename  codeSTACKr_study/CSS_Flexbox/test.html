@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+    <style>
+        .myDiv {
+            width: 600px;
+            height: 500px;
+            background: #ccc;
+            margin: 100px;
+            position: relative;
+        }
+        
+        .myDiv::before {
+            content: 'Pseudo Text';
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            /* background: green; */
+            height: 30px;
+            transform: translateY(-50%);
+            margin-top: -15px;
+            color: #fff;
+            padding-left: 30px;
+            box-sizing: border-box;
+            border-bottom: 6px solid red;
+            font-size: 20px;
+            line-height: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myDiv">
+
+    </div>
+</body>
+
+</html>

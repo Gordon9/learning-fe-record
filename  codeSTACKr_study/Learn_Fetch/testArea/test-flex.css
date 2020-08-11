@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+#posts {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10rem, 1fr));
+    gap: 0.8rem;
+    padding: 4rem 10rem;
+}
+
+#posts div {
+    background-color: #20848a;
+    height: 40rem;
+    text-align: center;
+}

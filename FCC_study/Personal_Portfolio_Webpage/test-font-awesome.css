@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    position: relative;
+    background-color: gray;
+    width: 10rem;
+    margin: 100px auto;
+    padding-left: 4rem;
+}
+
+p::before {
+    /* content: ' \f082';
+    font-family: 'Font Awesome 5';
+    font-weight: 900;
+    font-size: .9em; */
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    /* content: "\f007"; */
+    content: "\f082";
+}
+
+
+/* p::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '\f082';
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free;
+
+} */
+
+.test2::before {
+    content: ' \f1c1';
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    font-size: .9em;
+}
