@@ -1,0 +1,95 @@
+@import './reset';
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+$btn-size: 90px;
+$colors: ('facebook': #3b5998, 'twitter': #3cf, 'youtube': #c4302b, 'instagram': #e95959, 'linkedin': #0e76a8);
+@mixin animate-bounce {
+    transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8);
+}
+
+.sleek__social {
+    background: #ecf0f1;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 33.33%;
+    text-align: center;
+    .btn {
+        @extend .btn__sleek--inactive;
+        display: inline-block;
+        width: $btn-size;
+        height: $btn-size;
+        position: relative;
+        overflow: hidden;
+        border-radius: 28%;
+        box-shadow: 0 5px 50px 35px rgba(0, 0, 0, .1);
+        &::before {
+            @include animate-bounce();
+            display: inline-block;
+            content: '';
+            width: 125%;
+            height: 125%;
+            position: absolute;
+            top: -10%;
+            left: -10%;
+        }
+        .fab {
+            @include animate-bounce();
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            font-size: 2.5rem;
+            line-height: $btn-size;
+        }
+        &:focus,
+        &:hover {
+            @extend .btn__sleek-active;
+        }
+    }
+    .btn__sleek--inactive {
+        @each $name,
+        $color in $colors {
+            &.#{$name} {
+                &::before {
+                    background: $color;
+                }
+                .fab {
+                    color: $color;
+                }
+            }
+        }
+        &::before {
+            transform: translate(-100%, -100%) rotate(45deg);
+        }
+        .fab {
+            transform: scale(0.8);
+        }
+    }
+    .btn__sleek-active {
+        &::before {
+            transform: translate(0, 0) rotate(45deg);
+        }
+        .fab {
+            color: #fff;
+            transform: scale(1);
+        }
+    }
+}

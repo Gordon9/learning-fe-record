@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sleek__social {
+  background: #ecf0f1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 33.33%;
+  text-align: center;
+}
+
+.sleek__social .btn {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  -webkit-box-shadow: 0 5px 50px 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 50px 35px rgba(0, 0, 0, 0.1);
+}
+
+.sleek__social .btn::before {
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8);
+  transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8);
+  display: inline-block;
+  content: '';
+  width: 125%;
+  height: 125%;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+}
+
+.sleek__social .btn .fab {
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8);
+  transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 2.5rem;
+  line-height: 90px;
+}
+
+.sleek__social .btn__sleek--inactive.facebook::before, .sleek__social .facebook.btn::before {
+  background: #3b5998;
+}
+
+.sleek__social .btn__sleek--inactive.facebook .fab, .sleek__social .facebook.btn .fab {
+  color: #3b5998;
+}
+
+.sleek__social .btn__sleek--inactive.twitter::before, .sleek__social .twitter.btn::before {
+  background: #3cf;
+}
+
+.sleek__social .btn__sleek--inactive.twitter .fab, .sleek__social .twitter.btn .fab {
+  color: #3cf;
+}
+
+.sleek__social .btn__sleek--inactive.youtube::before, .sleek__social .youtube.btn::before {
+  background: #c4302b;
+}
+
+.sleek__social .btn__sleek--inactive.youtube .fab, .sleek__social .youtube.btn .fab {
+  color: #c4302b;
+}
+
+.sleek__social .btn__sleek--inactive.instagram::before, .sleek__social .instagram.btn::before {
+  background: #e95959;
+}
+
+.sleek__social .btn__sleek--inactive.instagram .fab, .sleek__social .instagram.btn .fab {
+  color: #e95959;
+}
+
+.sleek__social .btn__sleek--inactive.linkedin::before, .sleek__social .linkedin.btn::before {
+  background: #0e76a8;
+}
+
+.sleek__social .btn__sleek--inactive.linkedin .fab, .sleek__social .linkedin.btn .fab {
+  color: #0e76a8;
+}
+
+.sleek__social .btn__sleek--inactive::before, .sleek__social .btn::before {
+  -webkit-transform: translate(-100%, -100%) rotate(45deg);
+          transform: translate(-100%, -100%) rotate(45deg);
+}
+
+.sleek__social .btn__sleek--inactive .fab, .sleek__social .btn .fab {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.sleek__social .btn__sleek-active::before, .sleek__social .btn:focus::before, .sleek__social .btn:hover::before {
+  -webkit-transform: translate(0, 0) rotate(45deg);
+          transform: translate(0, 0) rotate(45deg);
+}
+
+.sleek__social .btn__sleek-active .fab, .sleek__social .btn:focus .fab, .sleek__social .btn:hover .fab {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=asm_main.css.map */
