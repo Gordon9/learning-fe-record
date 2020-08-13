@@ -302,3 +302,46 @@
             }
         }
     }
+    
+    // Third Way
+    .glitchy_social {
+        background: #000;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 33.33%;
+        text-align: center;
+        .btn {
+            display: inline-block;
+            width: $btn-size;
+            height: $btn-size;
+            position: relative;
+            .fab {
+                color: #fff;
+                font-size: 4rem;
+                line-height: $btn-size;
+            }
+            &:focus .fab,
+            &:hover .fab {
+                animation: glitchy 200ms infinite;
+            }
+        }
+        @keyframes glitchy {
+            0% {
+                text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+            }
+            25% {
+                text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+            }
+            50% {
+                text-shadow: 5px -4px #f44336, -8px -4px #2196f3;
+            }
+            75% {
+                text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+            }
+            100% {
+                text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+            }
+        }
+    }

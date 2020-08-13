@@ -440,4 +440,75 @@ a {
   -webkit-transition: all 0.325s steps(8);
   transition: all 0.325s steps(8);
 }
+
+.glitchy_social {
+  background: #000;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 33.33%;
+  text-align: center;
+}
+
+.glitchy_social .btn {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  position: relative;
+}
+
+.glitchy_social .btn .fab {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 90px;
+}
+
+.glitchy_social .btn:focus .fab,
+.glitchy_social .btn:hover .fab {
+  -webkit-animation: glitchy 200ms infinite;
+          animation: glitchy 200ms infinite;
+}
+
+@-webkit-keyframes glitchy {
+  0% {
+    text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+  }
+  25% {
+    text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+  }
+  50% {
+    text-shadow: 5px -4px #f44336, -8px -4px #2196f3;
+  }
+  75% {
+    text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+  }
+  100% {
+    text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+  }
+}
+
+@keyframes glitchy {
+  0% {
+    text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+  }
+  25% {
+    text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+  }
+  50% {
+    text-shadow: 5px -4px #f44336, -8px -4px #2196f3;
+  }
+  75% {
+    text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+  }
+  100% {
+    text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+  }
+}
 /*# sourceMappingURL=asm_main.css.map */
