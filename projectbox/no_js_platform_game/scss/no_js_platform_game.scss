@@ -58,7 +58,7 @@ body {
     left: 50%;
     width: $grid-size * $cols;
     height: $grid-size * $rows;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) perspective(100rem) rotate(-45deg);
 }
 
 .level {
@@ -94,6 +94,26 @@ body {
     transform: translate(-$grid-size/2, $grid-size/2);
     pointer-events: none;
     transition: tranform $mid $ease-in, opacity $mid linear;
+    &::before,
+    &::after {
+        content: "";
+        @include absolute;
+        pointer-events: none !important;
+    }
+    &::before {
+        left: -20%;
+        background: $dark;
+        transform-origin: 100% 100%;
+        transform: skewY(-45deg);
+        width: 20%;
+    }
+    &::after {
+        top: 100%;
+        background: $color;
+        transform-origin: 0 0;
+        height: 20%;
+        transform: skewX(-45deg);
+    }
     &.start,
     &:hover,
     &:hover+.step {
@@ -101,5 +121,22 @@ body {
         opacity: 1;
         pointer-events: auto;
         transition: transoform $short $ease-out, opacity $short linear;
+    }
+    @for $r from 1 through 4 {
+        &[r="#{$r}"] {
+            top: $r * 10rem;
+        }
+    }
+    @for $c from 1 through 4 {
+        &[c="#{$c}"] {
+            left: $c * 10rem;
+        }
+    }
+    @for $r from 0 through 4 {
+        @for $c from 0 through 4 {
+            &[c="#{$c}"][r="#{$r}"] {
+                z-index: ($r + 1) * ($cols - $c);
+            }
+        }
     }
 }
