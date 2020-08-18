@@ -70,12 +70,17 @@ body {
         pointer-events: auto;
         transform: translate(0, 0);
     }
-    &:hover .finsh {
+    &:hover .finish {
         transform: scale(1);
         opacity: 1;
         pointer-events: auto;
         transition: transform $short $ease-out, opacity $short linear;
     }
+}
+
+input {
+    opacity: 0;
+    pointer-events: none;
 }
 
 #level-one {
@@ -113,6 +118,16 @@ body {
         transform-origin: 0 0;
         height: 20%;
         transform: skewX(-45deg);
+    }
+    &.start,
+    &.finish {
+        &::before {
+            left: -50%;
+            width: 50%;
+        }
+        &::after {
+            height: 50%;
+        }
     }
     &.start,
     &:hover,
