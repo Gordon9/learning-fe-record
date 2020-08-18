@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>No JavaScript Platform Game</h1>
+    <h1 class="title"><span>No</span> JavaScript <span>Platform Game</span></h1>
     <div class="center">
         <input type="checkbox" id="level-one">
         <div class="level" l="1">
@@ -22,9 +22,49 @@
             <div class="step" r="4" c="1"></div>
             <div class="step" r="4" c="2"></div>
             <div class="step" r="4" c="3"></div>
-            <div class="step finish" r="4" c="4"></div>
+            <div class="step finish" r="4" c="4">
+                <label for="level-one" class="goal"></label>
+            </div>
+        </div>
+        <input type="checkbox" id="level-two">
+        <div class="level">
+            <div class="level-title">Level 2</div>
+            <div class="step start" r="4" c="4"></div>
+            <div class="step" r="4" c="3"></div>
+            <div class="step" r="4" c="2"></div>
+            <div class="step" r="3" c="2"></div>
+            <div class="step" r="3" c="1"></div>
+            <div class="step" r="3" c="0"></div>
+            <div class="step" r="4" c="0"></div>
+            <div class="step" r="4" c="1"></div>
+            <div class="step" r="3" c="1"></div>
+            <div class="step" r="3" c="2"></div>
+            <div class="step" r="3" c="3"></div>
+            <div class="step" r="4" c="3"></div>
+            <div class="step" r="4" c="2"></div>
+            <div class="step" r="3" c="2"></div>
+            <div class="step" r="3" c="1"></div>
+            <div class="step" r="4" c="1"></div>
+            <div class="step" r="4" c="0"></div>
+            <div class="step" r="3" c="0"></div>
+            <div class="step" r="2" c="0"></div>
+            <div class="step" r="1" c="0"></div>
+            <div class="step finish" r="1" c="1">
+                <label for="level-two" class="goal"></label>
+            </div>
+        </div>
+        <input type="checkbox" id="finish">
+        <div class="level">
+            <div class="message">
+                <h1>YOU WIN!</h1>
+                <p>Thanks for playing!
+                    <br> Impressive patience!!
+                </p>
+                <a href="#" class="share" target="_blank">Brag on Twitter</a>
+            </div>
         </div>
     </div>
+    <a href="#" class="signature" target="_blank">gordontam</a>
 </body>
 
 </html>

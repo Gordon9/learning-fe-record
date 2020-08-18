@@ -61,14 +61,55 @@ body {
     transform: translate(-50%, -50%) perspective(100rem) rotate(-45deg);
 }
 
+.title {
+    position: relative;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    font-size: 5rem;
+    background: #000;
+    z-index: 2;
+    span:first-of-type {
+        display: inline-block;
+        position: relative;
+        color: $darker;
+        font-family: "Russo One", sans-serif;
+        font-size: 8rem;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 1.8rem;
+            height: 1rem;
+            width: 11rem;
+            background: rgba($color: white, $alpha: 0.9);
+            z-index: -1;
+        }
+    }
+    span:last-of-type {
+        display: inline-block;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0.5rem;
+            height: 5rem;
+            width: 36rem;
+            background: $darker;
+            z-index: -1;
+        }
+    }
+}
+
 .level {
-    opacity: 1;
+    opacity: 0;
     transform: translate($grid-size * 2, -$grid-size * 2);
     pointer-events: none;
     transition: transform $mid $ease-out, opacity $mid $ease-out;
     &[l="1"] {
         pointer-events: auto;
         transform: translate(0, 0);
+        opacity: 1;
     }
     &:hover .finish {
         transform: scale(1);
@@ -78,9 +119,64 @@ body {
     }
 }
 
+.level-title {
+    position: absolute;
+    top: -20rem;
+    left: -20rem;
+    font-family: "Russo One", sans-serif;
+    font-size: 10rem;
+}
+
 input {
     opacity: 0;
     pointer-events: none;
+}
+
+input:checked+.level+input+.level {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(0, 0);
+}
+
+input:checked+.level {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transform: translate(-$grid-size * 2, $grid-size * 2) !important;
+}
+
+.button,
+.goal {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    width: 75%;
+    height: 75%;
+    border-radius: $grid-size;
+    background: $pop;
+    text-align: center;
+    line-height: $grid-size * 0.8;
+    box-shadow: -$grid-size * 0.05 $grid-size * 0.05 $grid-size * 0.05 $color;
+    transition: box-shadow $short $ease-out, transform $short $ease-out;
+    &:hover {
+        transform: translate($grid-size * 0.05, -$grid-size * 0.05);
+        box-shadow: -$grid-size * 0.2 $grid-size * 0.2 $grid-size * 0.3 $color;
+    }
+    &:active {
+        transform: translate($grid-size * -0.05, -$grid-size * -0.05);
+        box-shadow: 0 0 0 $color;
+    }
+    cursor: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/google/223/smiling-face-with-sunglasses_1f60e.png) 30 30,
+    auto;
+}
+
+.button {
+    background: $light;
+}
+
+input:checked+.button {
+    pointer-events: none;
+    transform: translate($grid-size * -0.05, -$grid-size * -0.05);
+    box-shadow: 0 0 0 $color;
 }
 
 #level-one {
@@ -99,6 +195,7 @@ input {
     transform: translate(-$grid-size/2, $grid-size/2);
     pointer-events: none;
     transition: tranform $mid $ease-in, opacity $mid linear;
+    cursor: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/google/223/worried-face_1f61f.png) 30 30, auto;
     &::before,
     &::after {
         content: "";
@@ -131,7 +228,10 @@ input {
     }
     &.start,
     &:hover,
-    &:hover+.step {
+    &:hover+.step,
+    &:hover+.path>.step:first-child,
+    &:hover+.bridge>input:checked+.step,
+    &:hover+.bridge>input:not(:checked)+.step+.step {
         transform: scale(1);
         opacity: 1;
         pointer-events: auto;
@@ -154,4 +254,55 @@ input {
             }
         }
     }
+}
+
+.bridge {
+    pointer-events: none;
+}
+
+h1 {
+    font-size: 10rem;
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+.share {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    padding: 2rem;
+    border-radius: 5rem;
+    background: $pop;
+    color: white;
+    box-shadow: -$grid-size * 0.05 $grid-size * 0.05 $grid-size * 0.05 darken($color: $darker, $amount: 10%);
+    transition: box-shadow $short $ease-out, transform $short $ease-out;
+    &:hover {
+        transform: translate($grid-size * 0.05, -$grid-size * 0.05);
+        box-shadow: -$grid-size * -0.15 $grid-size * 0.15 $grid-size * 0.25 darken($color: $darker, $amount: 10%);
+    }
+    &:active {
+        transform: translate($grid-size * -0.05, -$grid-size * -0.05);
+        box-shadow: -$grid-size * 0 $grid-size * 0 $grid-size * 0 darken($color: $darker, $amount: 10%);
+    }
+    cursor: pointer;
+}
+
+.message {
+    transform: rotate(45deg) translate(-10rem, -15rem);
+    text-align: center;
+    width: 40rem;
+}
+
+.signature {
+    position: fixed;
+    bottom: 2rem;
+    right: 4rem;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: rgba($color: white, $alpha: 0.4);
+    letter-spacing: 2px;
 }

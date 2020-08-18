@@ -23,8 +23,52 @@ body {
           transform: translate(-50%, -50%) perspective(100rem) rotate(-45deg);
 }
 
+.title {
+  position: relative;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  padding-left: 1rem;
+  font-size: 5rem;
+  background: #000;
+  z-index: 2;
+}
+
+.title span:first-of-type {
+  display: inline-block;
+  position: relative;
+  color: #854752;
+  font-family: "Russo One", sans-serif;
+  font-size: 8rem;
+}
+
+.title span:first-of-type::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 1.8rem;
+  height: 1rem;
+  width: 11rem;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+}
+
+.title span:last-of-type {
+  display: inline-block;
+  position: relative;
+}
+
+.title span:last-of-type::before {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem;
+  height: 5rem;
+  width: 36rem;
+  background: #854752;
+  z-index: -1;
+}
+
 .level {
-  opacity: 1;
+  opacity: 0;
   -webkit-transform: translate(20rem, -20rem);
           transform: translate(20rem, -20rem);
   pointer-events: none;
@@ -38,6 +82,7 @@ body {
   pointer-events: auto;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  opacity: 1;
 }
 
 .level:hover .finish {
@@ -51,9 +96,79 @@ body {
   transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1), opacity 200ms linear, -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.level-title {
+  position: absolute;
+  top: -20rem;
+  left: -20rem;
+  font-family: "Russo One", sans-serif;
+  font-size: 10rem;
+}
+
 input {
   opacity: 0;
   pointer-events: none;
+}
+
+input:checked + .level + input + .level {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+input:checked + .level {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  -webkit-transform: translate(-20rem, 20rem) !important;
+          transform: translate(-20rem, 20rem) !important;
+}
+
+.button,
+.goal {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  width: 75%;
+  height: 75%;
+  border-radius: 10rem;
+  background: #4763eb;
+  text-align: center;
+  line-height: 8rem;
+  -webkit-box-shadow: -0.5rem 0.5rem 0.5rem #b8ad7a;
+          box-shadow: -0.5rem 0.5rem 0.5rem #b8ad7a;
+  -webkit-transition: -webkit-box-shadow 200ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: -webkit-box-shadow 200ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: box-shadow 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: box-shadow 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-box-shadow 200ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/google/223/smiling-face-with-sunglasses_1f60e.png) 30 30, auto;
+}
+
+.button:hover,
+.goal:hover {
+  -webkit-transform: translate(0.5rem, -0.5rem);
+          transform: translate(0.5rem, -0.5rem);
+  -webkit-box-shadow: -2rem 2rem 3rem #b8ad7a;
+          box-shadow: -2rem 2rem 3rem #b8ad7a;
+}
+
+.button:active,
+.goal:active {
+  -webkit-transform: translate(-0.5rem, 0.5rem);
+          transform: translate(-0.5rem, 0.5rem);
+  -webkit-box-shadow: 0 0 0 #b8ad7a;
+          box-shadow: 0 0 0 #b8ad7a;
+}
+
+.button {
+  background: #d1dbbd;
+}
+
+input:checked + .button {
+  pointer-events: none;
+  -webkit-transform: translate(-0.5rem, 0.5rem);
+          transform: translate(-0.5rem, 0.5rem);
+  -webkit-box-shadow: 0 0 0 #b8ad7a;
+          box-shadow: 0 0 0 #b8ad7a;
 }
 
 #level-one {
@@ -74,6 +189,7 @@ input {
   pointer-events: none;
   -webkit-transition: tranform 600ms cubic-bezier(0.755, 0.05, 0.855, 0.06), opacity 600ms linear;
   transition: tranform 600ms cubic-bezier(0.755, 0.05, 0.855, 0.06), opacity 600ms linear;
+  cursor: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/google/223/worried-face_1f61f.png) 30 30, auto;
 }
 
 .step::before, .step::after {
@@ -116,7 +232,10 @@ input {
 }
 
 .step.start, .step:hover,
-.step:hover + .step {
+.step:hover + .step,
+.step:hover + .path > .step:first-child,
+.step:hover + .bridge > input:checked + .step,
+.step:hover + .bridge > input:not(:checked) + .step + .step {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
@@ -255,5 +374,67 @@ input {
 
 .step[c="4"][r="4"] {
   z-index: 5;
+}
+
+.bridge {
+  pointer-events: none;
+}
+
+h1 {
+  font-size: 10rem;
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+.share {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  padding: 2rem;
+  border-radius: 5rem;
+  background: #4763eb;
+  color: white;
+  -webkit-box-shadow: -0.5rem 0.5rem 0.5rem #63363d;
+          box-shadow: -0.5rem 0.5rem 0.5rem #63363d;
+  -webkit-transition: -webkit-box-shadow 200ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: -webkit-box-shadow 200ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: box-shadow 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: box-shadow 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-box-shadow 200ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+}
+
+.share:hover {
+  -webkit-transform: translate(0.5rem, -0.5rem);
+          transform: translate(0.5rem, -0.5rem);
+  -webkit-box-shadow: 1.5rem 1.5rem 2.5rem #63363d;
+          box-shadow: 1.5rem 1.5rem 2.5rem #63363d;
+}
+
+.share:active {
+  -webkit-transform: translate(-0.5rem, 0.5rem);
+          transform: translate(-0.5rem, 0.5rem);
+  -webkit-box-shadow: 0rem 0rem 0rem #63363d;
+          box-shadow: 0rem 0rem 0rem #63363d;
+}
+
+.message {
+  -webkit-transform: rotate(45deg) translate(-10rem, -15rem);
+          transform: rotate(45deg) translate(-10rem, -15rem);
+  text-align: center;
+  width: 40rem;
+}
+
+.signature {
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+  text-decoration: none;
+  font-weight: 100;
+  font-family: sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=no_js_platform_game.css.map */
