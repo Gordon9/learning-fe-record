@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  min-width: 500px;
+}
+
+body h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 5rem;
+  line-height: 1.1;
+  text-align: center;
+  color: #013034;
+  text-transform: uppercase;
+}
+
+body button {
+  padding: 1rem 2rem;
+  margin: 5rem 0;
+  border: none;
+  background: #171617;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+body h3 {
+  text-transform: uppercase;
+  color: #013034;
+}
+
+.alt-color {
+  background: #0aa6b1;
+}
+/*# sourceMappingURL=bg_color_changer_styles.css.map */

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    // background: #fa4242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 500px;
+
+    h1 {
+        font-family: "Anton", sans-serif;
+        font-size: 5rem;
+        line-height: 1.1;
+        text-align: center;
+        color: #013034;
+        text-transform: uppercase;
+    }
+
+    button {
+        padding: 1rem 2rem;
+        margin: 5rem 0;
+        border: none;
+        background: #171617;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        color: #013034;
+    }
+}
+
+.alt-color {
+    background: #0aa6b1;
+}
