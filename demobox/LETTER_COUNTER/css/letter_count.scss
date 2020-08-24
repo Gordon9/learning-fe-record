@@ -9,14 +9,13 @@
 
 body {
     margin: 0 auto;
-    // background: #fa4242;
+    background: #fa4242;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    min-width: 500px;
-    transition: background .3s ease-in-out;
+    min-width: 400px;
 
     h1 {
         font-family: "Anton", sans-serif;
@@ -27,15 +26,21 @@ body {
         text-transform: uppercase;
     }
 
-    button {
-        padding: 1rem 2rem;
+    .input-wrapper {
         margin: 5rem 0;
-        border: none;
-        background: #171617;
-        color: #fff;
-        text-transform: uppercase;
-        cursor: pointer;
+
+        div {
+            margin-top: 0.5rem;
+            color: #fff;
+        }
     }
+
+    input {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        border: none;
+    }
+    
 
     h3 {
         text-transform: uppercase;
@@ -43,6 +48,3 @@ body {
     }
 }
 
-.alt-color {
-    background: #0aa6b1;
-}

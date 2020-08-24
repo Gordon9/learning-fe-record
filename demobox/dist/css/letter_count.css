@@ -9,6 +9,7 @@
 
 body {
   margin: 0 auto;
+  background: #fa4242;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,9 +24,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  min-width: 500px;
-  -webkit-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
+  min-width: 400px;
 }
 
 body h1 {
@@ -37,22 +36,23 @@ body h1 {
   text-transform: uppercase;
 }
 
-body button {
-  padding: 1rem 2rem;
+body .input-wrapper {
   margin: 5rem 0;
-  border: none;
-  background: #171617;
+}
+
+body .input-wrapper div {
+  margin-top: 0.5rem;
   color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
+}
+
+body input {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
 }
 
 body h3 {
   text-transform: uppercase;
   color: #013034;
 }
-
-.alt-color {
-  background: #0aa6b1;
-}
-/*# sourceMappingURL=bg_color_changer_styles.css.map */
+/*# sourceMappingURL=letter_count.css.map */
