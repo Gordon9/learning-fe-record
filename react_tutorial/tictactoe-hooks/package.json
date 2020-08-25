@@ -1,5 +1,5 @@
 {
-  "name": "react-tic-tac-toe-hooks",
+  "name": "tictactoe-hooks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
