@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micro Interaction Password Input</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <input type="password" id="password" />
+      <button class="eye">
+        <i class="fas fa-eye hide" id="openEye"></i>
+        <i class="fas fa-eye-slash" id="closeEye"></i>
+      </button>
+      <button class="action" data-content="">
+        <i class="fas fa-arrow-right" id="arrow"></i>
+        <i class="fas fa-check hide" id="check"></i>
+        <i class="fas fa-times hide" id="times"></i>
+      </button>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/897f111bed.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
