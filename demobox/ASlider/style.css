@@ -6,7 +6,7 @@
 }
 
 :root {
-    --radisu: 0;
+    --radius: 0;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
     height: 25vh;
     background-color: #ff652f;
     margin: 1rem;
-    border-radius: var(--radisu);
+    border-radius: var(--radius);
 }
 
 .form-group {
