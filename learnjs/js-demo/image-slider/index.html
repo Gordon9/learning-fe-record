@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/897f111bed.js" crossorigin="anonymous"></script>
+</body>
 </head>
 <body>
     <div class="carousel-container">
+        <i class="fas fa-arrow-left slideBtn" id="prevBtn"></i>
+        <i class="fas fa-arrow-right slideBtn" id="nextBtn"></i>
         <div class="carousel-slide">
+            <img src="./got_4.png" id="lastClone" alt="">
             <img src="./got_0.jpg" alt="">
             <img src="./got_1.jpg" alt="">
             <img src="./got_2.jpg" alt="">
             <img src="./got_3.jpg" alt="">
             <img src="./got_4.png" alt="">
+            <img src="./got_0.jpg" id="firstClone" alt="">
         </div>
     </div>
+    <!-- <button id="prevBtn">Prev</button>
+    <button id="nextBtn">Next</button> -->
+
     <script src="./app.js"></script>
-</body>
+   
 </html>
