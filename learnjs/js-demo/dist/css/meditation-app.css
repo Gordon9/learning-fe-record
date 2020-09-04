@@ -10,9 +10,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -25,21 +25,87 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.app .time-select {
-  background: lightblue;
+.app .time-select button,
+.app .sound-picker button,
+.app .player-container button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.app .sound-picker {
-  background: lightgreen;
+.app .time-select button:hover {
+  color: black;
+  background: white;
+}
+
+.app .sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.app .sound-picker button:nth-child(1) {
+  background: #4972a1;
+}
+
+.app .sound-picker button:nth-child(2) {
+  background: #a14f48;
+}
+
+.app .sound-picker button img {
+  height: 100%;
 }
 
 .app .player-container {
-  background: lightcoral;
+  position: relative;
+}
+
+.app .player-container svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.app .player-container .time-display {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  font-size: 30px;
 }
 
 video {
-  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -10;
 }
 /*# sourceMappingURL=meditation-app.css.map */
