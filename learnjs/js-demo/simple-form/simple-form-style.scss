@@ -42,7 +42,7 @@ body {
         }
     }
 
-    div.innactive {
+    div.inactive {
         opacity: 0;
         pointer-events: none;
         // why?
@@ -54,5 +54,17 @@ body {
         pointer-events: all;
         transform: translate(-50%, -50%);
         // background-color: red;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
     }
 }
