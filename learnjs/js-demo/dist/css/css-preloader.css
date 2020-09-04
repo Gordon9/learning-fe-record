@@ -20,6 +20,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .preload .airplane {
@@ -69,6 +71,11 @@
           transform: translate(100%, -75%);
   -webkit-animation: clouds 3s ease infinite 1.5s;
           animation: clouds 3s ease infinite 1.5s;
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
 }
 
 section img {

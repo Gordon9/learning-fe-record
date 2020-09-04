@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: opacity 0.5s ease;
 
     .airplane {
         height: 200px;
@@ -42,11 +43,13 @@
         transform: translate(100%, -25%);
         animation: clouds 3s ease infinite;
     }
+
     .cloud2 {
         top: 50%;
         transform: translate(100%, -50%);
         animation: clouds 3s ease infinite 2s;
     }
+
     .cloud3 {
         top: 75%;
         transform: translate(100%, -75%);
@@ -54,6 +57,11 @@
     }
 
 
+}
+
+.preload-finish {
+    opacity: 0;
+    pointer-events: none;
 }
 
 section img {
@@ -64,6 +72,7 @@ section img {
     from {
         transform: translateY(0px);
     }
+
     to {
         transform: translateY(50px);
     }
@@ -73,6 +82,7 @@ section img {
     from {
         right: 0%;
     }
+
     to {
         right: 130%;
     }
