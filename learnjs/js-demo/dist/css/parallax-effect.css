@@ -15,6 +15,7 @@ body header {
   background: linear-gradient(240deg, #834d4d, #503ded);
   position: relative;
   color: white;
+  z-index: -1;
 }
 
 body header .intro-text {
