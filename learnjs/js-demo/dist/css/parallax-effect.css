@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merienda One', cursive;
+}
+
+body header {
+  min-height: 100vh;
+  background: linear-gradient(240deg, #834d4d, #503ded);
+  position: relative;
+  color: white;
+  z-index: -1;
+}
+
+body header .intro-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
+  position: absolute;
+}
+
+body header .intro-text h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+body header .intro-text h3 {
+  font-size: 35px;
+}
+
+body header .chair {
+  height: 700px;
+  position: absolute;
+  top: 90%;
+  right: 10%;
+  -webkit-transform: translate(-10%, -90%);
+          transform: translate(-10%, -90%);
+}
+
+body header .big-rose {
+  height: 200px;
+  position: absolute;
+  top: 10%;
+  right: 40%;
+}
+
+body header .small-rose {
+  height: 100px;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+body section {
+  min-height: 100vh;
+  color: #834d4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  background-color: lightslategray;
+}
+/*# sourceMappingURL=parallax-effect.css.map */
