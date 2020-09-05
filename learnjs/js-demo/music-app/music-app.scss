@@ -24,9 +24,18 @@ body {
             font-size: 40px;
         }
 
-        p { 
+        p {
             font-size: 20px;
         }
+    }
+
+    .visual div {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        bottom: 0%;
+        z-index: -1;
     }
 
     .pads {
@@ -43,20 +52,42 @@ body {
         .pad1 {
             background: #60d394;
         }
+
         .pad2 {
             background: #d36060;
         }
+
         .pad3 {
             background: #c060d3;
         }
+
         .pad4 {
             background: #d3d160;
         }
+
         .pad5 {
             background: #6860d3;
         }
+
         .pad6 {
             background: #60b2d3;
         }
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 0%;
+        left: 80%;
     }
 }
