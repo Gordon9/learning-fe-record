@@ -1,7 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.app header p {
+  font-size: 20px;
+}
+
+.app .pads {
+  background: lightblue;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app .pads div {
+  height: 100px;
+  width: 100px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.app .pads .pad1 {
+  background: #60d394;
+}
+
+.app .pads .pad2 {
+  background: #d36060;
+}
+
+.app .pads .pad3 {
+  background: #c060d3;
+}
+
+.app .pads .pad4 {
+  background: #d3d160;
+}
+
+.app .pads .pad5 {
+  background: #6860d3;
+}
+
+.app .pads .pad6 {
+  background: #60b2d3;
 }
 /*# sourceMappingURL=music-app.css.map */
