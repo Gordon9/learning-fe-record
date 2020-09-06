@@ -1,2 +1,160 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #e2c35d, #d88771);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+body header {
+  font-size: 1.5rem;
+}
+
+body header,
+body form {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body form input,
+body form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  outline: none;
+}
+
+body form button {
+  color: #d88771;
+  background: white;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body form button:hover {
+  background: #d88771;
+  color: white;
+}
+
+body form .select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+body form .select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body form .select:hover::after {
+  background: white;
+  color: #ff6f47;
+}
+
+body form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+body .todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .todo-container .todo-list {
+  min-width: 50%;
+  list-style: none;
+}
+
+body .todo-container .todo-list .todo {
+  background: white;
+  margin: 0.5rem;
+  color: black;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+body .todo-container .todo-list .todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 0.5rem;
+}
+
+body .todo-container .todo-list .todo button {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+body .todo-container .todo-list .todo button i {
+  pointer-events: none;
+}
+
+body .todo-container .todo-list .todo .completed-btn {
+  background: #49cc49;
+}
+
+body .todo-container .todo-list .todo.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+body .todo-container .todo-list .todo.fall {
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
 /*# sourceMappingURL=todo-style.css.map */
