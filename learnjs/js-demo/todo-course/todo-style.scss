@@ -46,6 +46,38 @@ body {
                 color: white;
             }
         }
+
+        .select {
+            margin: 1rem;
+            position: relative;
+            overflow: hidden;
+
+            &::after {
+                content: "\25BC";
+                position: absolute;
+                background: #ff6f47;
+                top: 0;
+                right: 0;
+                padding: 1rem;
+                pointer-events: none;
+                transition: all 0.3s ease;
+            }
+
+            &:hover::after {
+                background: white;
+                color: #ff6f47;
+            }
+        }
+
+        select {
+            appearance: none;
+            outline: none;
+            border: none;
+            color: #ff6f47;
+            width: 10rem;
+            cursor: pointer;
+            padding: 1rem;
+        }
     }
 
     .todo-container {
@@ -54,7 +86,7 @@ body {
         align-items: center;
 
         .todo-list {
-            min-width: 30%;
+            min-width: 50%;
             list-style: none;
 
             .todo {
@@ -65,6 +97,7 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                transition: all 1s ease;
 
                 li {
                     flex: 1;
@@ -87,6 +120,21 @@ body {
                 .completed-btn {
                     background: rgb(73, 204, 73);
                 }
+
+                &.completed {
+                    text-decoration: line-through;
+                    opacity: 0.5;
+                }
+
+                &.fall {
+                    transform: translateY(8rem) rotateZ(20deg);
+                    opacity: 0;
+                }
+
+                // .fall {
+                //     transform: translateY(8rem) rotateZ(20deg);
+                //     opacity: 0;
+                // }
             }
         }
     }

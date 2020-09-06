@@ -53,6 +53,41 @@ body form button:hover {
   color: white;
 }
 
+body form .select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+body form .select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body form .select:hover::after {
+  background: white;
+  color: #ff6f47;
+}
+
+body form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
 body .todo-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,7 +101,7 @@ body .todo-container {
 }
 
 body .todo-container .todo-list {
-  min-width: 30%;
+  min-width: 50%;
   list-style: none;
 }
 
@@ -84,6 +119,8 @@ body .todo-container .todo-list .todo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 body .todo-container .todo-list .todo li {
@@ -108,5 +145,16 @@ body .todo-container .todo-list .todo button i {
 
 body .todo-container .todo-list .todo .completed-btn {
   background: #49cc49;
+}
+
+body .todo-container .todo-list .todo.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+body .todo-container .todo-list .todo.fall {
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }
 /*# sourceMappingURL=todo-style.css.map */
