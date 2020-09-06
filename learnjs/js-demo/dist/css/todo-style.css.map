@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,oEAAI",
+    "sources": [
+        "../../todo-course/todo-style.scss"
+    ],
+    "names": [],
+    "file": "todo-style.css"
+}
