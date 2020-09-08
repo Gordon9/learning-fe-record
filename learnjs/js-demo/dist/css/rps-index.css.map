@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../rock-paper-scissors-game/rps-index.scss"
+    ],
+    "names": [],
+    "file": "rps-index.css"
+}
