@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../fluid-image-pop-up/fipu-index.scss"
+    ],
+    "names": [],
+    "file": "fipu-index.css"
+}
