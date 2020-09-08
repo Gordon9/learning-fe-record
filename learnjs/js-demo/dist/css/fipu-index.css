@@ -42,6 +42,8 @@
   height: 100%;
   opacity: 0;
   pointer-events: none;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
 }
 
 .modal.open {
