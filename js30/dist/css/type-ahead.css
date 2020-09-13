@@ -78,4 +78,8 @@ html {
   background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#EFEFEF));
   background: linear-gradient(to top, #ffffff 0%, #EFEFEF 100%);
 }
+
+.search-form .suggestions li .h1 {
+  background: #ffc600;
+}
 /*# sourceMappingURL=type-ahead.css.map */
