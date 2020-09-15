@@ -1,0 +1,28 @@
+html {
+  color: black;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+body .hero {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+body .hero h1 {
+  text-shadow: 10px 10px 0 black;
+  font-size: 100px;
+}
+/*# sourceMappingURL=ms.css.map */
