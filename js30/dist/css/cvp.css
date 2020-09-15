@@ -35,6 +35,7 @@ body .player {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   position: relative;
   font-size: 0;
+  overflow: hidden;
 }
 
 body .player:-webkit-full-screen {
@@ -136,8 +137,6 @@ body .player .progress__filled {
   -webkit-box-flex: 0;
       -ms-flex: 0;
           flex: 0;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
 }
 
 body .player input[type=range] {

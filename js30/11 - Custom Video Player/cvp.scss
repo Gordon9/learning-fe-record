@@ -25,7 +25,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     position: relative;
     font-size: 0;
-    // overflow: hidden;
+    overflow: hidden;
 
     // This css is only applied when fullscreen is active.
     &:fullscreen {
@@ -96,7 +96,7 @@ body {
         width: 50%;
         background: #ffc600;
         flex: 0;
-        flex-basis: 50%;
+        // flex-basis: 50%;
       }
     }
 
