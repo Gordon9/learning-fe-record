@@ -20,11 +20,11 @@ html {
 
 /* clearfix */
 
-/* .photobooth::after {
+.photobooth::after {
   content: '';
   display: block;
   clear: both;
-} */
+}
 
 .photo {
   width: 100%;
@@ -37,7 +37,7 @@ html {
   top: 20px;
   right: 20px;
   width: 200px;
-  background: lightgreen;
+  /* background: lightgreen; */
 }
 
 /* Strip */
