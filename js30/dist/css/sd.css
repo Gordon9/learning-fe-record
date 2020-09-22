@@ -1,0 +1,171 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #ff1a66 0%, rgba(255, 26, 102, 0) 70%), linear-gradient(135deg, #0643f9 10%, rgba(6, 67, 249, 0) 80%), linear-gradient(225deg, #0df259 10%, rgba(13, 242, 89, 0) 80%), linear-gradient(315deg, #f99e1f 100%, rgba(249, 158, 31, 0) 70%);
+}
+
+body h2 {
+  margin-top: 0;
+  padding-top: 0.8rem;
+}
+
+body nav {
+  position: relative;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+body nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .cool > li > a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+body .cool > li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .dropdown {
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+  padding: 20px;
+  top: -20px;
+  border-radius: 2px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  will-change: opacity;
+  display: none;
+}
+
+body .trigger-enter .dropdown {
+  display: block;
+  opacity: 1;
+}
+
+body .dropdownBackground {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s opacity 0.1s, -webkit-transform 0.2s;
+  transition: all 0.3s opacity 0.1s, -webkit-transform 0.2s;
+  transition: all 0.3s opacity 0.1s, transform 0.2s;
+  transition: all 0.3s opacity 0.1s, transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+}
+
+body .dropdownBackground .arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: white;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
+body .dropdownBackground.open {
+  opacity: 1;
+}
+
+body .bio {
+  min-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.7;
+}
+
+body .bio img {
+  float: left;
+  margin-right: 20px;
+}
+
+body .courses {
+  min-width: 300px;
+}
+
+body .courses li {
+  padding: 10px 0;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+body .dropdown a {
+  text-decoration: none;
+  color: #ffc600;
+}
+
+body a.button {
+  background: black;
+  display: block;
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+body .button[href*=twitter] {
+  background: #019FE9;
+}
+
+body .button[href*=facebook] {
+  background: #3B5998;
+}
+
+body .button[href*=courses] {
+  background: #ffc600;
+}
+/*# sourceMappingURL=sd.css.map */
