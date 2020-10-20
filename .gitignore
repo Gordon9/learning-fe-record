@@ -1,6 +1,8 @@
 # dependencies
 node_modules/
 
+testbox/
+
 #misc
 npm-debug.log*
 yarn-debug.log*
