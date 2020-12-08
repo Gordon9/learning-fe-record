@@ -2,3 +2,12 @@ routing/
 box/
 demo5/
 learnhook/
+public
+
+# custom
+README.md
+.eslintcache
+reportWebVitals.js
+setupTests.js
+App.test.js
+.gitignore
