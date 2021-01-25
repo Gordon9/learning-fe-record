@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ccc;
+}
+
+li {
+  list-style: none;
+}
+
+.banner {
+  width: 800px;
+  height: 420px;
+  margin: 100px auto;
+  background: #ffffff;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.customer_service {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  height: 90px;
+  line-height: 90px;
+}
+
+.server_icon {
+  display: inline-block;
+}
+
+.banner h4 {
+  display: inline-block;
+}
+
+.property_highlights {
+  padding: 24px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.property_highlights li {
+  height: 44px;
+  line-height: 44px;
+}
+
+.property_highlights_title {
+  width: 20%;
+  float: left;
+}
+
+.property_highlights_desc {
+  width: 80%;
+  font-size: 15px;
+  color: #464646;
+}
