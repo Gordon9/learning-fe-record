@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,9 +12,18 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .banner {
   width: 800px;
-  height: 420px;
+  height: 500px;
   margin: 100px auto;
   background: #ffffff;
   padding-top: 22px;
@@ -55,4 +65,29 @@ li {
   width: 80%;
   font-size: 15px;
   color: #464646;
+}
+
+.facilities {
+  border-bottom: 1px solid #ccc;
+  height: 120px;
+}
+
+.facilities li {
+  width: 16.6667%;
+  float: left;
+  text-align: center;
+  padding: 30px 0;
+  height: 120px;
+}
+
+.facilities li div:nth-child(1) {
+  padding-bottom: 4px;
+}
+
+.facilities li div:nth-child(2) {
+  padding-top: 4px;
+}
+
+.facilities a {
+  color: #438385;
 }
