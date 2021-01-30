@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浮动练习</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 1180px;
+      height: 300px;
+      margin: 100px auto;
+      background: #ccc;
+      
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .box li {
+      float: left;
+      background: lightblue;
+      width: 180px;
+      height: 300px;
+      margin-right: 20px;
+    }
+
+    .box li:last-child {
+      margin-right: 0;
+    }
+  </style>
+</head>
+<body>
+  <ul class="box">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+  </ul>
+</body>
+</html>
