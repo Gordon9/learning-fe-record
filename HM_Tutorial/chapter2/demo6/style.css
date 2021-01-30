@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  width: 1000px;
+  margin: 10px auto;
+  background: #eee;
+}
+
+.header-seciton a {
+  background: lightslategray;
+  color: #ffffff;
+  padding: 4px 6px;
+}
+
+.carousel ul {
+  width: 800px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.carousel li {
+  float: left;
+  width: 33.33333336%;
+  padding: 6px 12px 2px 0px;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.carousel p {
+  text-align: center;
+  color: #000000;
+  background: #ffffff;
+}
