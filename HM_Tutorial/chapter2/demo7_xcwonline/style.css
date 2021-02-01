@@ -81,3 +81,55 @@ a {
   float: left;
   margin-left: 30px;
 }
+
+/* banner */
+
+.banner {
+  background: url("./image/nav.png") center;
+  height: 420px;
+}
+
+.banner .w {
+  background: none;
+}
+
+.banner .discover_course {
+  width: 220px;
+  background: #14024b;
+  color: #ffffff;
+  height: 420px;
+  /* display: inline-block; */
+  position: relative;
+}
+
+.banner .discover_course li {
+  padding: 0 10px;
+  font-size: 12px;
+  margin: 20px 0;
+  width: 220px;
+}
+
+.course_active {
+  color: #00a4ff;
+}
+
+.banner .discover_course ul {
+  /* vertical-align: middle; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner .discover_course li:hover {
+  color: #00a4ff;
+  cursor: pointer;
+}
+
+.left_text {
+  /* float: left; */
+}
+
+.right_icon {
+  float: right;
+  padding-right: 6px;
+}
