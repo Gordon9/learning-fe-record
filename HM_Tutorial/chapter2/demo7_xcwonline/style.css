@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #f3f5f7;
+}
+
 li {
   list-style: none;
 }
@@ -12,9 +16,12 @@ a {
   text-decoration: none;
 }
 
+li a.fore {
+  color: #00a4ff !important;
+}
+
 .w {
   width: 880px;
-  background: #cccccc;
   margin: 0 auto;
 }
 
@@ -358,3 +365,125 @@ a {
 .high-quauity_recommend-carousel .course_level {
   color: #ff7c2d;
 }
+
+.course_level {
+  color: #ff7c2d !important;
+}
+
+/* programming-start */
+
+.programming_start {
+  margin-top: 6px;
+}
+
+.programming_start_wrap {
+  position: relative;
+  overflow: auto;
+  background: none;
+}
+
+.programming_start_wrap div {
+  float: left;
+  color: #494949;
+  font-size: 14px;
+}
+
+.programming_start_wrap ul {
+  float: left;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.programming_start_wrap ul li {
+  float: left;
+  margin: 0 18px;
+}
+
+.programming_start_wrap li a {
+  color: #c3c4c5;
+  font-size: 12px;
+}
+
+.programming_start_wrap li:hover a {
+  color: #00a4ff;
+}
+
+.programming_start_wrap>a {
+  float: right;
+  color: #c3c4c5;
+  font-size: 10px;
+  margin-right: 20px;
+}
+
+/* programming_start_carousel */
+
+.programming_start_carousel {
+  margin-top: 14px;
+  overflow: auto;
+}
+
+.programming_start_carousel_aside {
+  float: left;
+  height: 240px;
+  width: 168px;
+  /* width: auto; */
+  margin-right: 8px;
+}
+
+.programming_start_carousel_aside img {
+  width: 100%;
+  height: 100%;
+}
+
+.programming_start_carousel_top {
+  float: left;
+  width: 80%;
+  height: 62px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.programming_start_carousel_top img {
+  height: 62px;
+  width: 100%;
+}
+
+.programming_start_carousel_a_bottom {
+  height: 168px;
+  float: left;
+  width: 80%;
+}
+
+.programming_start_carousel_a_bottom ul {
+  overflow: auto;
+}
+
+.programming_start_carousel_a_bottom li {
+  float: left;
+  height: 168px;
+  width: 168.5px;
+  margin-right: 10px;
+  overflow: hidden;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+}
+
+.programming_start_carousel_a_bottom li:last-child {
+  margin-right: 0;
+}
+
+.programming_start_carousel_a_bottom a div img {
+  width: 100%;
+  height: 96px;
+}
+
+.programming_start_carousel_a_bottom a p {
+  text-align: left;
+  color: #000000;
+  font-size: 11px;
+  padding-left: 16px;
+  padding-top: 4px;
+  padding-right: 16px;
+}
+
