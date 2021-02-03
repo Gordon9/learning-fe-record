@@ -601,3 +601,221 @@ li a.fore {
   padding-top: 4px;
   padding-right: 16px;
 }
+
+/* machine-learning */
+
+.machine_learning {
+  margin-top: 22px;
+}
+
+.machine_learning_wrap {
+  position: relative;
+  overflow: auto;
+  background: none;
+}
+
+.machine_learning_wrap div {
+  float: left;
+  color: #494949;
+  font-size: 14px;
+}
+
+.machine_learning_wrap ul {
+  float: left;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.machine_learning_wrap ul li {
+  float: left;
+  margin: 0 18px;
+}
+
+.machine_learning_wrap li a {
+  color: #c3c4c5;
+  font-size: 12px;
+}
+
+.machine_learning_wrap li:hover a {
+  color: #00a4ff;
+}
+
+.machine_learning_wrap>a {
+  float: right;
+  color: #c3c4c5;
+  font-size: 10px;
+  margin-right: 20px;
+}
+
+/* machine-learning-carousel */
+
+.machine_learning_carousel li {
+  width: 168px;
+  float: left;
+  background: #ffffff;
+  margin-right: 10px;
+  height: 220px;
+  margin-bottom: 18px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.machine_learning_carousel .service_corner {
+  position: absolute;
+  right: -2px;
+  top: 2px;
+  color: #ff592d;
+  font-size: 10px;
+  padding: 2px 4px;
+  border: 1px solid #ff592d;
+  background: #ffffff;
+}
+
+.machine_learning_carousel {
+  margin-top: 14px;
+}
+
+.machine_learning_carousel ul {
+  overflow: auto;
+}
+
+.machine_learning_carousel li:last-child {
+  margin-right: 0;
+}
+
+.machine_learning_carousel a div {
+  width: 168px;
+}
+
+.machine_learning_carousel a div img {
+  width: 100%;
+}
+
+.machine_learning_carousel a p {
+  text-align: left;
+  color: #000000;
+  font-size: 12px;
+}
+
+.machine_learning_carousel a p {
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-right: 16px;
+}
+
+.machine_learning_carousel .course_level {
+  color: #ff7c2d;
+}
+
+.course_level {
+  color: #ff7c2d !important;
+}
+
+/* front end developer */
+
+.frontend_developer {
+  margin-top: 22px;
+}
+
+.frontend_developer_wrap {
+  position: relative;
+  overflow: auto;
+  background: none;
+}
+
+.frontend_developer_wrap div {
+  float: left;
+  color: #494949;
+  font-size: 14px;
+}
+
+.frontend_developer_wrap ul {
+  float: left;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.frontend_developer_wrap ul li {
+  float: left;
+  margin: 0 18px;
+}
+
+.frontend_developer_wrap li a {
+  color: #c3c4c5;
+  font-size: 12px;
+}
+
+.frontend_developer_wrap li:hover a {
+  color: #00a4ff;
+}
+
+.frontend_developer_wrap>a {
+  float: right;
+  color: #c3c4c5;
+  font-size: 10px;
+  margin-right: 20px;
+}
+
+.frontend_developer_carousel li {
+  width: 168px;
+  float: left;
+  background: #ffffff;
+  margin-right: 10px;
+  height: 220px;
+  margin-bottom: 18px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.frontend_developer_carousel .service_corner {
+  position: absolute;
+  right: -2px;
+  top: 2px;
+  color: #ff592d;
+  font-size: 10px;
+  padding: 2px 4px;
+  border: 1px solid #ff592d;
+  background: #ffffff;
+}
+
+.frontend_developer_carousel {
+  margin-top: 14px;
+}
+
+.frontend_developer_carousel ul {
+  overflow: auto;
+}
+
+.frontend_developer_carousel li:last-child {
+  margin-right: 0;
+}
+
+.frontend_developer_carousel a div {
+  width: 168px;
+}
+
+.frontend_developer_carousel a div img {
+  width: 100%;
+}
+
+.frontend_developer_carousel a p {
+  text-align: left;
+  color: #000000;
+  font-size: 12px;
+}
+
+.frontend_developer_carousel a p {
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-right: 16px;
+}
+
+.frontend_developer_carousel .course_level {
+  color: #ff7c2d;
+}
+
+.course_level {
+  color: #ff7c2d !important;
+}
