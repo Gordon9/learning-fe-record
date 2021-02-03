@@ -715,7 +715,7 @@ li a.fore {
 /* front end developer */
 
 .frontend_developer {
-  margin-top: 22px;
+  margin-top: 10px;
 }
 
 .frontend_developer_wrap {
@@ -818,4 +818,50 @@ li a.fore {
 
 .course_level {
   color: #ff7c2d !important;
+}
+
+/* footer */
+
+footer {
+  margin-top: 8px;
+}
+
+.footer_wrap {
+  background: #ffffff;
+  overflow: auto;
+  height: 260px;
+}
+
+.footer_wrap .w>div {
+  overflow: auto;
+}
+
+.fl {
+  float: left;
+  width: 52%;
+  height: 260px;
+  padding-left: 14px;
+}
+
+.fl img {
+  padding-top: 22px;
+  width: 200px;
+  height: 54px;
+}
+
+.fl>div {
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+
+.fl a {
+  color: #00a4ff;
+  border: 1px solid #00a4ff;
+  font-size: 14px;
+  padding: 4px 10px;
+}
+
+.fr {
+  float: right;
 }
