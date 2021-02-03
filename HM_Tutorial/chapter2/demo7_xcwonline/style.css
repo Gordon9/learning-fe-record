@@ -864,4 +864,19 @@ footer {
 
 .fr {
   float: right;
+  width: 48%;
+  padding-left: 80px;
+}
+
+.fr thead {
+  font-size: 14px;
+}
+
+.fr tbody {
+  font-size: 10px;
+}
+
+.fr table tr td {
+  padding-right: 40px;
+  padding-top: 8px;
 }
