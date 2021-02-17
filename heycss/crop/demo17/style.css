@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialogue {
+  width: 500px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 5px;
+  background-color: #f4f5f7;
+}
+
+.user {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.local {
+  justify-content: flex-end;
+}
+
+.user .avatar {
+  width: 60px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.user .pic {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user .pic img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.user .txt {
+  background-color: #aaa;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.remote .txt {
+  margin-left: 20px;
+  margin-right: 80px;
+  background-color: #fff;
+  position: relative;
+}
+
+.local .txt {
+  margin-right: 20px;
+  margin-left: 80px;
+  order: -1;
+  background-color: #3e92cc;
+  color: #fff;
+  position: relative;
+}
+
+.remote .txt::before, .local .txt::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.remote .txt::before {
+  border-right: 10px solid #fff;
+  left: -10px;
+}
+
+.local .txt::before {
+  border-left: 10px solid #3e92cc;
+  right: -10px;
+}
