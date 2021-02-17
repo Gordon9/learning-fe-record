@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #ccc;
+}
+
+.side-menu {
+  width: 300px;
+  height: 100%;
+  background-image: linear-gradient(0deg, #3381b0, #c2196c);
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  box-sizing: border-box;
+  box-shadow: 17px 10px 50px rgba(0, 132, 138, 0.15);
+  position: relative;
+  /* transform: translateX(-100%); */
+  transform: .3s;
+}
+
+.side-menu form {
+  display: flex;
+  margin: 0 10px 50px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+}
+
+.side-menu form input, .side-menu form button {
+  border: none;
+  padding: 5px 10px;
+  background: transparent;
+  color: #fff;
+}
+
+.side-menu form input:focus, .side-menu form button:focus {
+  outline: none;
+}
+
+.side-menu form input {
+  width: 230px;
+}
+
+.side-menu form button {
+  width: 50px;
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav li+li a::before {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #fff;
+  left: 10px;
+  right: 10px;
+  top: 0;
+}
+
+.nav a .fas {
+  margin-right: -1.1em;
+  transform: scale(0);
+  transition: .3s;
+}
+
+.nav li:hover>a {
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.nav li:hover .fas {
+  margin-right: 0em;
+  transform: scale(1);
+}
+
+.side-menu label {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, .6);
+  color: #fff;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: -40px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 30px;
+  border-radius: 0 10px 10px 0;
+}
+
+#side-menu-switch {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+#side-menu-switch:checked+.side-menu {
+  transform: translateX(0);
+}
+
+#side-menu-switch:checked+.side-menu label .fas {
+  transform: scaleX(-1);
+}
+
+.nav ul {
+  position: absolute;
+  left: 100%;
+  width: 300px;
+  background-color: rgba(255, 255, 255, .2);
+  box-shadow: 0px 7px 14px rgba(0, 132, 138, 0.15);
+  top: 7px;
+  display: none;
+}
+
+.nav li:hover>ul {
+  display: block;
+}
+
+.nav li:hover>ul li a::before {
+  border-top: none;
+}
