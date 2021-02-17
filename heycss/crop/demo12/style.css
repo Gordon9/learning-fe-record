@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #eee;
+}
+
+.side-menu {
+  width: 300px;
+  height: 100%;
+  background-image: linear-gradient(0deg, #3381b0, #c2196c);
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  box-sizing: border-box;
+  box-shadow: 17px 10px 50px rgba(0, 132, 138, 0.15);
+}
+
+.side-menu form {
+  display: flex;
+  margin: 0 10px 50px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+}
+
+.side-menu form input, .side-menu form button {
+  border: none;
+  padding: 5px 10px;
+  background: transparent;
+  color: #fff;
+}
+
+.side-menu form input:focus, .side-menu form button:focus {
+  outline: none;
+}
+
+.side-menu form input {
+  width: 230px;
+}
+
+.side-menu form button {
+  width: 50px;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a+a::before {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #fff;
+  left: 10px;
+  right: 10px;
+  top: 0;
+}
+
+nav a .fas {
+  margin-right: -1.1em;
+  transform: scale(0);
+  transition: .3s;
+}
+
+nav a:hover .fas {
+  margin-right: 0em;
+  transform: scale(1);
+}
