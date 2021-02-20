@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrap {
+  padding: 100px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.container h1 {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 70px;
+  margin-bottom: 0.5em;
+  display: flex;
+}
+
+.container h1::before, .container h1::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #aaa;
+  margin: auto;
+  flex-grow: 1;
+}
+
+.container h1::before {
+  margin-right: 0.5em;
+}
+
+.container h1::after {
+  margin-left: 0.5em;
+}
+
+.container .txt {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.container .txt p {
+  margin-bottom: 1em;
+}
