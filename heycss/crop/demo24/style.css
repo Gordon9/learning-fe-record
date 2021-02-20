@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrap {
+  margin: 100px 0;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+}
+
+.container h1 {
+  width: 400px;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #eee;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.container p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+  column-count: 2;
+  column-gap: 460px;
+}
