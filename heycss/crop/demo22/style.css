@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.container h1 {
+  width: 300px;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px;
+  border-right: 3px solid #000;
+  float: left;
+  margin-right: 0.5em;
+}
+
+.container .txt {
+  box-sizing: border-box;
+  padding: 0 15px;
+}
