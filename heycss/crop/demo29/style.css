@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrap {
+  padding: 100px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.container h1 {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 70px;
+  margin-bottom: 0.5em;
+}
+
+.container .txt {
+  box-sizing: border-box;
+  position: relative;
+  padding: 1em;
+}
+
+.container .txt p {
+  margin-bottom: 1em;
+}
+
+.container .txt::before, .container .txt::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.container .txt::before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #AAA;
+  border-top: 3px solid #AAA;
+}
+
+.container .txt::after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #AAA;
+  border-bottom: 3px solid #AAA;
+}
