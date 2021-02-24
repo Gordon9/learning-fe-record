@@ -18,89 +18,186 @@
           </div>
           <ul>
             <li class="text-gray-700 font-bold">
-              <a href="#"><span>Home</span></a>
+              <a href="#"
+                ><svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  /></svg
+                ><span>Home</span></a
+              >
             </li>
             <li>
-              <a href="#"><span>About</span></a>
+              <a href="#"
+                ><span
+                  ><svg
+                    class="w-5 inline-block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    /></svg
+                  >About</span
+                ></a
+              >
             </li>
             <li>
-              <a href="#"><span>Contact</span></a>
+              <a href="#"
+                ><svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+                  /></svg
+                ><span>Contact</span></a
+              >
             </li>
           </ul>
         </nav>
       </div>
-    </div>
 
-    <main class="px-16 py-16 md:col-span-2 bg-gray-100">
-      <div class="flex justify-center md:justify-end">
-        <a href="#" class="text-secondary-100">Log in</a
-        ><a href="#" class="text-secondary-100 ml-2">Sign up</a>
-      </div>
-
-      <header>
-        <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
-        <h3 class="text-2xl font-semibold">For Gordon</h3>
-      </header>
-
-      <div>
-        <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">
-          Latest Recipes
-        </h4>
-
-        <div class="mt-8 grid lg:grid-cols-3 gap-10">
-          <!-- cards go here -->
-          <div
-            class="card"
+      <main class="px-16 py-16 md:col-span-2 bg-gray-100">
+        <div class="flex justify-center md:justify-end">
+          <a href="#" class="btn text-secondary-100 md:border-2">Log in</a
+          ><a href="#" class="btn text-secondary-100 ml-2 md:border-2"
+            >Sign up</a
           >
-            <img
-              src="pic/curry.jpg"
-              alt="curry"
-              class="h-32 sm:h-48 w-full object-cover"
-            />
-            <div class="m-4">
-              <span class="font-bold">5 Bean Chillli Stew</span
-              ><span class="block text-gray-500 text-sm"
-                >5 Bean Chili Stew</span
-              >
+        </div>
+
+        <header>
+          <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+          <h3 class="text-2xl font-semibold">For Gordon</h3>
+        </header>
+
+        <div>
+          <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">
+            Latest Recipes
+          </h4>
+
+          <div class="mt-8 grid lg:grid-cols-3 gap-10">
+            <!-- cards go here -->
+            <div class="card">
+              <img
+                src="pic/curry.jpg"
+                alt="curry"
+                class="h-32 sm:h-48 w-full object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">5 Bean Chillli Stew</span
+                ><span class="block text-gray-500 text-sm"
+                  >5 Bean Chili Stew</span
+                >
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>25 mins</span>
+              </div>
             </div>
-            <div class="badge">
-              <span>25 mins</span>
+            <div class="card">
+              <img
+                src="pic/noodles.jpg"
+                alt="noodles"
+                class="h-32 sm:h-48 w-full object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">8 Bean Chillli Stew</span
+                ><span class="block text-gray-500 text-sm">Veg Noodles</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>25 mins</span>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="pic/stew.jpg"
+                alt="stew"
+                class="h-32 sm:h-48 w-full object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">100 Bean Chillli Stew</span
+                ><span class="block text-gray-500 text-sm">Tofu Curry</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>25 mins</span>
+              </div>
             </div>
           </div>
-          <div
-            class="card"
-          >
-            <img
-              src="pic/noodles.jpg"
-              alt="noodles"
-              class="h-32 sm:h-48 w-full object-cover"
-            />
-            <div class="m-4">
-              <span class="font-bold">8 Bean Chillli Stew</span
-              ><span class="block text-gray-500 text-sm">Veg Noodles</span>
-            </div>
-            <div class="badge">
-              <span>25 mins</span>
-            </div>
-          </div>
-          <div
-            class="card"
-          >
-            <img
-              src="pic/stew.jpg"
-              alt="stew"
-              class="h-32 sm:h-48 w-full object-cover"
-            />
-            <div class="m-4">
-              <span class="font-bold">100 Bean Chillli Stew</span
-              ><span class="block text-gray-500 text-sm">Tofu Curry</span>
-            </div>
-            <div class="badge">
-              <span>25 mins</span>
-            </div>
+
+          <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">
+            Most Popular
+          </h4>
+
+          <div class="mt-8">
+            <!-- cards go here -->
           </div>
         </div>
-      </div>
-    </main>
+
+        <div class="mt-12 flex justify-center">
+          <div class="btn bg-secondary-100 text-secondary-200">Load more</div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

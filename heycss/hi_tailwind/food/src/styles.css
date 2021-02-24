@@ -24,3 +24,14 @@
   @apply font-bold;
   @apply rounded-full;
 }
+
+.btn {
+  @apply rounded-full;
+  @apply py-2;
+  @apply px-3;
+  @apply uppercase;
+  @apply text-xs;
+  @apply font-bold;
+  @apply tracking-wider;
+  @apply cursor-pointer;
+}
