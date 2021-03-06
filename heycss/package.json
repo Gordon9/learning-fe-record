@@ -1,0 +1,15 @@
+{
+  "name": "heycss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss build hi_tailwind/spug_demo/src/style.css -o hi_tailwind/spug_demo/dist/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.0.3"
+  }
+}
