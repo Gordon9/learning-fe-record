@@ -95,7 +95,6 @@ body {
 }
 
 .winning-message {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -107,6 +106,7 @@ body {
   align-items: center;
   font-size: 5rem;
   color: white;
+  display: none;
 }
 
 .winning-message button {
@@ -121,4 +121,8 @@ body {
   background-color: black;
   color: white;
   border-color: white;
+}
+
+.winning-message.show {
+  display: flex;
 }
