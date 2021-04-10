@@ -556,6 +556,10 @@ p {
   margin-bottom: 10px;
 }
 
+#contact .contact-info {
+  word-wrap: break-word;
+}
+
 #contact .contact-info h1 {
   font-size: 2.5rem;
   font-weight: 500;
@@ -638,7 +642,6 @@ p {
   100% {
     color: #0F25A4;
     font-weight: 900;
-    
   }
 }
 
@@ -652,3 +655,95 @@ p {
     left: 100%;
   }
 }
+
+/* Meida Query For Tablet */
+
+@media only screen and (min-width: 768px) {
+  .cta {
+    font-size: 2.5rem;
+    padding: 20px 60px;
+  }
+  h1.section-title {
+    font-size: 6rem;
+  }
+  /* Hero */
+  #hero h1 {
+    font-size: 7rem;
+  }
+  /* Services */
+  #services .service-bottom .service-item {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+  /* Projects */
+  #projects .project-item {
+    flex-direction: row;
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  #projects .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  #projects .all-projects .project-img, #projects .all-projects .project-info {
+    height: 100%;
+  }
+  /* About */
+  #about .about {
+    flex-direction: row;
+  }
+  #about .col-left {
+    width: 600px;
+    height: 400px;
+    padding-left: 60px;
+  }
+  #about .about .col-left .about-img::after {
+    left: -45px;
+    top: 34px;
+  }
+  #about .col-right {
+    text-align: left;
+    padding: 30px;
+  }
+  #about .col-right h1 {
+    text-align: left;
+  }
+  /* Contact */
+  #contact .contact {
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vw;
+  }
+  #contact .contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  #contact .contact-item {
+    width: 30%;
+    margin: 0;
+    flex-direction: row;
+  }
+  #contact .contact-item .icon {
+    height: 70px;
+    width: 50px;
+  }
+  #contact .contact-item .icon img {
+    object-fit: contain;
+    height: 70px;
+    width: 50px;
+  }
+  #contact .contact-item .contact-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+/* Meida Query For Desktop  */
+
+@media only screen and (min-width: 1200px) {}
