@@ -150,7 +150,7 @@ p {
 }
 
 #header .nav-list ul li:hover a {
-  color: crimson;
+  color: #0F25A4;
 }
 
 #header .hamburger {
@@ -746,4 +746,35 @@ p {
 
 /* Meida Query For Desktop  */
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+  /* header */
+  #header .hamburger {
+    display: none;
+  }
+  #header .nav-ul {
+    position: initial;
+  }
+  #header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+  #header .nav-list ul li {
+    display: inline-block;
+    padding-right: 0%;
+  }
+  #header .nav-list ul li a {
+    font-size: 1.8rem;
+    color: black;
+  }
+  #header .nav-list ul li a::after {
+    display: none;
+  }
+  /* Services */
+  #services .service-bottom .service-item {
+    flex-basis: 22%;
+    margin: 1.5%;
+  }
+}
