@@ -3,16 +3,23 @@ const moible_menu = document.querySelector(".header .nav-ul");
 const menu_item = document.querySelectorAll(".header .nav-list a");
 const header = document.querySelector(".header.container");
 
-hamburger.addEventListener("click", () => {
+// 封装监听函数
+const addEvent = (ele, type, handle) => {
+  if (ele.addEventListener) {
+    ele.addEventListener(type, handle, false);
+  } else {
+    console.log("不支持IE8及以下的浏览器");
+  }
+};
+
+const toggleHamburger = () => {
   hamburger.classList.toggle("active");
   moible_menu.classList.toggle("active");
-});
+};
 
+addEvent(hamburger, "click", toggleHamburger);
 menu_item.forEach((item) => {
-  item.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    moible_menu.classList.toggle("active");
-  });
+  addEvent(item, "click", toggleHamburger);
 });
 
 document.addEventListener("scroll", () => {
