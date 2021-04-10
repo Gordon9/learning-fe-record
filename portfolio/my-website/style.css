@@ -38,6 +38,16 @@ p {
   letter-spacing: .05rem;
 }
 
+.brand h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.brand h1 span {
+  color: #0F25A4;
+}
+
 .section-title {
   font-size: 4rem;
   font-weight: 300;
@@ -267,6 +277,10 @@ p {
   animation-delay: .5s;
 }
 
+#hero a {
+  color: white;
+}
+
 #hero h1:nth-child(1) span {
   animation-delay: .5s;
 }
@@ -295,6 +309,7 @@ p {
 
 .cta:hover {
   background-color: #0F25A4;
+  color: white;
 }
 
 /* Services section */
@@ -555,6 +570,51 @@ p {
 
 /* Footer section */
 
+#footer {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#footer .footer {
+  min-height: 200px;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+#footer h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#footer .social-icon {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#footer .social-item {
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+}
+
+#footer .social-item img {
+  filter: grayscale(1);
+  transition: .3s ease filter;
+}
+
+#footer .social-item:hover img {
+  filter: grayscale(0);
+}
+
+#footer p {
+  color: white;
+  font-size: 1.3rem;
+}
+
 /* Keyframes */
 
 @keyframes hamburger_puls {
@@ -577,7 +637,8 @@ p {
 @keyframes text_reveal_name {
   100% {
     color: #0F25A4;
-    font-weight: 500;
+    font-weight: 900;
+    
   }
 }
 
