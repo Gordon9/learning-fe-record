@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 
 $green: #3f5d45;
+$light_green: #eaf0ed;
 $white: #fff;
 $yellow: #ffe180;
+
 
 .material-icons {
   font-family: "Material Icons";
@@ -191,7 +193,71 @@ header {
         background-image: url("../../img/topic_3.jpg");
       }
     }
+  }
+}
 
+// section-why1
+section {
+  width: 100%;
+  height: 420px;
+  padding: 40px 35px;
+  margin-bottom: 80px;
+  background: $light_green;
 
+  .contain {
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 940px;
+    margin: auto;
+  }
+
+  #why_2 {
+    flex-direction: row-reverse;
+  }
+
+  .reason {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 460px;
+    margin: 0 40px;
+
+    p {
+      writing-mode: vertical-rl;
+      display: inline-block;
+      font-size: 1rem;
+      line-height: 28px;
+      max-height: 300px;
+      color: #8da291;
+      margin: 0 15px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 90px;
+      height: 300px;
+    }
+  }
+
+  .pic_1,
+  .pic_2 {
+    flex: 1;
+    width: 460px;
+    height: 460px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .pic_1 {
+    background-image: url("../../img/reason1.jpg");
+  }
+
+  .pic_2 {
+    background-image: url("../../img/reason2.jpg");
   }
 }
