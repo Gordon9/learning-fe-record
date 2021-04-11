@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 
 $green: #3f5d45;
+$white: #fff;
+$yellow: #ffe180;
 
 .material-icons {
   font-family: "Material Icons";
@@ -125,4 +127,71 @@ header {
   background-size: cover;
   background-position: center;
   margin-bottom: 40px;
+}
+
+// topic_area
+.topic_area {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-60%);
+  // margin-bottom: -80px;
+
+  .topic {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+
+    .text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background: $green;
+      color: $white;
+      opacity: .8;
+      transition: all .3s;
+
+      &:hover {
+        background: $yellow;
+        color: $green;
+      }
+    }
+
+    p {
+      writing-mode: vertical-rl;
+      text-align: center;
+      letter-spacing: 10px;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    .blur_bg {
+      position: absolute;
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:nth-child(1) {
+      .blur_bg {
+        background-image: url("../../img/topic_1.jpg");
+      }
+    }
+
+    &:nth-child(2) {
+      .blur_bg {
+        background-image: url("../../img/topic_2.jpg");
+      }
+    }
+
+    &:nth-child(3) {
+      .blur_bg {
+        background-image: url("../../img/topic_3.jpg");
+      }
+    }
+
+
+  }
 }

@@ -136,4 +136,75 @@ header nav ul li:hover {
   background-position: center;
   margin-bottom: 40px;
 }
+
+.topic_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+.topic_area .topic {
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+}
+
+.topic_area .topic .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #3f5d45;
+  color: #fff;
+  opacity: .8;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.topic_area .topic .text:hover {
+  background: #ffe180;
+  color: #3f5d45;
+}
+
+.topic_area .topic p {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-align: center;
+  letter-spacing: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.topic_area .topic .blur_bg {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.topic_area .topic:nth-child(1) .blur_bg {
+  background-image: url("../../img/topic_1.jpg");
+}
+
+.topic_area .topic:nth-child(2) .blur_bg {
+  background-image: url("../../img/topic_2.jpg");
+}
+
+.topic_area .topic:nth-child(3) .blur_bg {
+  background-image: url("../../img/topic_3.jpg");
+}
 /*# sourceMappingURL=all.css.map */
