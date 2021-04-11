@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+$green: #3f5d45;
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 28px;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "cwtexyen", sans-serif;
+  font-size: 18px;
+  color: $green;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+input,
+select {
+  appearance: none;
+  border-radius: 0px;
+  outline: none;
+  border: none;
+  font-family: "cwtexyen", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: $green;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// header
+header {
+  font-size: 1rem;
+
+  .logo {
+    width: 220px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  nav {
+    padding: 30px 42px;
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      li {
+        margin: 0 30px;
+        padding: 5px 10px;
+        transition: all 0.3s;
+
+        &:hover {
+          box-shadow: 0 3px 0 $green;
+        }
+      }
+    }
+  }
+}
