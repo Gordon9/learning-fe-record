@@ -115,3 +115,14 @@ header {
     }
   }
 }
+
+// slide
+.slide {
+  width: 940px;
+  height: 496px;
+  margin: auto;
+  background-image: url(../../img/slide.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+}

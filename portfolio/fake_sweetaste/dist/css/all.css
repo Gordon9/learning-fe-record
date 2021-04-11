@@ -126,4 +126,14 @@ header nav ul li:hover {
   -webkit-box-shadow: 0 3px 0 #3f5d45;
           box-shadow: 0 3px 0 #3f5d45;
 }
+
+.slide {
+  width: 940px;
+  height: 496px;
+  margin: auto;
+  background-image: url(../../img/slide.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+}
 /*# sourceMappingURL=all.css.map */
