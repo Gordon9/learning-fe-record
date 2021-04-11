@@ -89,6 +89,17 @@ p {
   padding: 0 10px;
 }
 
+#header .brand {
+  width: 34px;
+  height: 34px;
+}
+
+#header .brand a {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+}
+
 #header .nav-ul {
   position: absolute;
   left: 100%;
