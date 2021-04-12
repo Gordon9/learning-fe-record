@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 .material-icons {
   font-family: "Material Icons";
@@ -289,5 +290,15 @@ section .pic_1 {
 
 section .pic_2 {
   background-image: url("../../img/reason2.jpg");
+}
+
+.noreason {
+  width: 1024px;
+  height: 360px;
+  background-image: url("../../img/lg-想吃甜点是不需要理由的.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 120px auto;
 }
 /*# sourceMappingURL=all.css.map */
