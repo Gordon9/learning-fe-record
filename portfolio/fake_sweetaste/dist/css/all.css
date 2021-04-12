@@ -381,4 +381,86 @@ section .pic_2 {
   color: #fff;
   background: #3f5d45;
 }
+
+footer {
+  margin-top: 40px;
+  background: #eaf0ed;
+}
+
+footer .subscribe {
+  background: #3f5d45;
+}
+
+footer .subscribe .container {
+  width: 960px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+footer .subscribe .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .subscribe p {
+  color: #eaf0ed;
+  font-size: 1.5rem;
+  padding: 0 20px;
+}
+
+footer .subscribe img {
+  width: 40px;
+}
+
+footer .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .email .icon {
+  height: 56px;
+  line-height: 56px;
+  padding: 6px 20px;
+  background: #fff;
+}
+
+footer .email label {
+  cursor: pointer;
+  background: #ffe180;
+  height: 56px;
+  line-height: 56px;
+  padding: 6px 20px;
+}
+
+footer .email input {
+  color: #3f5d45;
+  font-size: 1.2rem;
+  width: 300px;
+  height: 56px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
 /*# sourceMappingURL=all.css.map */
