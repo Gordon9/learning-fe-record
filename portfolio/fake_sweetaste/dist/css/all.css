@@ -286,6 +286,12 @@ header .mobile_menu ul li:last-child {
   background-image: url("../../img/topic_3.jpg");
 }
 
+.mobile_pic {
+  width: 100%;
+  display: none;
+  padding: 0 90px;
+}
+
 section {
   width: 100%;
   height: 420px;

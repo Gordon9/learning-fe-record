@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (max-width: 640px) {
   header {
     background: #fff;
@@ -21,6 +22,125 @@
   }
   header .mobile_menu img {
     width: 150px;
+  }
+  .slide {
+    width: 100%;
+    height: 280px;
+    margin: 0;
+  }
+  .topic_area {
+    width: 100%;
+    margin: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .topic_area .topic {
+    height: 180px;
+  }
+  .topic_area .topic p {
+    font-size: 1rem;
+  }
+  .mobile_pic {
+    display: block;
+  }
+  section {
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  section .contain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    width: 100%;
+    height: auto;
+  }
+  section .contain .reason {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    margin: 0 20px;
+  }
+  section .contain .reason p {
+    margin: 10px 0;
+    -webkit-writing-mode: initial;
+        -ms-writing-mode: initial;
+            writing-mode: initial;
+  }
+  section .contain .reason img {
+    display: none;
+  }
+  section .contain .pic_1,
+  section .contain .pic_2 {
+    width: 100%;
+    height: 250px;
+  }
+  section #why_2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .noreason {
+    width: 100%;
+    height: 160px;
+    margin: 10px 0;
+    padding: 0 80px;
+    background-image: url("../../img/sm-想吃甜点是不需要理由的-1.png");
+  }
+  .products {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .products .item {
+    margin: 10px 0;
+  }
+  footer {
+    margin: 0;
+    width: 100%;
+  }
+  footer .subscribe .container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .email {
+    margin: 10px 0;
+  }
+  footer .email input {
+    width: 200px;
+  }
+  footer .email .icon,
+  footer .email label {
+    padding: 6px 10px;
+  }
+  footer .bottom {
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+    height: auto;
+  }
+  footer .bottom .left,
+  footer .bottom .right {
+    display: inline-block;
+  }
+  footer .bottom .right {
+    margin: 20px 0;
+  }
+  footer .bottom .right img {
+    display: none;
   }
 }
 /*# sourceMappingURL=rwd.css.map */
