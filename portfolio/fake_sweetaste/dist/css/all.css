@@ -128,6 +128,83 @@ header nav ul li:hover {
           box-shadow: 0 3px 0 #3f5d45;
 }
 
+header .mobile_menu {
+  display: none;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .mobile_menu .hamburger {
+  cursor: pointer;
+  display: inline-block;
+}
+
+header .mobile_menu .hamburger span {
+  margin: 5px 0;
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: #3f5d45;
+}
+
+header .mobile_menu .hamburger span::before, header .mobile_menu .hamburger span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #3f5d45;
+}
+
+header .mobile_menu .hamburger span::before {
+  top: -5px;
+}
+
+header .mobile_menu .hamburger span::after {
+  top: 5px;
+}
+
+header .mobile_menu ul {
+  display: none;
+  background: #fff;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 20px 0;
+}
+
+header .mobile_menu ul li {
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid #eaf0ed;
+}
+
+header .mobile_menu ul li a {
+  display: block;
+  width: 100%;
+}
+
+header .mobile_menu ul li:last-child {
+  border: none;
+}
+
 .slide {
   width: 940px;
   height: 496px;

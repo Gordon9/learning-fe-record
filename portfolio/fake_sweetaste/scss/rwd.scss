@@ -1,0 +1,28 @@
+$green: #3f5d45;
+$light_green: #eaf0ed;
+$white: #fff;
+$yellow: #ffe180;
+$black: #000;
+
+@media screen and (max-width: 640px) {
+  // index
+  header {
+    background: $white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 2px 0px $light_green;
+    nav {
+      padding: 18px 30px;
+    }
+    .pc_menu {
+      display: none;
+    }
+    .mobile_menu {
+      display: flex;
+      img {
+        width: 150px;
+      }
+    }
+  }
+}

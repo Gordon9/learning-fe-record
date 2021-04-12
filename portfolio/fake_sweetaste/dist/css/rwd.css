@@ -1,0 +1,26 @@
+@media screen and (max-width: 640px) {
+  header {
+    background: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0px 2px 0px #eaf0ed;
+            box-shadow: 0px 2px 0px #eaf0ed;
+  }
+  header nav {
+    padding: 18px 30px;
+  }
+  header .pc_menu {
+    display: none;
+  }
+  header .mobile_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .mobile_menu img {
+    width: 150px;
+  }
+}
+/*# sourceMappingURL=rwd.css.map */
