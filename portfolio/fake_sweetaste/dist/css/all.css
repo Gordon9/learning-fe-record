@@ -145,6 +145,10 @@ header .mobile_menu {
           justify-content: space-between;
 }
 
+header .mobile_menu.active ul {
+  display: block;
+}
+
 header .mobile_menu .hamburger {
   cursor: pointer;
   display: inline-block;

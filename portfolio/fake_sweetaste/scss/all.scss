@@ -127,6 +127,12 @@ header {
     align-items: center;
     justify-content: space-between;
 
+    &.active {
+      ul {
+        display: block;
+      }
+    }
+
     .hamburger {
       cursor: pointer;
       display: inline-block;
@@ -183,7 +189,9 @@ header {
           border: none;
         }
       }
+
     }
+
   }
 }
 
