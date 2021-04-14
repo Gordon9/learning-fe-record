@@ -1,0 +1,646 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 28px;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: "liga";
+          font-feature-settings: "liga";
+}
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "cwtexyen", sans-serif;
+  font-size: 18px;
+  color: #3f5d45;
+}
+
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+input,
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0px;
+  outline: none;
+  border: none;
+  font-family: "cwtexyen", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #3f5d45;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    background: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0px 2px 0px #eaf0ed;
+            box-shadow: 0px 2px 0px #eaf0ed;
+  }
+  header nav {
+    padding: 18px 30px;
+  }
+  header .pc_menu {
+    display: none;
+  }
+  header .mobile_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .mobile_menu img {
+    width: 150px;
+  }
+  .slide {
+    width: 100%;
+    height: 280px;
+    margin: 0;
+  }
+  .topic_area {
+    width: 100%;
+    margin: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .topic_area .topic {
+    height: 180px;
+  }
+  .topic_area .topic p {
+    font-size: 1rem;
+  }
+  .mobile_pic {
+    display: block;
+  }
+  section {
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  section .contain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    width: 100%;
+    height: auto;
+  }
+  section .contain .reason {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    margin: 0 20px;
+  }
+  section .contain .reason p {
+    margin: 10px 0;
+    -webkit-writing-mode: initial;
+        -ms-writing-mode: initial;
+            writing-mode: initial;
+  }
+  section .contain .reason img {
+    display: none;
+  }
+  section .contain .pic_1,
+  section .contain .pic_2 {
+    width: 100%;
+    height: 250px;
+  }
+  section #why_2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .product_contain {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product_contain .list ul {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  .product_contain .list ul li {
+    border-bottom: 1px solid #eaf0ed;
+  }
+  .product_contain .items .item {
+    margin: 10px 0;
+  }
+  .noreason {
+    width: 100%;
+    height: 160px;
+    margin: 10px 0;
+    padding: 0 80px;
+    background-image: url("../../img/sm-想吃甜点是不需要理由的-1.png");
+  }
+  .products {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .products .item {
+    margin: 10px 0;
+  }
+  footer {
+    margin: 0;
+    width: 100%;
+  }
+  footer .subscribe .container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .email {
+    margin: 10px 0;
+  }
+  footer .email input {
+    width: 200px;
+  }
+  footer .email .icon,
+  footer .email label {
+    padding: 6px 10px;
+  }
+  footer .bottom {
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+    height: auto;
+  }
+  footer .bottom .left,
+  footer .bottom .right {
+    display: inline-block;
+  }
+  footer .bottom .right {
+    margin: 20px 0;
+  }
+  footer .bottom .right img {
+    display: none;
+  }
+}
+
+header {
+  font-size: 1rem;
+}
+
+header .logo {
+  width: 220px;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header nav {
+  padding: 30px 42px;
+  width: 1024px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header nav ul li {
+  margin: 0 30px;
+  padding: 5px 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header nav ul li:hover {
+  -webkit-box-shadow: 0 3px 0 #3f5d45;
+          box-shadow: 0 3px 0 #3f5d45;
+}
+
+header .mobile_menu {
+  display: none;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .mobile_menu.active ul {
+  display: block;
+}
+
+header .mobile_menu .container_ul {
+  display: block;
+  width: 100%;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: height .6s;
+  transition: height .6s;
+}
+
+header .mobile_menu .container_ul ul {
+  position: absolute;
+  bottom: 0;
+}
+
+header .mobile_menu .hamburger {
+  cursor: pointer;
+  display: inline-block;
+}
+
+header .mobile_menu .hamburger span {
+  margin: 5px 0;
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: #3f5d45;
+}
+
+header .mobile_menu .hamburger span::before, header .mobile_menu .hamburger span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #3f5d45;
+}
+
+header .mobile_menu .hamburger span::before {
+  top: -5px;
+}
+
+header .mobile_menu .hamburger span::after {
+  top: 5px;
+}
+
+header .mobile_menu ul {
+  background: #fff;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 20px 0;
+}
+
+header .mobile_menu ul li {
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid #eaf0ed;
+}
+
+header .mobile_menu ul li a {
+  display: block;
+  width: 100%;
+}
+
+header .mobile_menu ul li:last-child {
+  border: none;
+}
+
+.login_area {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  width: 940px;
+  margin: 80px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 340px;
+  background: #eaf0ed;
+}
+
+.login_area .router {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+  height: 60px;
+  line-height: 60px;
+  width: 300px;
+  text-align: center;
+  background: #fff;
+}
+
+.login_area .router img {
+  max-width: 100px;
+  color: #3f5d45;
+  opacity: .6;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.contain {
+  width: 390px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contain {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contain i {
+  padding: 20px 10px;
+}
+
+.contain input {
+  height: 60px;
+  width: 80%;
+  border: none;
+  outline: none;
+}
+
+.contain .checkbox {
+  width: 300px;
+  padding: 20px 0;
+}
+
+.contain .checkbox input {
+  width: auto;
+  height: auto;
+}
+
+.contain .login {
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.active {
+  height: 380px;
+  background: #3f5d45;
+}
+
+.active .checkbox {
+  color: #eaf0ed;
+}
+
+.active h1 {
+  color: #eaf0ed;
+  font-size: 2rem;
+}
+
+.active .login {
+  color: #3f5d45;
+  background: #ffe180;
+}
+
+.active .router img {
+  opacity: 1;
+  -webkit-filter: none;
+          filter: none;
+}
+
+footer {
+  margin-top: 40px;
+  background: #eaf0ed;
+}
+
+footer .subscribe {
+  background: #3f5d45;
+}
+
+footer .subscribe .container {
+  width: 960px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+footer .subscribe .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .subscribe p {
+  color: #eaf0ed;
+  font-size: 1.5rem;
+  padding: 0 20px;
+}
+
+footer .subscribe img {
+  width: 40px;
+}
+
+footer .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .email .icon {
+  height: 56px;
+  line-height: 56px;
+  padding: 6px 20px;
+  background: #fff;
+}
+
+footer .email label {
+  cursor: pointer;
+  background: #ffe180;
+  height: 56px;
+  line-height: 56px;
+  padding: 6px 20px;
+}
+
+footer .email input {
+  color: #3f5d45;
+  font-size: 1.2rem;
+  width: 300px;
+  height: 56px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+footer .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 960px;
+  height: 340px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+footer .bottom .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .bottom .left .logo img {
+  width: 170px;
+}
+
+footer .bottom .left .icon img {
+  width: 32px;
+}
+
+footer .bottom .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer .bottom .right img {
+  width: 60px;
+}
+/*# sourceMappingURL=login.css.map */

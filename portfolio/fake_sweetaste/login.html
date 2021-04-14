@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweetaste · Login</title>
+    <link rel="stylesheet" href="dist/css/basic.css" />
+    <link rel="stylesheet" href="dist/css/login.css" />
+    <link rel="stylesheet" href="dist/css/rwd.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="pc_menu">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo-all-dark.png" alt="" />
+          </a>
+        </div>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="product.html">甜点</a></li>
+          <li><a href="login.html">登入</a></li>
+          <li>
+            <a href="cart.html">
+              <i class="material-icons">shopping_cart</i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile_menu">
+        <div class="hamburger">
+          <span></span>
+        </div>
+        <img src="img/logo-all-dark.png" alt="logo" />
+        <a href="cart.html">
+          <i class="material-icons">shopping_cart</i>
+        </a>
+        <div class="container_ul">
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="product.html">甜点</a></li>
+            <li><a href="login.html">登入</a></li>
+            <li>
+              <a href="cart.html">
+                <i class="material-icons">shopping_cart</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Login area -->
+    <div class="login_area">
+      <div class="contain active">
+        <h1>会员登入</h1>
+        <div class="router">
+          <label for="user_id">
+            <i class="material-icons">person</i>
+          </label>
+          <input type="text" placeholder="电子信箱/手机号码" id="user_id" />
+        </div>
+        <div class="router">
+          <label for="password">
+            <i class="material-icons">vpn_key</i>
+          </label>
+          <input type="password" placeholder="输入密码" id="password" />
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="check" id="check" />
+          <label for="check">记住我</label>
+        </div>
+        <div class="login">登入账号</div>
+      </div>
+      <div class="social">
+        <h1></h1>
+        <div class="router"><img src="img/facebook.png" alt="" /></div>
+        <div class="router"><img src="img/google.png" alt="" /></div>
+        <div class="router"><img src="img/yahoo.png" alt="" /></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="subscribe">
+        <div class="container">
+          <div class="logo">
+            <img src="img/logo-light.png" alt="" />
+            <p>订阅你我的甜蜜邮件</p>
+          </div>
+          <div class="email">
+            <div class="icon"><i class="material-icons">email</i></div>
+            <input type="text" id="email" name="email" />
+            <label for="email">
+              <i class="material-icons">arrow_forward</i>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="left">
+          <div class="logo">
+            <img src="img/logotype.png" alt="logo" />
+          </div>
+          <div class="info">
+            <p>44-3434-6545</p>
+            <p>fake-sweetaste@email.com</p>
+            <p>Guangzhou, China</p>
+          </div>
+          <div class="icon">
+            <img src="img/ic-facebook.png" alt="fb" />
+            <img src="img/ic-line@.png" alt="line" />
+          </div>
+        </div>
+        <div class="right">
+          <img src="img/sm-今天是个吃甜点的好日子.png" alt="" />
+          <p>&copy; 2021 Gordon始乱终弃诺兰.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/all.js"></script>
+  </body>
+</html>
