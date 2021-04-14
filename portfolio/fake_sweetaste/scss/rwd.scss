@@ -99,6 +99,32 @@ $black: #000;
     }
   }
 
+  // product products
+  .product_contain {
+    width: 100%;
+    flex-direction: column;
+
+    .list {
+      ul {
+        font-size: 1.25rem;
+        margin: 0;
+
+        li {
+          border-bottom: 1px solid $light_green;
+        }
+      }
+    }
+
+    .items {
+      .item {
+        margin: 10px 0;
+      }
+    }
+  }
+
+
+
+
   // noreason
   .noreason {
     width: 100%;
@@ -156,6 +182,7 @@ $black: #000;
 
       .right {
         margin: 20px 0;
+
         img {
           display: none;
         }

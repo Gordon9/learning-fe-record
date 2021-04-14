@@ -90,6 +90,23 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .product_contain {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product_contain .list ul {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  .product_contain .list ul li {
+    border-bottom: 1px solid #eaf0ed;
+  }
+  .product_contain .items .item {
+    margin: 10px 0;
+  }
   .noreason {
     width: 100%;
     height: 160px;

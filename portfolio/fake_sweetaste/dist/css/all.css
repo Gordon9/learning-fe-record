@@ -129,7 +129,6 @@ header nav ul li:hover {
 }
 
 header .mobile_menu {
-  display: none;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
