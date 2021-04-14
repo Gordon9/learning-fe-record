@@ -122,6 +122,30 @@ $black: #000;
     }
   }
 
+  // Login area
+  .login_area {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .contain {
+    width: 100%;
+    input {
+      height: auto;
+    }
+    .mobile_social {
+      display: flex;
+      margin-bottom: 20px;
+      padding: 30px 0;
+    }
+  }
+
 
 
 

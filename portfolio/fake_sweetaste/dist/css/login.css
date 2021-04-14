@@ -427,7 +427,8 @@ header .mobile_menu ul li:last-child {
           filter: grayscale(1);
 }
 
-.contain {
+.contain,
+.social {
   width: 390px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -442,6 +443,14 @@ header .mobile_menu ul li:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contain h1,
+.social h1 {
+  color: #3f5d45;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 30px 0;
 }
 
 .contain {
@@ -478,6 +487,21 @@ header .mobile_menu ul li:last-child {
   font-weight: bold;
   font-size: 1.5rem;
   width: 100%;
+}
+
+.contain .mobile_social {
+  background: #eaf0ed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contain .mobile_social img {
+  margin: 0 10px;
+  width: 25%;
 }
 
 .active {

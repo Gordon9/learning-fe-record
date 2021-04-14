@@ -158,12 +158,20 @@ header {
   }
 }
 
-.contain {
+.contain,
+.social {
   width: 390px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h1 {
+    color: $green;
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin: 30px 0;
+  }
 }
 
 .contain {
@@ -197,6 +205,18 @@ header {
     font-weight: bold;
     font-size: 1.5rem;
     width: 100%;
+  }
+
+  .mobile_social {
+    // display: none;
+    background: $light_green;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 0 10px;
+      width: 25%;
+    }
   }
 }
 
