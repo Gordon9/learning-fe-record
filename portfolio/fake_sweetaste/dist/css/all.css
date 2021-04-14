@@ -161,6 +161,7 @@ header .mobile_menu .container_ul {
 
 header .mobile_menu .container_ul ul {
   position: absolute;
+  bottom: 0;
 }
 
 header .mobile_menu .hamburger {
@@ -196,7 +197,6 @@ header .mobile_menu .hamburger span::after {
 }
 
 header .mobile_menu ul {
-  display: none;
   background: #fff;
   width: 100%;
   -webkit-box-orient: vertical;

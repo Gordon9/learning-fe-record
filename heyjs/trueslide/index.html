@@ -15,9 +15,9 @@
       .container {
         height: 0;
         position: relative;
-        width: 400px;
+        width: 300px;
         overflow: hidden;
-        transition: height .6s;
+        transition: height 0.6s;
       }
       .container img {
         position: absolute;
@@ -29,13 +29,14 @@
   <body>
     <div class="box">
       <p>
-        want to see machine? <a href="javascript:" id="button">hello machine</a>
+        want to see machine?
+        <a href="javascript:" id="button" data-rel="more">hello machine</a>
       </p>
       <div id="more" class="container">
         <img src="./poi_0.jpg" alt="" />
       </div>
     </div>
 
-    <script src="./app.js"></script>
+    <script src="./app2.js"></script>
   </body>
 </html>

@@ -3,13 +3,49 @@ const hamburger = document.querySelector(".mobile_menu .hamburger");
 const mobileMenu = document.querySelector(".mobile_menu");
 const eleMore = document.querySelector(".container_ul");
 
-let display = false;
+// let display = false;
 
-hamburger.addEventListener("click", () => {
-  console.log("hello");
-  mobileMenu.classList.toggle("active");
+const slideToggleTrans = (element, display) => {
+  if (typeof window.screenX === "number") {
+    element.addEventListener("click", function () {
+      display = !display;
+      // const rel = this.getAttribute("data-rel");
+      // const eleMore = document.querySelector("#" + rel);
 
-  display = !display;
-  eleMore.style.height = display ? "217px" : "0px";
-  return false;
-});
+      eleMore &&
+        (eleMore.style.height = display
+          ? (function () {
+              let height = 0;
+              Array.prototype.slice
+                .call(eleMore.childNodes)
+                .forEach(function (child) {
+                  if (child.nodeType === 1) {
+                    let oStyle = window.getComputedStyle(child);
+                    console.log("child.clientHeight:", child.clientHeight);
+                    height =
+                      child.clientHeight +
+                      (parseInt(oStyle.borderTopWidth) || 0) +
+                      (parseInt(oStyle.borderBottomWidth) || 0);
+                  }
+                });
+              return height;
+            })() + "px"
+          : "0px");
+    });
+  } else {
+    console.log("handle IE...");
+  }
+};
+
+slideToggleTrans(hamburger);
+
+// hamburger.addEventListener("click", () => {
+//   console.log("hello");
+//   mobileMenu.classList.toggle("active");
+
+//   slideToggleTrans(eleMore, false);
+
+//   // display = !display;
+//   // eleMore.style.height = display ? "217px" : "0px";
+//   // return false;
+// });
