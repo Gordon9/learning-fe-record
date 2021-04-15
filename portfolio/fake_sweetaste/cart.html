@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweetaste · cart</title>
+    <!-- <link rel="stylesheet" href="dist/css/basic.css" /> -->
+    <link rel="stylesheet" href="dist/css/cart.css" />
+    <link rel="stylesheet" href="dist/css/rwd.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="pc_menu">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo-all-dark.png" alt="" />
+          </a>
+        </div>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="product.html">甜点</a></li>
+          <li><a href="login.html">登入</a></li>
+          <li>
+            <a href="cart.html">
+              <i class="material-icons">shopping_cart</i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile_menu">
+        <div class="hamburger">
+          <span></span>
+        </div>
+        <img src="img/logo-all-dark.png" alt="logo" />
+        <a href="cart.html">
+          <i class="material-icons">shopping_cart</i>
+        </a>
+        <div class="container_ul">
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="product.html">甜点</a></li>
+            <li><a href="login.html">登入</a></li>
+            <li>
+              <a href="cart.html">
+                <i class="material-icons">shopping_cart</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- cart -->
+    <div class="cart">
+      <div class="lists">
+        <div class="title">您的购物车</div>
+        <table>
+          <tr>
+            <td class="pic">
+              <img src="img/item3.jpg" alt="" />
+            </td>
+            <td class="item_title">
+              <p>焦糖马卡龙</p>
+              <p class="price">￥79</p>
+            </td>
+            <td class="select">
+              <span>-</span>
+              <input type="number" value="2" />
+              <span>+</span>
+            </td>
+            <td class="total_price">
+              <p>￥299</p>
+            </td>
+            <td class="delete">
+              <i class="material-icons">delete_outline</i>
+            </td>
+          </tr>
+          <tr>
+            <td class="pic">
+              <img src="img/item1.jpg" alt="" />
+            </td>
+            <td class="item_title">
+              <p>焦糖马卡龙</p>
+              <p class="price">￥79</p>
+            </td>
+            <td class="select">
+              <span>-</span>
+              <input type="number" value="2" />
+              <span>+</span>
+            </td>
+            <td class="total_price">
+              <p>￥299</p>
+            </td>
+            <td class="delete">
+              <i class="material-icons">delete_outline</i>
+            </td>
+          </tr>
+          <tr>
+            <td class="pic">
+              <img src="img/item2.jpg" alt="" />
+            </td>
+            <td class="item_title">
+              <p>焦糖马卡龙</p>
+              <p class="price">￥79</p>
+            </td>
+            <td class="select">
+              <span>-</span>
+              <input type="number" value="2" />
+              <span>+</span>
+            </td>
+            <td class="total_price">
+              <p>￥299</p>
+            </td>
+            <td class="delete">
+              <i class="material-icons">delete_outline</i>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="order_info">
+        <h2>订单摘要</h2>
+        <div class="price">
+          <span>小计</span>
+          <span>￥12447</span>
+        </div>
+        <div class="fee">
+          <span>运费</span>
+          <span>￥9</span>
+        </div>
+        <div class="total">
+          <span>总计</span>
+          <span>￥99999</span>
+        </div>
+        <div class="checkout">
+          <a href="checkout_1.html">结账</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="subscribe">
+        <div class="container">
+          <div class="logo">
+            <img src="img/logo-light.png" alt="" />
+            <p>订阅你我的甜蜜邮件</p>
+          </div>
+          <div class="email">
+            <div class="icon"><i class="material-icons">email</i></div>
+            <input type="text" id="email" name="email" />
+            <label for="email">
+              <i class="material-icons">arrow_forward</i>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="left">
+          <div class="logo">
+            <img src="img/logotype.png" alt="logo" />
+          </div>
+          <div class="info">
+            <p>44-3434-6545</p>
+            <p>fake-sweetaste@email.com</p>
+            <p>Guangzhou, China</p>
+          </div>
+          <div class="icon">
+            <img src="img/ic-facebook.png" alt="fb" />
+            <img src="img/ic-line@.png" alt="line" />
+          </div>
+        </div>
+        <div class="right">
+          <img src="img/sm-今天是个吃甜点的好日子.png" alt="" />
+          <p>&copy; 2021 Gordon始乱终弃诺兰.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
