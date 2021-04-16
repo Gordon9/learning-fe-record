@@ -168,6 +168,56 @@ $black: #000;
     }
   }
 
+// cart
+.cart {
+  margin: 0;
+  flex-direction: column;
+  width: 100%;
+
+  .lists {
+    display: block;
+    width: 100%;
+    margin: 0;
+    table {
+      width: 90%;
+      margin: auto;
+
+      tr {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+        display: block;
+        position: relative;
+      }
+      td {
+        display: inline-block;
+      }
+      .pic {
+        img {
+          width: 150px;
+        }
+      }
+      .item_title {
+        text-align-last: left;
+        position: absolute;
+        top: 40px;
+      }
+      .select {
+        bottom: 60px;
+        position: absolute;
+        * {
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+      .delete {
+        display: none;
+      }
+    }
+  }
+}
+
   // footer
   footer {
     margin: 0;
