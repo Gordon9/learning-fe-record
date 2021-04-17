@@ -183,7 +183,7 @@ $black: #000;
       margin: auto;
 
       tr {
-        width: 90%;
+        width: 100%;
         height: auto;
         margin: 10px 0;
         display: block;
@@ -210,6 +210,14 @@ $black: #000;
           height: 40px;
           line-height: 40px;
         }
+      }
+      .total_price {
+        font-size: 1.25rem;
+        border-top: 1px solid $light_green;
+        border-bottom: 1px solid $light_green;
+        text-align: right;
+        padding: 10px;
+        width: 100%;
       }
       .delete {
         display: none;

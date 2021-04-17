@@ -19,6 +19,8 @@ const slideToggleTrans = (element, display) => {
               Array.prototype.slice
                 .call(eleMore.childNodes)
                 .forEach(function (child) {
+                  console.log('child: ' + child.clientHeight);
+                  console.log("chiltype: " + child.nodeType);
                   if (child.nodeType === 1) {
                     let oStyle = window.getComputedStyle(child);
                     console.log("child.clientHeight:", child.clientHeight);
@@ -28,6 +30,7 @@ const slideToggleTrans = (element, display) => {
                       (parseInt(oStyle.borderBottomWidth) || 0);
                   }
                 });
+                console.log('height:' + height);
               return height;
             })() + "px"
           : "0px");

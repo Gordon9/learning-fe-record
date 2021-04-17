@@ -132,6 +132,7 @@ header .mobile_menu {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
