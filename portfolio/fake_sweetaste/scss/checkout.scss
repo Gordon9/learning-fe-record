@@ -240,37 +240,37 @@ footer {
   width: 940px;
   margin: 60px auto;
   align-items: flex-start;
+}
 
-  .steps {
-    width: 460px;
-    margin: 0 10px;
-    background: $green;
-    color: $light_green;
+.steps {
+  width: 460px;
+  margin: 0 10px;
+  background: $green;
+  color: $light_green;
 
-    .title {
-      padding: 10px 40px;
+  .title {
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-weight: normal;
+      font-size: 2rem;
+      padding: 20px 0;
+    }
+
+    ul {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
 
-      h2 {
-        font-weight: normal;
-        font-size: 2rem;
-        padding: 20px 0;
-      }
-
-      ul {
-        display: flex;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: 20px;
-          width: calc(100% - 40px);
-          height: 1px;
-          background: $light_green;
-        }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        width: calc(100% - 40px);
+        height: 1px;
+        background: $light_green;
       }
 
       li {
@@ -302,9 +302,16 @@ footer {
     padding: 5px 40px;
     align-items: flex-end;
 
+    i {
+      top: 55px;
+      right: 10px;
+      position: absolute;
+      color: $green2;
+    }
+
     div {
       flex: 1;
-      margin-right: 10px;
+      margin-right: 5px;
     }
 
     label {
@@ -349,7 +356,6 @@ footer {
     font-weight: bold;
     text-align: center;
     font-size: 1.5rem;
-
   }
 }
 

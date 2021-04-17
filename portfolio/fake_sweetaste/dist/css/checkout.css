@@ -630,14 +630,14 @@ footer .bottom .right img {
           align-items: flex-start;
 }
 
-.checkout .steps {
+.steps {
   width: 460px;
   margin: 0 10px;
   background: #3f5d45;
   color: #eaf0ed;
 }
 
-.checkout .steps .title {
+.steps .title {
   padding: 10px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,19 +650,19 @@ footer .bottom .right img {
           align-items: center;
 }
 
-.checkout .steps .title h2 {
+.steps .title h2 {
   font-weight: normal;
   font-size: 2rem;
   padding: 20px 0;
 }
 
-.checkout .steps .title ul {
+.steps .title ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.checkout .steps .title ul::before {
+.steps .title ul::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -672,7 +672,7 @@ footer .bottom .right img {
   background: #eaf0ed;
 }
 
-.checkout .steps .title li {
+.steps .title ul li {
   margin: 0 20px;
   width: 21px;
   height: 21px;
@@ -681,7 +681,7 @@ footer .bottom .right img {
   border-radius: 50%;
 }
 
-.checkout .steps .title .done::before {
+.steps .title ul .done::before {
   content: "";
   border-radius: 50%;
   position: absolute;
@@ -692,7 +692,7 @@ footer .bottom .right img {
   background: #eaf0ed;
 }
 
-.checkout .set {
+.steps .set {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,59 +702,66 @@ footer .bottom .right img {
           align-items: flex-end;
 }
 
-.checkout .set div {
+.steps .set i {
+  top: 55px;
+  right: 10px;
+  position: absolute;
+  color: #8DA291;
+}
+
+.steps .set div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
-.checkout .set label {
+.steps .set label {
   display: block;
   font-size: 1.25rem;
   padding: 5px 0;
 }
 
-.checkout .set input,
-.checkout .set select {
+.steps .set input,
+.steps .set select {
   width: 100%;
   padding: 0 10px;
   height: 50px;
   background: #eaf0ed;
 }
 
-.checkout .set input:focus,
-.checkout .set select:focus {
+.steps .set input:focus,
+.steps .set select:focus {
   background: #fff;
 }
 
-.checkout .set select {
+.steps .set select {
   font-size: 1rem;
   font-family: "cwTeXYen", sans-serif;
 }
 
-.checkout .set option {
+.steps .set option {
   height: 40px;
   font-size: 1rem;
 }
 
-.checkout .set ::-webkit-input-placeholder {
+.steps .set ::-webkit-input-placeholder {
   color: #8DA291;
 }
 
-.checkout .set :-ms-input-placeholder {
+.steps .set :-ms-input-placeholder {
   color: #8DA291;
 }
 
-.checkout .set ::-ms-input-placeholder {
+.steps .set ::-ms-input-placeholder {
   color: #8DA291;
 }
 
-.checkout .set ::placeholder {
+.steps .set ::placeholder {
   color: #8DA291;
 }
 
-.checkout .next {
+.steps .next {
   display: block;
   margin-top: 20px;
   padding: 20px 0;
