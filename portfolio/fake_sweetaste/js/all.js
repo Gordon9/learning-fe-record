@@ -19,11 +19,8 @@ const slideToggleTrans = (element, display) => {
               Array.prototype.slice
                 .call(eleMore.childNodes)
                 .forEach(function (child) {
-                  console.log('child: ' + child.clientHeight);
-                  console.log("chiltype: " + child.nodeType);
                   if (child.nodeType === 1) {
                     let oStyle = window.getComputedStyle(child);
-                    console.log("child.clientHeight:", child.clientHeight);
                     height =
                       child.clientHeight +
                       (parseInt(oStyle.borderTopWidth) || 0) +
