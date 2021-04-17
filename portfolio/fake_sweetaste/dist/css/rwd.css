@@ -263,5 +263,13 @@
   .checkout .order_info {
     display: none;
   }
+  .success {
+    width: 100%;
+  }
+  .success a {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
 }
 /*# sourceMappingURL=rwd.css.map */

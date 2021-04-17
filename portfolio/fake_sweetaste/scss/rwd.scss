@@ -314,4 +314,15 @@ $black: #000;
     }
   }
 
+
+  // success
+  .success {
+    width: 100%;
+
+    a {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+  }
 }
