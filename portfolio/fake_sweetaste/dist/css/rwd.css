@@ -251,5 +251,17 @@
   footer .bottom .right img {
     display: none;
   }
+  .checkout {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .checkout .steps {
+    width: 100%;
+    margin: 0;
+  }
+  .checkout .order_info {
+    display: none;
+  }
 }
 /*# sourceMappingURL=rwd.css.map */

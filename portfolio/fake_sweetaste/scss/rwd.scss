@@ -298,4 +298,20 @@ $black: #000;
     }
   }
 
+  // checkout
+  .checkout {
+    display: block;
+    width: 100%;
+    margin: 0;
+
+    .steps {
+      width: 100%;
+      margin: 0;
+    }
+
+    .order_info {
+      display: none;
+    }
+  }
+
 }
