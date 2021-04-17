@@ -136,9 +136,11 @@ $black: #000;
 
   .contain {
     width: 100%;
+
     input {
       height: auto;
     }
+
     .mobile_social {
       display: flex;
       margin-bottom: 20px;
@@ -168,63 +170,87 @@ $black: #000;
     }
   }
 
-// cart
-.cart {
-  margin: 0;
-  flex-direction: column;
-  width: 100%;
-
-  .lists {
-    display: block;
-    width: 100%;
+  // cart
+  .cart {
     margin: 0;
-    table {
-      width: 90%;
-      margin: auto;
+    flex-direction: column;
+    width: 100%;
 
-      tr {
-        width: 100%;
-        height: auto;
-        margin: 10px 0;
-        display: block;
-        position: relative;
-      }
-      td {
-        display: inline-block;
-      }
-      .pic {
-        img {
-          width: 150px;
+    .lists {
+      display: block;
+      width: 100%;
+      margin: 0;
+
+      table {
+        width: 90%;
+        margin: auto;
+
+        tr {
+          width: 100%;
+          height: auto;
+          margin: 10px 0;
+          display: block;
+          position: relative;
         }
-      }
-      .item_title {
-        text-align-last: left;
-        position: absolute;
-        top: 40px;
-      }
-      .select {
-        bottom: 60px;
-        position: absolute;
-        * {
-          width: 40px;
-          height: 40px;
-          line-height: 40px;
+
+        td {
+          display: inline-block;
         }
-      }
-      .total_price {
-        font-size: 1.25rem;
-        border-top: 1px solid $light_green;
-        border-bottom: 1px solid $light_green;
-        text-align: right;
-        padding: 10px;
-        width: 100%;
-      }
-      .delete {
-        display: none;
+
+        .pic {
+          img {
+            width: 150px;
+          }
+        }
+
+        .item_title {
+          text-align-last: left;
+          position: absolute;
+          top: 40px;
+        }
+
+        .select {
+          bottom: 60px;
+          position: absolute;
+
+          * {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+          }
+        }
+
+        .total_price {
+          font-size: 1.25rem;
+          border-top: 1px solid $light_green;
+          border-bottom: 1px solid $light_green;
+          text-align: right;
+          padding: 10px;
+          width: 100%;
+        }
+
+        .delete {
+          display: none;
+        }
       }
     }
+
+    .order_info {
+      background: none;
+      width: 100%;
+
+      h2 {
+        color: $green;
+        background: $light_green;
+      }
+
+      div {
+        color: $green;
+        padding: 10px 30px;
+      }
+
+    }
   }
-}
 
   // footer
   footer {

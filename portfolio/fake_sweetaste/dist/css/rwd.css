@@ -202,6 +202,18 @@
   .cart .lists table .delete {
     display: none;
   }
+  .cart .order_info {
+    background: none;
+    width: 100%;
+  }
+  .cart .order_info h2 {
+    color: #3f5d45;
+    background: #eaf0ed;
+  }
+  .cart .order_info div {
+    color: #3f5d45;
+    padding: 10px 30px;
+  }
   footer {
     margin: 0;
     width: 100%;
