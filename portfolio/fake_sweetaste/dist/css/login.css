@@ -282,6 +282,18 @@ li {
   .cart .lists table .delete {
     display: none;
   }
+  .cart .order_info {
+    background: none;
+    width: 100%;
+  }
+  .cart .order_info h2 {
+    color: #3f5d45;
+    background: #eaf0ed;
+  }
+  .cart .order_info div {
+    color: #3f5d45;
+    padding: 10px 30px;
+  }
   footer {
     margin: 0;
     width: 100%;
@@ -318,6 +330,26 @@ li {
   }
   footer .bottom .right img {
     display: none;
+  }
+  .checkout {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .checkout .steps {
+    width: 100%;
+    margin: 0;
+  }
+  .checkout .order_info {
+    display: none;
+  }
+  .success {
+    width: 100%;
+  }
+  .success a {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
   }
 }
 
@@ -570,6 +602,7 @@ header .mobile_menu ul li:last-child {
 }
 
 .contain .mobile_social {
+  display: none;
   background: #eaf0ed;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
