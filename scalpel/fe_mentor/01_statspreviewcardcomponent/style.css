@@ -70,3 +70,12 @@ h1 span {
 .stats-container div + div {
   margin-left: 70px;
 }
+
+.right {
+  background: linear-gradient(hsl(277, 64%, 61%, 0.4), hsl(277, 64%, 61%, 0.4)),
+    url("images/image-header-desktop.jpg");
+  width: 530px;
+  border-radius: 0 5px 5px 0;
+  padding: 211px 0;
+  background-position-y: -10px;
+}
