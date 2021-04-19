@@ -4,7 +4,7 @@ body {
 
 main {
   background: hsl(244, 38%, 16%);
-  min-width: 1118px;
+  max-width: 1118px;
   min-height: 422px;
   margin: 9% auto 10px;
   border-radius: 5px;
@@ -78,4 +78,59 @@ h1 span {
   border-radius: 0 5px 5px 0;
   padding: 211px 0;
   background-position-y: -10px;
+}
+
+@media (max-width: 1155px) {
+  main {
+    max-width: 330px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .left {
+    order: 2;
+    width: 330px;
+  }
+
+  .left h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 15px;
+    padding: 15px 40px;
+    margin-bottom: 0;
+  }
+
+  .left p {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .stats-container span {
+    text-align: center;
+  }
+
+  .stats-container div + div {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .stats3 {
+    margin-bottom: 35px;
+  }
+
+  .right {
+    border-radius: 5px 5px 0 0;
+    padding: 0 0;
+    background-size: cover;
+    height: 245px;
+    background-position-y: -4px;
+  }
 }
