@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  width: 60%;
+  height: 450px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#sedans {
+  background-color: hsl(31, 77%, 52%);
+  flex-basis: 33.33%;
+  border-radius: 10px 0 0 10px;
+}
+#suvs {
+  background-color: hsl(184, 100%, 22%);
+  flex-basis: 33.33%;
+}
+#luxury {
+  background-color: hsl(179, 100%, 13%);
+  flex-basis: 33.33%;
+  border-radius: 0 10px 10px 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", serif;
+  font-size: 700;
+  margin: 10px 30px;
+  color: #fff;
+}
+p {
+  font-family: Lexend Deca, serif;
+  font-size: 400;
+  color: #fff;
+}
+img,
+p {
+  margin: 30px;
+}
+button {
+  margin: 40px 20px 50px 30px;
+  height: 40px;
+  width: 150px;
+  border-radius: 50px;
+  outline: none;
+  font-family: Lexend Deca, serif;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+#one {
+  color: hsl(31, 77%, 52%);
+}
+#one:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: #fff;
+  border: 2px solid #fff;
+}
+#two {
+  color: hsl(184, 100%, 22%);
+}
+#two:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: #fff;
+  border: 2px solid #fff;
+}
+#three {
+  color: hsl(179, 100%, 13%);
+}
+#three:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: #fff;
+  border: 2px solid #fff;
+}
