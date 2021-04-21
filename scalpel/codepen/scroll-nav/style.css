@@ -1,9 +1,28 @@
 :root {
-  
+  --space: 1rem;
+  --border: 4px;
+  --page-wdith: 80ch;
+  --font-family: "Airbnb Cereal", sans-ferif;
+  --color-link: black;
+  --color-active: #00848a;
+  --duration: 350ms;
+  --section-offset: 0;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  --scroll-behaboir: smooth;
+  scroll-behavior: var(--scroll-behaboir);
 
+  @media (prefers-reduced-motion: reduce) {
+    --scroll-behaboir: auto;
+  }
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+}
