@@ -1,0 +1,125 @@
+:root {
+  --space: 1rem;
+  --border: 4px;
+  --page-wdith: 80ch;
+  --font-family: "Airbnb Cereal", sans-ferif;
+  --color-link: black;
+  --color-active: #00848a;
+  --ease: cubic-bezier(0.23, 1, 0.32, 1);
+  --duration: 350ms;
+  --section-offset: 0;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  --scroll-behaboir: smooth;
+  scroll-behavior: var(--scroll-behaboir);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    --scroll-behaboir: auto;
+  }
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.nav-sections {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.12);
+  z-index: 100;
+}
+
+.nav-sections .menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: scroll;
+  overscroll-behavior: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin: 0 auto;
+  max-width: var(--page-wdith);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: -webkit-transform var(--ease) var(--duration);
+  transition: -webkit-transform var(--ease) var(--duration);
+  transition: transform var(--ease) var(--duration);
+  transition: transform var(--ease) var(--duration), -webkit-transform var(--ease) var(--duration);
+}
+
+.nav-sections .menu::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-sections .menu .menu-item-link {
+  display: block;
+  padding: 12px 16px;
+  font-size: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--color-link);
+  -webkit-transition: color var(--ease) var(--duration);
+  transition: color var(--ease) var(--duration);
+}
+
+.nav-sections .menu .menu-item-link.active {
+  color: var(--color-active);
+}
+
+.nav-sections .menu-item:first-of-type .menu-item-link {
+  margin-left: 0;
+}
+
+.nav-sections .active-line {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  height: 80%;
+  border-radius: 4px;
+  background-color: var(--color-active);
+  opacity: 10%;
+  -webkit-transition: width var(--ease) var(--duration), -webkit-transform var(--ease) var(--duration);
+  transition: width var(--ease) var(--duration), -webkit-transform var(--ease) var(--duration);
+  transition: width var(--ease) var(--duration), transform var(--ease) var(--duration);
+  transition: width var(--ease) var(--duration), transform var(--ease) var(--duration), -webkit-transform var(--ease) var(--duration);
+}
+/*# sourceMappingURL=style.css.map */
