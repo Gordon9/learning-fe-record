@@ -1,0 +1,8 @@
+@font-face {
+  font-family: airbnb-font;
+  src: url(AirbnbCerealBlack.woff);
+}
+
+p {
+  font-family: airbnb-font;
+}
