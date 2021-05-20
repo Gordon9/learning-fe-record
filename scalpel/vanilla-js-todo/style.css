@@ -3,6 +3,48 @@
   src: url(AirbnbCerealBlack.woff);
 }
 
-p {
-  font-family: airbnb-font;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #ff5a5f, #00848a);
+  color: #ffffff;
+  font-family: airbnb-font, sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: #ffffff;
+  outline: none;
+}
+
+form button {
+  color: #00848a;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #00848a;
+  color: #ffffff;
 }
