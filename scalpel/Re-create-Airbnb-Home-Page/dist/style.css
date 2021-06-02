@@ -31899,6 +31899,10 @@ video {
   color: #008F94;
 }
 
+.bg-cyan {
+  background-color: #008F94
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
