@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.transition {
+  transition: ease 0.2s;
+}
+
+.label {
+  @apply uppercase;
+  @apply tracking-wide;
+  @apply font-semibold;
+  @apply text-xs;
+  @apply text-gray-700;
+  @apply mb-2;
+  @apply block;
+}
+
+.input {
+  @apply p-3;
+  @apply text-gray-800;
+  @apply border-gray-300;
+  @apply border;
+  @apply rounded;
+  @apply w-full;
+}
+
+.input::placeholder {
+  @apply text-gray-700;
+}
+
+.input:focus {
+  @apply shadow;
+  @apply outline-none;
+  @apply border-gray-400;
+  @apply duration-200;
+  @apply ease-linear;
+
+  box-shadow: 0 0 0 0.2rem theme("colors.gray.200");
+  background-clip: padding-box;
+}
+
+.input.select {
+  @apply appearance-none;
+  @apply bg-white;
+  @apply w-full;
+}
