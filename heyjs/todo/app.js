@@ -41,6 +41,7 @@ const deleteCheck = (e) => {
   if (item.classList[0] === "trash-btn") {
     const todo = item.parentElement;
     todo.classList.add("fall");
+    console.log('todo:', todo)
     removeLocalTodos(todo);
     // todo.remove();
     todo.addEventListener("transitionend", function () {
@@ -166,6 +167,7 @@ const removeLocalTodos = (todo) => {
     todos = JSON.parse(localStorage.getItem("todos"));
   }
   const todoIndex = todo.children[0].innerText;
+  console.log('todo.children[0]:', todo.children[0])
   todos.splice(todos.indexOf(todoIndex), 1);
   localStorage.setItem("todos", JSON.stringify(todos));
 };
@@ -175,3 +177,4 @@ document.addEventListener("DOMContentLoaded", getTodos);
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("change", filterTodo);
+
