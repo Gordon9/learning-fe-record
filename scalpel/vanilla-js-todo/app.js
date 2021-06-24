@@ -51,7 +51,7 @@ const getTodos = () => {
 };
 
 const removeLocalTodos = (todo) => {
-  console.log('hello remove');
+  console.log("hello remove");
   let todos;
   if (localStorage.getItem("todos") === null) {
     todos = [];
