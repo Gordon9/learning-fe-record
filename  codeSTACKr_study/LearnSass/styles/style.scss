@@ -1,8 +1,0 @@
-@import './variables';
-@import './header';
-.contact {
-    // @include flexCenter(row, blue);
-    @extend header;
-    background: lightcoral;
-    width: 100% - 20%;
-}
