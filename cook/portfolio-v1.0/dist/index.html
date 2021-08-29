@@ -11,14 +11,15 @@
   <body>
     <header
       class="
-        sticky
-        top-0
+        fixed
+        w-full
         grid grid-cols-3
         bg-white
         shadow-md
         md:px-10
         px-5
         py-3.5
+        z-50
       "
     >
       <!-- Left -->
@@ -107,5 +108,36 @@
         </div>
       </div>
     </header>
+
+    <!-- Banner -->
+    <div class="relative h-72 sm:h-96 banner-lg-h banner-xl-h banner-2xl-h">
+      <img
+        src="images/b3.webp"
+        class="object-fit w-full"
+        style="max-height: 882px"
+      />
+      <div class="absolute top-1/2 lg:top-2/3 w-full text-center">
+        <p class="text-sm sm:text-lg">live with less, share with more.</p>
+        <button
+          class="
+            text-purple-500
+            bg-white
+            px-10
+            py-4
+            shadow-md
+            rounded-full
+            font-bold
+            my-3
+            hover:shadow-xl
+            transition
+            duration-150
+            banner-button
+          "
+        >
+          I'm flexible
+        </button>
+      </div>
+    </div>
+    <div>Hello</div>
   </body>
 </html>
