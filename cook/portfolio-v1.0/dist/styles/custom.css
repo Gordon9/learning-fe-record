@@ -25,3 +25,11 @@ header img {
 .banner-button:active {
   transform: scale(0.9);
 }
+
+/* banner font */
+@font-face {
+  font-family: "Airbnb Cereal App Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/AirbnbCerealBlack.woff") format("woff");
+}
