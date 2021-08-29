@@ -1,13 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gordon飞刀始乱终弃诺兰</title>
-  <link rel="stylesheet" href="./styles/tailwind.css">
-</head>
-<body>
-  <div class="bg-yellow-100">hello</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gordon飞刀始乱终弃诺兰</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/custom.css" />
+  </head>
+  <body>
+    <header
+      class="
+        sticky
+        top-0
+        grid grid-cols-3
+        bg-white
+        shadow-md
+        md:px-10
+        px-5
+        py-3.5
+        z-50
+      "
+    >
+      <!-- Left -->
+      <div class="flex h-10 items-center my-auto">
+        <a href="/">
+          <img src="images/myself.svg" alt="" />
+        </a>
+      </div>
+
+      <!-- Middle -->
+      <div
+        class="
+          flex
+          items-center
+          border-0
+          sm:border-2
+          rounded-full
+          py-2
+          md:shadow-sm
+        "
+      >
+        <input
+          class="
+            flex-grow
+            pl-5
+            bg-transparent
+            outline-none
+            text-sm text-gray-600
+            placeholder-gray-400
+          "
+          type="text"
+          placeholder="You're Being Watched"
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="
+            h-8
+            bg-blue-400
+            text-white
+            rounded-full
+            p-2
+            cursor-pointer
+            hidden
+            md:inline-flex md:mx-2
+          "
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+
+      <!-- Right -->
+      <div class="flex items-center space-x-4 justify-end text-gray-500">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-5 cursor-pointer"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <div class="flex items-center space-x-2 border-2 p-2 rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="relative h-72 sm:h-96 sm:mb-12" style="height: auto">
+      <img
+        src="images/b3.webp"
+        class="object-fill w-full"
+        style="max-height: 882px"
+      />
+      <div class="absolute top-1/2 lg:top-2/3 w-full text-center">
+        <p
+          class="text-sm sm:text-lg"
+          style="font-family: Airbnb Cereal App Black"
+        >
+          live with less, share with more.
+        </p>
+        <button
+          class="
+            text-purple-500
+            bg-white
+            px-10
+            py-4
+            shadow-md
+            rounded-full
+            font-bold
+            my-3
+            hover:shadow-xl
+            transition
+            duration-150
+            banner-button
+          "
+        >
+          I'm flexible
+        </button>
+      </div>
+    </div>
+    <!-- Main -->
+    <main class="max-w-7xl mx-auto px-8 sm\:px-16 mt-4">
+      <!-- toy projecy -->
+      <section>
+        <h2 class="text-4xl font-semibold pb-6 pt-2">Toy Project</h2>
+
+        <!-- Shouble be Pull some date from a server - API endpoints -->
+        <!-- Temporarily use local picture -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
+          <div
+            class="
+              flex
+              items-center
+              m-2
+              mt-5
+              space-x-4
+              rounded-xl
+              cursor-pointer
+              hover:bg-gray-100 hover:scale-105
+              transition
+              transform
+              duration-200
+              ease-out
+            "
+          >
+            <!-- Left -->
+            <div class="w-16 h-16">
+              <img
+                class="rounded-lg h-full object-fill"
+                src="images/toy-prj-0.png"
+                alt=""
+              />
+            </div>
+            <!-- Right -->
+            <div>
+              <h2>fake-airbnb</h2>
+              <h3>tech stack</h3>
+            </div>
+          </div>
+          <div
+            class="
+              flex
+              items-center
+              m-2
+              mt-5
+              space-x-4
+              rounded-xl
+              cursor-pointer
+              hover:bg-gray-100 hover:scale-105
+              transition
+              transform
+              duration-200
+              ease-out
+            "
+          >
+            <!-- Left -->
+            <div class="w-16 h-16">
+              <img
+                class="rounded-lg h-full object-fill"
+                src="images/toy-prj-0.png"
+                alt=""
+              />
+            </div>
+            <!-- Right -->
+            <div>
+              <h2>fake-airbnb</h2>
+              <h3>tech stack</h3>
+            </div>
+          </div>
+          <div
+            class="
+              flex
+              items-center
+              m-2
+              mt-5
+              space-x-4
+              rounded-xl
+              cursor-pointer
+              hover:bg-gray-100 hover:scale-105
+              transition
+              transform
+              duration-200
+              ease-out
+            "
+          >
+            <!-- Left -->
+            <div class="w-16 h-16">
+              <img
+                class="rounded-lg h-full object-fill"
+                src="images/toy-prj-0.png"
+                alt=""
+              />
+            </div>
+            <!-- Right -->
+            <div>
+              <h2>fake-airbnb</h2>
+              <h3>tech stack</h3>
+            </div>
+          </div>
+          <div
+            class="
+              flex
+              items-center
+              m-2
+              mt-5
+              space-x-4
+              rounded-xl
+              cursor-pointer
+              hover:bg-gray-100 hover:scale-105
+              transition
+              transform
+              duration-200
+              ease-out
+            "
+          >
+            <!-- Left -->
+            <div class="w-16 h-16">
+              <img
+                class="rounded-lg h-full object-fill"
+                src="images/toy-prj-0.png"
+                alt=""
+              />
+            </div>
+            <!-- Right -->
+            <div>
+              <h2>fake-airbnb</h2>
+              <h3>tech stack</h3>
+            </div>
+          </div>
+          <div
+            class="
+              flex
+              items-center
+              m-2
+              mt-5
+              space-x-4
+              rounded-xl
+              cursor-pointer
+              hover:bg-gray-100 hover:scale-105
+              transition
+              transform
+              duration-200
+              ease-out
+            "
+          >
+            <!-- Left -->
+            <div class="w-16 h-16">
+              <img
+                class="rounded-lg h-full object-fill"
+                src="images/toy-prj-0.png"
+                alt=""
+              />
+            </div>
+            <!-- Right -->
+            <div>
+              <h2>fake-airbnb</h2>
+              <h3>tech stack</h3>
+            </div>
+          </div>
+          <div
+            class="
+              flex
+              items-center
+              m-2
+              mt-5
+              space-x-4
+              rounded-xl
+              cursor-pointer
+              hover:bg-gray-100 hover:scale-105
+              transition
+              transform
+              duration-200
+              ease-out
+            "
+          >
+            <!-- Left -->
+            <div class="w-16 h-16">
+              <img
+                class="rounded-lg h-full object-fill"
+                src="images/toy-prj-0.png"
+                alt=""
+              />
+            </div>
+            <!-- Right -->
+            <div>
+              <h2>fake-airbnb</h2>
+              <h3>tech stack</h3>
+            </div>
+          </div>
+          <div
+            class="
+              flex
+              items-center
+              m-2
+              mt-5
+              space-x-4
+              rounded-xl
+              cursor-pointer
+              hover:bg-gray-100 hover:scale-105
+              transition
+              transform
+              duration-200
+              ease-out
+            "
+          >
+            <!-- Left -->
+            <div class="w-16 h-16">
+              <img
+                class="rounded-lg h-full object-fill"
+                src="images/toy-prj-0.png"
+                alt=""
+              />
+            </div>
+            <!-- Right -->
+            <div>
+              <h2>fake-airbnb</h2>
+              <h3>tech stack</h3>
+            </div>
+          </div>
+          <div
+            class="
+              flex
+              items-center
+              m-2
+              mt-5
+              space-x-4
+              rounded-xl
+              cursor-pointer
+              hover:bg-gray-100 hover:scale-105
+              transition
+              transform
+              duration-200
+              ease-out
+            "
+          >
+            <!-- Left -->
+            <div class="w-16 h-16">
+              <img
+                class="rounded-lg h-full object-fill"
+                src="images/toy-prj-0.png"
+                alt=""
+              />
+            </div>
+            <!-- Right -->
+            <div>
+              <h2>fake-airbnb</h2>
+              <h3>tech stack</h3>
+            </div>
+          </div>
+          <div
+            class="
+              flex
+              items-center
+              m-2
+              mt-5
+              space-x-4
+              rounded-xl
+              cursor-pointer
+              hover:bg-gray-100 hover:scale-105
+              transition
+              transform
+              duration-200
+              ease-out
+            "
+          >
+            <!-- Left -->
+            <div class="w-16 h-16">
+              <img
+                class="rounded-lg h-full object-fill"
+                src="images/toy-prj-0.png"
+                alt=""
+              />
+            </div>
+            <!-- Right -->
+            <div>
+              <h2>fake-airbnb</h2>
+              <h3>tech stack</h3>
+            </div>
+          </div>
+          <div
+            class="
+              flex
+              items-center
+              m-2
+              mt-5
+              space-x-4
+              rounded-xl
+              cursor-pointer
+              hover:bg-gray-100 hover:scale-105
+              transition
+              transform
+              duration-200
+              ease-out
+            "
+          >
+            <!-- Left -->
+            <div class="w-16 h-16">
+              <img
+                class="rounded-lg h-full object-fill"
+                src="images/toy-prj-0.png"
+                alt=""
+              />
+            </div>
+            <!-- Right -->
+            <div>
+              <h2>fake-airbnb</h2>
+              <h3>tech stack</h3>
+            </div>
+          </div>
+          <div
+            class="
+              flex
+              items-center
+              m-2
+              mt-5
+              space-x-4
+              rounded-xl
+              cursor-pointer
+              hover:bg-gray-100 hover:scale-105
+              transition
+              transform
+              duration-200
+              ease-out
+            "
+          >
+            <!-- Left -->
+            <div class="w-16 h-16">
+              <img
+                class="rounded-lg h-full object-fill"
+                src="images/toy-prj-0.png"
+                alt=""
+              />
+            </div>
+            <!-- Right -->
+            <div>
+              <h2>fake-airbnb</h2>
+              <h3>tech stack</h3>
+            </div>
+          </div>
+          <div
+            class="
+              flex
+              items-center
+              m-2
+              mt-5
+              space-x-4
+              rounded-xl
+              cursor-pointer
+              hover:bg-gray-100 hover:scale-105
+              transition
+              transform
+              duration-200
+              ease-out
+            "
+          >
+            <!-- Left -->
+            <div class="w-16 h-16">
+              <img
+                class="rounded-lg h-full object-fill"
+                src="images/toy-prj-0.png"
+                alt=""
+              />
+            </div>
+            <!-- Right -->
+            <div>
+              <h2>fake-airbnb</h2>
+              <h3>tech stack</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- funny project -->
+      <section>
+        <h2 class="text-4xl font-semibold py-8">Funny Project</h2>
+
+        <div class="flex space-x-3 overflow-scroll scrollbar-hide -ml-3 p-3">
+          <div
+            class="
+              cursor-pointer
+              hover:scale-105
+              transform
+              transition
+              duration-300
+              ease-out
+            "
+          >
+            <div class="w-80 h-80">
+              <img
+                class="object-fill h-full w-full"
+                src="images/funny-prj-0.jpeg"
+                alt=""
+              />
+            </div>
+            <h3 class="text-2xl mt-3">Contra</h3>
+          </div>
+          <div
+            class="
+              cursor-pointer
+              hover:scale-105
+              transform
+              transition
+              duration-300
+              ease-out
+            "
+          >
+            <div class="w-80 h-80">
+              <img
+                class="object-fill h-full w-full"
+                src="images/funny-prj-1.jpeg"
+                alt=""
+              />
+            </div>
+            <h3 class="text-2xl mt-3">Bubble Hall</h3>
+          </div>
+          <div
+            class="
+              cursor-pointer
+              hover:scale-105
+              transform
+              transition
+              duration-300
+              ease-out
+            "
+          >
+            <div class="w-80 h-80">
+              <img
+                class="object-fill h-full w-full"
+                src="images/funny-prj-2.jpeg"
+                alt=""
+              />
+            </div>
+            <h3 class="text-2xl mt-3">International chess</h3>
+          </div>
+          <div
+            class="
+              cursor-pointer
+              hover:scale-105
+              transform
+              transition
+              duration-300
+              ease-out
+            "
+          >
+            <div class="w-80 h-80">
+              <img
+                class="object-fill h-full w-full"
+                src="images/funny-prj-3.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="text-2xl mt-3">Street fighter</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
