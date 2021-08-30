@@ -5,6 +5,10 @@
   src: url("../font/AirbnbCerealBlack.woff") format("woff");
 }
 
+/* * {
+  border: 1px solid red !important;
+} */
+
 /* header img */
 header img {
   width: 100%;
