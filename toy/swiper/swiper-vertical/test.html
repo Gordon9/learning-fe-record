@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字上下无缝轮播</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #container{
+        width: 60%;
+        margin: 100px auto;
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+    #list-wrapper{
+        position: relative;
+    }
+    ul {
+        list-style: none;
+        background: #f8f8f8;
+        text-align: center;
+        padding: 0 20px;
+    }
+    li{
+        height: 35px;
+        line-height: 35px;
+        color: #fff;
+    }
+    li:nth-child(odd){
+        background: #5077aa;
+    }
+    li:nth-child(even){
+        background: #fb6b06;
+    }
+</style>
+<body>
+<div id="container">
+    <div id="list-wrapper" style="top: 0">
+        <ul class="notice-list" id="notice-list">
+            <li>富强、民主、文明、和谐、自由1</li>
+            <li>富强、民主、文明、和谐、自由2</li>
+            <li>富强、民主、文明、和谐、自由3</li>
+            <li>富强、民主、文明、和谐、自由4</li>
+            <li>富强、民主、文明、和谐、自由5</li>
+            <li>富强、民主、文明、和谐、自由6</li>
+        </ul>
+        <ul class="notice-list" id="notice-list-2">
+        </ul>
+    </div>
+</div>
+<script>
+    var ROLL_SPEED = 100
+    var noticeList1 = document.getElementById('notice-list');
+    var noticeList2 = document.getElementById('notice-list-2');
+    var listWrapper = document.getElementById('list-wrapper');
+    noticeList2.innerHTML=noticeList1.innerHTML;
+    
+    var timer = setInterval(rollStart, ROLL_SPEED);
+    function rollStart() {
+        if (Math.abs(_subStr(listWrapper.style.top)) >= noticeList1.clientHeight) {
+            listWrapper.style.top = '0px'
+        } else {
+            var top = listWrapper.style.top
+            listWrapper.style.top = _subStr(top)-1+'px'
+        }
+    }
+    // 截取px前数值
+    function _subStr(str) {
+        var index = str.indexOf('px');
+        if (index > -1) {
+            return parseFloat(str.substr(0, index + 1))
+        }
+    }
+</script>
+</body>
+</html>
