@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 60%;
+  margin: 100px auto;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background-color: yellow;
+}
+
+#list-wrapper {
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  background: lightblue;
+  text-align: center;
+  padding: 0 20px;
+}
+
+li {
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+}
+li:nth-child(odd) {
+  background: #5077aa;
+}
+li:nth-child(even) {
+  background: #fb6b06;
+}
