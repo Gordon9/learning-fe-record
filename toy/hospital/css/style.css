@@ -527,6 +527,7 @@ section:nth-child(even) {
     border: var(--border);
     width: 30rem;
     transform: scale(0);
+    background: #fff;
     transform-origin: top right;
     opacity: 0;
     transition: none;
