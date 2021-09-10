@@ -136,6 +136,16 @@ section:nth-child(even) {
   margin-left: 0.5rem;
 }
 
+.btn:hover {
+  background: var(--green);
+  color: #fff;
+}
+.btn:hover span {
+  color: var(--green);
+  background: #fff;
+  margin-left: 1rem;
+}
+
 /* icon section*/
 .icons-container {
   display: grid;
@@ -296,7 +306,52 @@ section:nth-child(even) {
   background: var(--green);
   color: #fff;
   box-shadow: var(--box-shadow);
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/* book section */
+.book .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.book .row .image {
+  flex: 1 1 45rem;
+}
+
+.book .row .image img {
+  width: 100%;
+}
+
+.book .row form {
+  flex: 1 1 45rem;
+  background: #fff;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.book .row form h3 {
+  color: var(--black);
+  padding-bottom: 1rem;
+  font-size: 3rem;
+}
+.book .row form .box {
+  width: 100%;
+  margin: 0.7rem 0;
+  border-radius: 0.5rem;
+  border: var(--border);
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  padding: 1rem;
+}
+.book .row form .btn {
+  padding: 1rem 4rem;
 }
 
 /* media queries */
