@@ -354,6 +354,61 @@ section:nth-child(even) {
   padding: 1rem 4rem;
 }
 
+/* review section */
+.review .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 2rem;
+}
+
+.review .box-container .box {
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.review .box-container .box::before {
+  content: "";
+  position: absolute;
+  background: var(--green);
+  height: 25rem;
+  width: 120%;
+  top: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.review .box-container .box img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.5rem solid #fff;
+}
+.review .box-container .box h3 {
+  color: #fff;
+  font-size: 2.2rem;
+  padding: 0.5rem 0;
+}
+.review .box-container .box .start i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.review .box-container .box .text {
+  color: var(--light-color);
+  line-height: 1.8;
+  font-size: 1.6rem;
+  padding-top: 4rem;
+}
+
 /* media queries */
 @media (max-width: 991px) {
   html {
