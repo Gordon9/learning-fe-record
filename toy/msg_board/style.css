@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 100px;
+}
+
+textarea {
+  width: 200px;
+  height: 100px;
+  border: 1px lightblue solid;
+  outline: none;
+  resize: none;
+  border-radius: 10px;
+}
+
+ul {
+  margin-top: 50px;
+}
+
+li {
+  width: 300px;
+  padding: 5px;
+  background-color: rgb(245, 209, 243);
+  color: black;
+  font-size: 14px;
+  margin: 15px 0;
+  list-style: none;
+}
