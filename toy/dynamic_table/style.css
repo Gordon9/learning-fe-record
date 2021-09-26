@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: arial, sans-serif;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
