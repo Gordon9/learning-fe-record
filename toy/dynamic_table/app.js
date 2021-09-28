@@ -19,6 +19,27 @@ const loadTableData = () => {
   tableBody.innerHTML = dataHtml;
 };
 
+const sortNumberColumn = (sort, columnName) => {
+  personData = personData.sort((p1, p2) => {
+    return sort
+      ? p1[columnName] - p2[columnName]
+      : p2[columnName] - p1[columnName];
+  });
+};
+
+const sortColumn = (columnName) => {
+  const dataType = typeof personData[0][columnName];
+  sortDirection = !sortDirection;
+
+  switch (dataType) {
+    case "number":
+      sortNumberColumn(sortDirection, columnName);
+      break;
+  }
+
+  loadTableData();
+};
+
 window.onload = () => {
   loadTableData();
 };
