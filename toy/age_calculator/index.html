@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./custom.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="grid w-2/5">
+          <h1 class="text-center mb-5 font-bold text-4xl">Age Calculator</h1>
+          <form action="" autocomplete="off">
+            <input
+              type="text"
+              id="username"
+              class="mb-2 form-control"
+              placeholder="Name"
+            />
+            <input type="date" id="dob" class="form-control mb-2" />
+            <div class="grid">
+              <button class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+
+          <div class="mt-5 font-bold text-3xl">
+            <ul class="flex flex-col rounded">
+              <li class="list-item">
+                <p>Name: <span></span></p>
+              </li>
+              <li class="list-item">
+                <p>
+                  Age: <span class="age-year badge bg-green-400">0 Years</span>
+                  <span class="age-month badge bg-red-400">0 Months</span>
+                  <span class="age-day badge bg-blue-400">0 Days</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-control {
+  @apply block w-full px-1.5 py-3 text-base text-black bg-white bg-clip-padding border border-solid border-gray-400 appearance-none rounded transition;
+}
+
+.btn {
+  @apply inline-block text-base text-black text-center no-underline align-middle cursor-pointer select-none bg-transparent  px-1.5 py-3 border border-solid border-transparent rounded transition;
+}
+
+.list-item {
+  @apply relative block py-2 px-4 text-black bg-white border border-solid border-gray-300;
+}
+
+.badge {
+  @apply inline-block py-1.5 px-3 text-xs text-base text-center text-white whitespace-nowrap align-baseline rounded;
+}
