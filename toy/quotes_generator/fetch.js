@@ -2,6 +2,22 @@ const btn = document.querySelector(".get-quotes");
 const number = document.getElementById("number");
 const URL = "https://type.fit/api/quotes";
 
+const shuffle = (quotes) => {
+  let CI = quotes.length;
+  let tempValue;
+  let randomIndex;
+
+  while (CI > 0) {
+    randomIndex = Math.floor(Math.random() * CI);
+    CI--;
+    tempValue = quotes[CI];
+    quotes[CI] = quotes[randomIndex];
+    quotes[randomIndex] = tempValue;
+  }
+
+  return quotes;
+};
+
 btn.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -18,7 +34,9 @@ btn.addEventListener("click", (e) => {
       .then((data) => {
         // console.log(JSON.stringify(data));
 
-        JSON.stringify(data);
+        // JSON.stringify(data);
+        data = shuffle(data);
+
         let output = "";
 
         for (let i = 0; i < data.length; i++) {
