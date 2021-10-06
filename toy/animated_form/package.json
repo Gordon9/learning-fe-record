@@ -1,0 +1,15 @@
+{
+  "name": "animated_form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build-css": "tailwindcss build styles.css -o style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.2.16"
+  }
+}
