@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.form-control {
+  @apply block w-full text-base py-1.5 px-3 bg-white bg-clip-padding border border-solid border-white appearance-none rounded transition outline-none;
+}
