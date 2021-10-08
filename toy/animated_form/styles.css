@@ -5,3 +5,7 @@
 .form-control {
   @apply block w-full text-base py-1.5 px-3 bg-white bg-clip-padding border border-solid border-white appearance-none rounded transition outline-none;
 }
+
+.btn {
+  @apply inline-block text-base text-center no-underline align-middle cursor-pointer select-none bg-transparent border border-solid border-transparent py-1.5 px-3  rounded transition;
+}

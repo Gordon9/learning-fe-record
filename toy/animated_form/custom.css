@@ -2,7 +2,7 @@
 
 :root {
   --grey: #eee;
-  --light-blue: #005490;
+  --light-blue: #ff5a5f;
 }
 
 * {
@@ -54,7 +54,7 @@ section.main {
   width: 50%;
   height: 100%;
   padding: 4rem 1rem;
-  background-color: var(--light-color);
+  background-color: var(--light-blue);
   animation: slide-down 0.5s ease;
 }
 
@@ -98,6 +98,23 @@ form span {
   justify-content: center;
   align-items: center;
   animation: slide-up 0.5s ease;
+}
+
+.form-control-lg {
+  min-height: calc(1.5em + 1rem + 2px);
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
+.btn-primary {
+  background-color: #ff5a5f;
+  border-color: #ff5a5f;
+  color: #fff;
+}
+
+a {
+  color: #00848a;
 }
 
 .register {
