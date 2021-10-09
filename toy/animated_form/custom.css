@@ -117,12 +117,16 @@ a {
   color: #00848a;
 }
 
-.register {
+.login {
   display: none;
 }
 
+.register {
+  /* display: none; */
+}
+
 .forgot {
-  display: none;
+  /* display: none; */
 }
 
 @media screen and (max-width: 500px) {
