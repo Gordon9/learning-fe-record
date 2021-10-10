@@ -119,7 +119,7 @@ a {
 }
 
 .login {
-  display: none;
+  /* display: none; */
 }
 
 .register {
@@ -127,7 +127,7 @@ a {
 }
 
 .forgot {
-  /* display: none; */
+  display: none;
 }
 
 .close {
