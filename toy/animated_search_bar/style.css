@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-dark-gray: #222831;
+  --white: #fff;
+  --color-primary: #9d0191;
+}
+
+html {
+  font-size: 10px;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: var(--color-dark-gray);
+  padding: 1rem 0;
+  overflow-y: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.fas {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.fa-times {
+  transform: translateY(-200%);
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.fa-search {
+  transition: all 0.5s;
+}
+
+.search {
+  position: absolute;
+  top: 6rem;
+  right: 2rem;
+  width: 4.5rem;
+  height: 4rem;
+  background-color: var(--color-primary);
+  padding: 5px 8px;
+  border-radius: 5px;
+  transform: translateX(200%);
+  transition: all 1s ease-in-out;
+}
+
+.search input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  padding: 0 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.search .fa-search {
+  color: var(--color-primary);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.main {
+  height: 200rem;
+}
