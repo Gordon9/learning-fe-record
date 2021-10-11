@@ -48,6 +48,12 @@ nav {
   cursor: pointer;
 }
 
+.search_box {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
 .fa-times {
   transform: translateY(-200%);
   position: absolute;
