@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.row-col > * {
+  margin-top: 20px;
+}
+
+.btn {
+  color: #fff;
+  background-color: #0d6eff;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #0d6eff;
+}
