@@ -1,0 +1,22 @@
+$primaryBtn: #00848A;
+$textColor: #FF5A5F;
+
+header {
+  background: lightblue;
+}
+
+button {
+  background: $primaryBtn;
+
+  &::after {
+    content: "-welcome back";
+  }
+
+  &:hover {
+    background: $textColor;
+  }
+}
+
+p {
+  color: $textColor;
+}
