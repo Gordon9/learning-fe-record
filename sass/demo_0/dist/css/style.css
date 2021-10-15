@@ -1,0 +1,20 @@
+header {
+  background: lightblue;
+}
+
+button {
+  background: #00848A;
+}
+
+button::after {
+  content: "-welcome back";
+}
+
+button:hover {
+  background: #FF5A5F;
+}
+
+p {
+  color: #FF5A5F;
+}
+/*# sourceMappingURL=style.css.map */
