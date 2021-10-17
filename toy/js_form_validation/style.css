@@ -12,3 +12,27 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #f2796e;
+  width: 55%;
+  height: 100vh;
+  padding: 10px 20px;
+}
+
+.image {
+  background-image: url("https://svgshare.com/i/_gZ.svg' title='illustration");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 65%;
+}
+
+.text {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
