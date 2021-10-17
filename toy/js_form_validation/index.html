@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="logo">
+          <img src="https://svgshare.com/i/_go.svg" alt="" />
+        </div>
+        <div class="image"></div>
+        <div class="text">
+          Start for free & get <br />
+          attractive offers today!
+        </div>
+      </div>
+      <form action="">
+        <div class="social">
+          <div class="title">Get Started</div>
+          <div class="question">
+            Already Have an account?
+            <span>Sign In</span>
+          </div>
+          <div class="btn">
+            <div class="btn-1">
+              <img
+                src="https://img.icons8.com/color/30/000000/google-logo.png"
+                alt=""
+              />
+              Sign Up
+            </div>
+            <div class="btn-2">
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png"
+                alt=""
+              />
+              Sign Up
+            </div>
+            <div>Or</div>
+          </div>
+        </div>
+
+        <!-- Username Input here -->
+        <div>
+          <label for="username">Username</label>
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Gordon Tan"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="fas fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <!-- Email Input here -->
+        <div>
+          <label for="email">Email</label>
+          <i class="fas fa-envelope"></i>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="abc@gmail.com"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="fas fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <!-- Password Input here -->
+        <div>
+          <label for="password">Password</label>
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password here"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="fas fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <div type="submit" id="submit">Submit</div>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/af6a01894a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
