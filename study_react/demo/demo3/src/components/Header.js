@@ -7,7 +7,7 @@ const Header = (props) => {
   };
 
   return (
-    <header>
+    <header className="header">
       <h1 style={{ color: "lightblue", fontSize: "30px" }}>{props.title}</h1>
       <Button text="Add" onClick={handleAdd} />
     </header>
