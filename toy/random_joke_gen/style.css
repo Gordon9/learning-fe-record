@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.wrap {
+  border: 1px solid #ff5a5f;
+  padding: 1rem;
+  width: 50%;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
