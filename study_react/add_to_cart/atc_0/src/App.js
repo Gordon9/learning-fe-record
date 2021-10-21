@@ -1,7 +1,12 @@
 import "./App_tw.css";
+import Home from "./Home";
 
 function App() {
-  return <h1 className="text-red-300">good night, gordon222</h1>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
 
 export default App;
