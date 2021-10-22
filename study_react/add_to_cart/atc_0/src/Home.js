@@ -15,6 +15,8 @@ const Home = () => {
               key={product.id}
               title={product.title}
               price={product.price}
+              desc={product.desc}
+              item={product}
             />
           );
         })}
