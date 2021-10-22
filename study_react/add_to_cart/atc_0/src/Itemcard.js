@@ -4,7 +4,6 @@ import { useCart } from "react-use-cart";
 
 const Itemcard = ({ img, title, price, desc, item }) => {
   const { addItem } = useCart();
-  console.log(addItem);
 
   return (
     <>
