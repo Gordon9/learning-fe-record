@@ -6,6 +6,7 @@
   --dark-grey: #222831;
   --color-second: #db6400;
   --color-favorite: #00848a;
+  --color-favorite-also: #ff5a5f;
 }
 
 body {
@@ -76,4 +77,35 @@ p {
   cursor: pointer;
   text-align: center;
   font-size: 1.6rem;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  font-size: 1.6rem;
+}
+
+.keys li {
+  list-style: none;
+  width: 5rem;
+  background-color: var(--white);
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-favorite-also);
+  border-radius: 3px;
+  color: var(--dark-grey);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.keys li:hover {
+  background-color: var(--color-favorite-also);
+  color: var(--white);
+}
+
+.keys .equals {
+  background-color: var(--color-favorite);
+  color: var(--white);
 }
