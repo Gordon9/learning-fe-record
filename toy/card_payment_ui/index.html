@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Payment UI</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="payment">
+          <!-- Header -->
+          <div class="header">
+            <h1>Pay</h1>
+            <p>ZinoTrust</p>
+          </div>
+          <!-- Content -->
+          <div class="content">
+            <div class="amount">
+              <p>USD <span>100.00</span></p>
+              <span>example@gmail.com</span>
+            </div>
+
+            <form action="">
+              <div class="card-details">
+                <!-- Number -->
+                <div class="number">
+                  <label for="">Card Number</label>
+                  <input type="text" placeholder="0000 0000 0000 0000" />
+                  <img src="./img/credit-card.png" alt="" />
+                </div>
+                <!-- Valid -->
+                <label for="">Valid Till</label>
+                <input type="text" placeholder="MM / YY" />
+                <!-- CVV -->
+                <label for="">CVV</label>
+                <input type="text" placeholder="123" />
+                <span>What is this?</span>
+              </div>
+
+              <!-- Remember card -->
+              <div class="remember"></div>
+              <input type="checkbox" />
+              <span>Rmember this card next time</span>
+
+              <!-- Button -->
+              <div class="button"></div>
+              <button>Pay $100.00</button>
+              <i></i>
+            </form>
+          </div>
+        </div>
+        <div class="secure">
+          <i></i>
+          <span>Secured by Flutterwave</span>
+        </div>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
