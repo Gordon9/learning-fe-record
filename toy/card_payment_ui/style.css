@@ -1,0 +1,71 @@
+@import url("http://fonts.cdnfonts.com/css/airbnb-cereal-app");
+
+:root {
+  --color-grey: #eee;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Airbnb Cereal App", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 10%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  background: var(--color-grey);
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.payment {
+  width: 35rem;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background: var(--white);
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: orange;
+}
+
+.header p {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
