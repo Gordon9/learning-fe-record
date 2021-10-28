@@ -9,7 +9,7 @@
   </head>
   <body>
     <section>
-      <div class="container">
+      <div class="container box">
         <div class="payment">
           <!-- Header -->
           <div class="header">
@@ -32,33 +32,43 @@
                   <img src="./img/credit-card.png" alt="" />
                 </div>
                 <!-- Valid -->
-                <label for="">Valid Till</label>
-                <input type="text" placeholder="MM / YY" />
+                <div class="valid">
+                  <label for="">Valid Till</label>
+                  <input type="text" placeholder="MM / YY" />
+                </div>
                 <!-- CVV -->
-                <label for="">CVV</label>
-                <input type="text" placeholder="123" />
-                <span>What is this?</span>
+                <div class="cvv">
+                  <label for="">CVV</label>
+                  <input type="text" placeholder="123" />
+                  <span>What is this?</span>
+                </div>
               </div>
 
               <!-- Remember card -->
-              <div class="remember"></div>
-              <input type="checkbox" />
-              <span>Rmember this card next time</span>
+              <div class="remember">
+                <input type="checkbox" />
+                <span>Rmember this card next time</span>
+              </div>
 
               <!-- Button -->
-              <div class="button"></div>
-              <button>Pay $100.00</button>
-              <i></i>
+              <div class="button">
+                <button class="btn">Pay $100.00</button>
+                <i class="fas fa-angle-right"></i>
+              </div>
             </form>
           </div>
         </div>
         <div class="secure">
-          <i></i>
+          <i class="fas fa-lock"></i>
           <span>Secured by Flutterwave</span>
         </div>
       </div>
     </section>
 
+    <script
+      src="https://kit.fontawesome.com/af6a01894a.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./app.js"></script>
   </body>
 </html>
