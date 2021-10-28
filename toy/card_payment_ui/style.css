@@ -187,3 +187,12 @@ input {
   color: var(--white);
   font-size: 1.5rem;
 }
+
+.secure {
+  margin: 2rem 0;
+  background: #000;
+  padding: 4px 1rem;
+  color: orange;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
