@@ -1,0 +1,77 @@
+@import url("http://fonts.cdnfonts.com/css/airbnb-cereal-app");
+
+:root {
+  --favorite-color: #00848a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Airbnb Cereal App", sans-serif;
+  background: var(--favorite-color);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  display: flex;
+  flex: 0 0 auto;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+h4 {
+  text-align: center;
+  padding-bottom: 2px;
+  color: #fff;
+}
+
+.wrap form {
+  display: flex;
+}
+
+.coupon {
+  margin-right: 0.5rem;
+  min-height: calc(1.5em + 1rem + 2px);
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+  display: block;
+  width: 100%;
+  appearance: none;
+  background: #fff;
+  background-clip: padding-box;
+  border: 1px solid #fff;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  color: #f8f9fa;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+  border: 1px solid transparent;
+  border-color: #f8f9fa;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  background: var(--favorite-color);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
