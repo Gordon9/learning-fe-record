@@ -58,7 +58,7 @@ tr:nth-child(even) {
   background-color: #eee;
 }
 
-tr:hover {
+tbody tr:hover {
   background-color: #00848a;
   color: #fff;
 }
