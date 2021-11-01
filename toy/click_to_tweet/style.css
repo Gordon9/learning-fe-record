@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.wrap {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.form-control {
+  width: 100%;
+  display: block;
+  padding: 0.375em 0.75em;
+}
+
+.btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 2px;
+}
