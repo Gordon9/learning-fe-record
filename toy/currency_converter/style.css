@@ -65,3 +65,15 @@ section.main {
   font-weight: 600;
   color: red;
 }
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--grey);
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.text:nth-child(2) {
+  padding-right: 7.7rem;
+}
