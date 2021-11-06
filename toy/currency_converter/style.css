@@ -7,6 +7,8 @@
 :root {
   --grey: #eee;
   --white: #fff;
+  --color-second: #db6400;
+  --dark-grey: #222831;
 }
 
 html {
@@ -38,9 +40,16 @@ section.main {
   background: var(--grey);
 }
 
+h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  color: var(--dark-grey);
+}
+
 .box {
   width: 35rem;
-  border-top: 1px solid #449acf;
+  border-top: 5px solid #449acf;
   padding: 4rem 2rem;
   background-color: var(--white);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -76,4 +85,58 @@ section.main {
 
 .text:nth-child(2) {
   padding-right: 7.7rem;
+}
+
+.main-convert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.cur-box {
+  width: 30%;
+}
+
+.switch-cur {
+  width: 30%;
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--color-second);
+  transition: all 0.5s;
+}
+
+.currency {
+  border: 2px solid var(--grey);
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 3px;
+  width: 9rem;
+  display: flex;
+  align-items: center;
+}
+
+.currency img {
+  width: 30%;
+  margin-right: 3px;
+}
+
+.currency select {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cur-box input {
+  width: 9rem;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  outline: none;
+  border: 2px solid var(--grey);
+}
+
+.rotate {
+  transform: rotateY(180deg);
 }
