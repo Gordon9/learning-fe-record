@@ -46,3 +46,22 @@ section.main {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 5px 5px;
 }
+
+.base-convert {
+  background: rgba(68, 154, 207, 0.2);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.base-convert p {
+  font-weight: 700;
+}
+
+.base {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: red;
+}
