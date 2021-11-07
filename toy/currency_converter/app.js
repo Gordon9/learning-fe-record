@@ -10,7 +10,7 @@ const switchCur = document.querySelector(".switch-cur");
 
 const countries = [
   {
-    name: "CH",
+    name: "CNY",
     flagURL: "https://www.worldometers.info/img/flags/ch-flag.gif",
   },
   {
@@ -48,13 +48,28 @@ const getExchangeRate = async () => {
   cur2Input.value = (cur1Input.value * rate).toFixed(2);
 };
 
+const getFlag = () => {
+  countries.forEach((country) => {
+    if (cur1.value === country.name) {
+      const imgSrc = document.querySelector(".from img");
+      imgSrc.setAttribute("src", country.flagURL);
+    }
+    if (cur2.value === country.name) {
+      const imgSrc = document.querySelector(".to img");
+      imgSrc.setAttribute("src", country.flagURL);
+    }
+  });
+};
+
 getExchangeRate();
 
 cur1.addEventListener("change", () => {
   getExchangeRate();
+  getFlag();
 });
 cur2.addEventListener("change", () => {
   getExchangeRate();
+  getFlag();
 });
 cur1Input.addEventListener("input", getExchangeRate);
 cur2Input.addEventListener("input", getExchangeRate);
