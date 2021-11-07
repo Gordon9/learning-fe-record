@@ -63,6 +63,15 @@ const getFlag = () => {
 
 getExchangeRate();
 
+switchCur.addEventListener("click", () => {
+  const cur1Val = cur1.value;
+  cur1.value = cur2.value;
+  cur2.value = cur1Val;
+  switchCur.classList.toggle("rotate");
+  getExchangeRate();
+  getFlag();
+});
+
 cur1.addEventListener("change", () => {
   getExchangeRate();
   getFlag();
