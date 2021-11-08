@@ -6,8 +6,7 @@
 
 :root {
   --white: #fff;
-  /* --color-primary: #9d0191; */
-  --color-primary: yellow;
+  --color-primary: #9d0191;
 }
 
 html {
@@ -131,7 +130,7 @@ p {
   font-size: 2rem;
 }
 
-/* .progress-bar {
+.progress-bar {
   width: 100%;
   background-color: transparent;
   position: absolute;
@@ -141,7 +140,7 @@ p {
 
 .progress {
   width: 0%;
-  height: 3%;
+  height: 3px;
   line-height: 3px;
   background-color: var(--color-primary);
-} */
+}
