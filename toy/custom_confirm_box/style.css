@@ -8,6 +8,8 @@
   --color-second: #db6400;
   --white: #fff;
   --color-dark-grey: #222831;
+  --color-grey: #eee;
+  --light-blue: #005490;
 }
 
 html {
@@ -82,7 +84,7 @@ p {
 }
 
 .close-modal {
-  /* display: none; */
+  display: none;
 }
 
 .header {
@@ -96,6 +98,8 @@ p {
 .title {
   font-size: 1.6rem;
   font-weight: 700;
+  display: flex;
+  align-items: center;
 }
 
 .close {
@@ -106,4 +110,37 @@ p {
   cursor: pointer;
   color: var(--white);
   transition: all 0.2s;
+}
+
+.close:hover {
+  color: red;
+}
+
+.content {
+  padding: 2rem 1.5rem;
+}
+
+.buttons {
+  background: var(--color-grey);
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1.5rem;
+}
+
+.btn {
+  padding: 0.8rem 1rem;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: var(--white);
+  color: var(--light-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-ok {
+  background: var(--light-blue);
+  color: var(--white);
 }
