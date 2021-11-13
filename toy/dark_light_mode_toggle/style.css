@@ -38,7 +38,7 @@ img {
   --color-orange: #db6400;
 
   --background: var(--color-dark);
-  --foreground: var(var(--color-light));
+  --foreground: var(--color-light);
 }
 
 body {
