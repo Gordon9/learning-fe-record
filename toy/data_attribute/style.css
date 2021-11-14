@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.btn {
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 1rem;
+}
