@@ -1,0 +1,27 @@
+.banner {
+  background: url("./pic/Airbnb_Newsroom_WinterRelease-1.jpg") center center;
+  height: 50vh;
+  position: relative;
+  background-size: cover;
+}
+
+.banner__info {
+  /* background-color: black; */
+  color: #fff;
+  padding-top: 25vh;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
+
+.banner__search {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__searchButton {
+  background-color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  color: #ff7779 !important;
+}
