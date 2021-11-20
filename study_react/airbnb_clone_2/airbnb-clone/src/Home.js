@@ -1,10 +1,13 @@
 import React from "react";
 import "./Home.css";
+import Banner from "./Banner";
+import Date from "./Date";
 
 function Home() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="home">
+      <Date />
+      <Banner />
     </div>
   );
 }

@@ -1,0 +1,12 @@
+.date__search {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.date__searchButton {
+  background-color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  color: #ff7779 !important;
+}
