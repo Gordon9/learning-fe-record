@@ -1,0 +1,72 @@
+:root {
+  --grey: #eee;
+  --white: #fff;
+  --color-primary: #9d0191;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+section.main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--grey);
+}
+
+.fab__btn {
+  position: absolute;
+  right: 3rem;
+  bottom: 1.5rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: #ff4081;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.fab__btn i {
+  transition: all 0.3s;
+}
+
+.fab__btns .fab__btn {
+  width: 4rem;
+  height: 4rem;
+  right: 3.8rem;
+  bottom: 2.3rem;
+  font-size: 1.5rem;
+}
+
+.fab__btns.show .fab__btn:nth-child(1) {
+  bottom: 8rem;
+  background: #3b5999;
+}
+.fab__btns.show .fab__btn:nth-child(2) {
+  bottom: 13rem;
+  background: #55acee;
+}
+.fab__btns.show .fab__btn:nth-child(3) {
+  bottom: 18rem;
+  background: #25d366;
+}
+.fab__btns.show .fab__btn:nth-child(4) {
+  bottom: 23rem;
+  background: var(--color-primary);
+}
+
+.fab__btns.show + .fab__btn i {
+  transform: rotate(135deg);
+}
