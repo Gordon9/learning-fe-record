@@ -54,7 +54,41 @@
             </nav>
 
             <section>
-              <div class="content content-link">link content</div>
+              <div class="content content-link">
+                <i class="fas fa-download"></i>
+                <h2>Google Drive link</h2>
+                <p>Paste your Google Drive File link below</p>
+                <form action="">
+                  <label for="glink">
+                    <i class="fab fa-google-drive"></i>
+                    <input
+                      type="text"
+                      id="glink"
+                      class="glink"
+                      placeholder="Google Drive Link"
+                      autocomplete="off"
+                      required
+                    />
+                  </label>
+                  <button class="btn" id="btn">
+                    Generate Direct Download Link
+                  </button>
+                  <div class="embed__code">
+                    <hr class="m-y" />
+                    <h3>Direct Download link</h3>
+                    <textarea
+                      name=""
+                      id="downloadk-link"
+                      class="embed"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                    <span class="copy">Copy</span>
+                  </div>
+                  <hr />
+                  <button class="clear">Clear Form</button>
+                </form>
+              </div>
               <div class="content content-audio">audio content</div>
               <div class="content content-video">video content</div>
             </section>
