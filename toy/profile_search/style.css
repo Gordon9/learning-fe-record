@@ -82,6 +82,17 @@
   padding-bottom: 0.3rem;
 }
 
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+}
+
 .img__thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -99,4 +110,14 @@
   color: #6c757d;
   border-color: #6c757d;
   text-decoration: none;
+}
+
+.repo {
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+}
+
+a {
+  text-decoration: none;
+  color: #0d6efd;
 }
