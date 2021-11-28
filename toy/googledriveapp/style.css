@@ -332,3 +332,22 @@ button.clear {
 button.clear:hover {
   background-color: orangered;
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 750px) {
+  .main__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .instructions {
+    width: 100%;
+  }
+  .download__link {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .download__link h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
