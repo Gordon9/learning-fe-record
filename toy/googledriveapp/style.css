@@ -3,6 +3,9 @@
 :root {
   --black: #1c2b2d;
   --color-sec: #db6400;
+  --color-primary: #9d0191;
+  --color-grey: #eee;
+  --color-dark-grey: #222831;
 }
 
 * {
@@ -75,4 +78,94 @@ body {
 
 .download__link {
   width: 70%;
+  padding-top: 5rem;
+  /* border-right: 5px; */
+}
+
+.download__link section {
+  border: 2px solid var(--color-primary);
+  border-radius: 0 0 5px 5px;
+}
+
+/* form section */
+main h1 {
+  display: block;
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 5rem;
+  padding-bottom: 1rem;
+}
+
+main input[type="radio"] {
+  display: none;
+}
+
+main nav {
+  display: flex;
+  background-color: var(--color-grey);
+  justify-content: space-around;
+  padding: 5px;
+  border: 1px solid #fff;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+
+main nav label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem;
+  position: relative;
+  color: var(--color-dark-grey);
+  cursor: pointer;
+}
+
+main nav label i {
+  padding-right: 0.5rem;
+  color: var(--color-sec);
+}
+
+nav .slide {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 30%;
+  height: 100%;
+  padding: 0 1rem;
+  background-color: var(--color-primary);
+  z-index: -1;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+#register:checked ~ nav .slide {
+  left: 30%;
+}
+#reset:checked ~ nav .slide {
+  left: 66%;
+}
+
+#login:checked ~ nav label.login,
+#register:checked ~ nav label.register,
+#reset:checked ~ nav label.reset {
+  color: #fff;
+}
+
+.content {
+  display: none;
+}
+
+#login:checked ~ section .content-link {
+  display: block;
+}
+
+#register:checked ~ section .content-audio {
+  display: block;
+}
+
+#reset:checked ~ section .content-video {
+  display: block;
+  /* transform: translateX(0); */
 }
