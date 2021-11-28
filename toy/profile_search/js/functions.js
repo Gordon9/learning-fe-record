@@ -22,6 +22,24 @@ const displayData = (user) => {
   v.profile.innerHTML = html;
 };
 
+const displayRepos = (repoData) => {
+  let repo_data = repoData.map((repo) => {
+    return `
+      <span class="repo">
+        <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+        <p>
+          <strong>Stars: ${repo.starzers_count} |</strong>
+          <strong>Watchers : ${repo.watchers_count} |</strong>
+          <strong>Forks: ${repo.forks_count}</strong>
+        </p>
+      </span>
+    `;
+  });
+  // v.repos.innerHTML = repo_data;
+  v.repos.innerHTML = repo_data.slice(0, 8).join("");
+};
+
+// Get Users
 export const getUser = async (username) => {
   const response = await fetch(v.apiURL + username);
   const data = await response.json();
@@ -31,5 +49,15 @@ export const getUser = async (username) => {
   } else {
     console.log(data);
     displayData(data);
+    getRepos(username);
   }
+};
+
+// Get Repos
+const getRepos = async (username) => {
+  const response = await fetch(v.apiURL + username + "/repos");
+  const data = await response.json();
+
+  console.log(data);
+  displayRepos(data);
 };
