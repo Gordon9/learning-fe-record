@@ -64,4 +64,13 @@ const generateLink = (e) => {
   }
 };
 
+const clearForm = (e) => {
+  e.preventDefault();
+  glink.value = "";
+  downloadLink.value = "";
+  embedAudio.value = "";
+  embedVideo.value = "";
+};
+
 btn.addEventListener("click", generateLink);
+clear.addEventListener("click", clearForm);
