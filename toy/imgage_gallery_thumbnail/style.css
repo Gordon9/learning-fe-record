@@ -80,3 +80,13 @@ img {
   background-color: var(--color-second);
   outline: 1px solid #eee;
 }
+
+@media screen and (max-width: 600px) {
+  .product__container {
+    flex-direction: column-reverse;
+  }
+  .img__large,
+  .img__small {
+    width: 30rem;
+  }
+}
