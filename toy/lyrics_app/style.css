@@ -1,5 +1,6 @@
 :root {
   --color-second: #db6400;
+  --color-primary: #9d0191;
 }
 
 * {
@@ -11,6 +12,11 @@
 html {
   font-size: 10px;
   margin: 0 auto;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 body {
@@ -41,10 +47,80 @@ body::after {
   padding: 0 20px;
 }
 
+header h1 {
+  font-size: 3rem;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
 header .container {
   padding: 4rem 0;
   text-align: center;
   background-color: var(--color-second);
   border-radius: 0 0 5rem 5rem;
   margin-bottom: 2rem;
+}
+
+form input,
+form button {
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+form input {
+  width: 50%;
+  border-radius: 1rem 0 1rem 0;
+  margin-right: 3px;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+form button {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  border: 1px solid #fff;
+}
+
+section .container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 3rem 0;
+}
+
+.songs {
+  width: 70%;
+  margin: 0 auto;
+  list-style: none;
+  padding: 2rem 0;
+}
+
+.songs li {
+  font-size: 1.4rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.songs li span {
+  font-size: 1.4rem;
+  background-color: var(--color-primary);
+  padding: 5px;
+  margin: 5px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
