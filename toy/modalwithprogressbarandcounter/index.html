@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal With ProgressBar and Counter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lets <span>Minify</span></h1>
+      <p>Paste your URL below and Click the button</p>
+    </header>
+
+    <section>
+      <div class="container">
+        <form action="">
+          <input type="text" id="link" placeholder='https://example.com"' />
+          <button id="btn">TEST POPUP</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; <a href="#">miss you, root</a></p>
+    </footer>
+
+    <div class="modal" id="modal">
+      <div class="modal__content">
+        <span class="close">&times;</span>
+        <p>Your download will begin in..</p>
+        <progress value="0" max="10" id="pbar" class="progress"></progress>
+        <p id="counting">0</p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
