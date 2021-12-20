@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../../sass/page/index.scss"
+        "../../sass/page/index.sass"
     ],
     "names": [],
     "file": "index.css"

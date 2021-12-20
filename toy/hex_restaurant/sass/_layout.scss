@@ -1,0 +1,14 @@
+.header {
+  color: #fff;
+  background-image: url(../../pic/header_mobile.png);
+  background-position: 70% 0;
+  height: 420px;
+  position: relative;
+
+  @include small-ipad() {
+    background-image: url(../../pic/header_mobile@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 40%;
+  }
+}
