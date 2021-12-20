@@ -112,3 +112,37 @@
   margin-bottom: 6px;
   border-radius: 2px;
 }
+
+.title {
+  margin: 70px auto;
+  height: 152px;
+  width: 452px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .35);
+
+  @include small-ipad() {
+    margin-top: 15%;
+    height: 160px;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 36px;
+    padding-top: 20px;
+
+    @include small-ipad() {
+      font-size: 30px;
+      padding-top: 5%;
+    }
+
+    @include iphone6s() {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  p {
+    line-height: 1.5;
+    margin-top: 16px;
+  }
+}
