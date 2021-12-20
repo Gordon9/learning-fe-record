@@ -1,9 +1,25 @@
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .header {
   color: #fff;
-  background-image: url(../../pic/header_mobile.png);
-  background-position: 70% 0;
+  background-image: url(../../pic/header_desktop.png);
+  background-position: 70% 0%;
   height: 420px;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-position: 70% 0%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -13,6 +29,102 @@
     background-repeat: no-repeat;
     background-position: 0 40%;
   }
+}
+
+.header h1 {
+  padding-top: 16px;
+  float: left;
+}
+
+.header h1 a {
+  background-image: url(../../pic/logo_w.png);
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 120px;
+  margin-left: 42px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .header h1 a {
+    margin-left: 20px;
+  }
+}
+
+.header .burger__icon {
+  display: none;
+}
+
+@media (max-width: 564px) {
+  .header .burger__icon {
+    display: block;
+    float: right;
+    margin: 15px;
+  }
+}
+
+.top__menu {
+  background-color: rgba(0, 0, 0, 0.75);
+  max-width: 100%;
+  float: right;
+  margin-right: 48px;
+  display: block;
+  margin-top: 20px;
+}
+
+@media (max-width: 564px) {
+  .top__menu {
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: max-height 1.5s;
+    transition: max-height 1.5s;
+    margin-top: 1px;
+    position: absolute;
+    z-index: 100;
+    top: 55px;
+    right: -50px;
+    left: 0;
+    text-align: center;
+  }
+  .top__menu.slide-down {
+    max-height: 500px;
+  }
+}
+
+.top__menu li {
+  float: left;
+}
+
+@media (max-width: 564px) {
+  .top__menu li {
+    float: none;
+    border-bottom: 1px solid #FF5E45;
+    background-color: #090001;
+  }
+}
+
+.top__menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 30px;
+  display: block;
+}
+
+@media (max-width: 564px) {
+  .top__menu li a {
+    padding: 30px;
+    padding-right: 35px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+}
+
+.top__menu li a:hover {
+  color: #FF5E45;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
