@@ -48,13 +48,7 @@
 //   return x;
 // };
 
-const run =
-  (...functions) =>
-  (x) => {
-    functions.reverse().forEach((func) => (x = func(x)));
-    return x;
-  };
-
+// -run- for X functions
 // const run =
 //   (...functions) =>
 //   (x) => {
@@ -62,23 +56,72 @@ const run =
 //     return x;
 //   };
 
-const add1 = function (x) {
-  return x + 1;
+// const compose = (...fns) =>
+//   fns.reduce(
+//     (f, g) =>
+//       (...args) =>
+//         f(g(...args))
+//   );
+
+// const compose =
+//   (...fns) =>
+//   (x) =>
+//     fns.reduceRight((acc, fn) => fn(acc), x);
+
+// const add1 = function (x) {
+//   console.log("here is add1");
+//   return x + 1;
+// };
+
+// const mult2 = function (x) {
+//   console.log("here is mult2");
+
+//   return x * 2;
+// };
+
+// const square = function (x) {
+//   console.log("here is square");
+
+//   return x * x;
+// };
+
+// const negate = function (x) {
+//   console.log("here is negate");
+
+//   return -x;
+// };
+
+// let testRun = compose(negate, square, mult2);
+// console.log(testRun(2)); // -16
+
+function h2(message) {
+  return "<h2>" + message + "</h2>";
+}
+
+function p(date) {
+  return "<p>" + date + "</p>";
+}
+
+function echo(message) {
+  return message;
+}
+
+function addToDom(elementId) {
+  return function (content) {
+    const target = document.querySelector(`#${elementId}`);
+    if (target.innerHTML !== "") {
+      target.innerHTML = target.innerHTML + content;
+    } else {
+      target.innerHTML = content;
+    }
+  };
+}
+
+const notify = function (f, g, h) {
+  return function (x) {
+    return f(g(h(x)));
+  };
 };
 
-const mult2 = function (x) {
-  return x * 2;
-};
-
-const square = function (x) {
-  return x * x;
-};
-
-const negate = function (x) {
-  return -x;
-};
-
-let testRun = run(negate, square, mult2);
-// let testRun = run(negate, square, mult2)(2);
-console.log(testRun(2)); // -16
-// console.log(testRun);
+notify(addToDom("title"), h2, echo)("送你一份回忆");
+notify(addToDom("title"), p, echo)("Dec 21, 2021");
