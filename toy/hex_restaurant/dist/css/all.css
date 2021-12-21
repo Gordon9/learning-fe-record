@@ -179,6 +179,64 @@
   margin-top: 16px;
 }
 
+.footer {
+  background-color: #efe9e7;
+  padding: 0 20px;
+}
+
+.footer ul > li h4 {
+  font-size: 24px;
+  padding-top: 50px;
+  margin-bottom: 16px;
+}
+
+.footer li.about,
+.footer li.contact {
+  color: #3D1101;
+  width: 300px;
+  float: left;
+  line-height: 1.3;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 414px) {
+  .footer {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.about p {
+  font-size: 1em;
+}
+
+.contact li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.logo__link {
+  float: right;
+  margin-top: 50px;
+  margin-right: 22px;
+}
+
+.logo__link ul {
+  margin-top: 22px;
+  float: right;
+}
+
+.logo__link ul li {
+  float: left;
+  margin-bottom: 15%;
+}
+
+.logo__link ul li img {
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
