@@ -237,3 +237,98 @@
     }
   }
 }
+
+// booking
+.booking {
+  background-color: #f6f4f3;
+  padding-bottom: 50px;
+
+  h3 {
+    text-align: center;
+    color: #3D1101;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .map {
+    max-width: 45%;
+    float: left;
+    margin-left: 4%;
+
+    @include small-ipad {
+      max-width: 98%;
+      float: none;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+  }
+
+  form {
+    max-width: 47%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    @include small-ipad {
+      max-width: 96%;
+      float: none;
+      margin: 10% auto;
+    }
+
+    p {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    label {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    input[type=text],
+    input[type=number],
+    input[type=email] {
+      width: 100%;
+      padding: 5px 300px 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    input[type=submit] {
+      color: white;
+      border-style: none;
+      border-radius: 3px;
+      padding: 10px 35px;
+      cursor: pointer;
+    }
+
+    .button {
+      float: right;
+    }
+
+    .cancel {
+      background: rgba(0, 0, 0, .35);
+      float: left;
+    }
+
+    input[type=submit].send {
+      background: #F56C23;
+      float: left;
+      margin-left: 10px;
+    }
+
+    input[type=submit].send:hover {
+      background: #e68bd5;
+    }
+
+    h3 {
+      @include iphone6s {
+        margin: 0 40px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
