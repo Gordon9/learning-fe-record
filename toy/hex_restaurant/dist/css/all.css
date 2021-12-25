@@ -554,4 +554,97 @@ img {
     line-height: 1.5em;
   }
 }
+
+.comment {
+  background-color: #efe9e7;
+  color: #481f10;
+}
+
+.comment h3 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  font-size: 24px;
+}
+
+.comment ul {
+  margin-left: 3%;
+}
+
+@media (max-width: 767px) {
+  .comment ul {
+    padding-bottom: 8%;
+  }
+}
+
+.comment ul li {
+  max-width: 31.3333%;
+  float: left;
+  margin-right: 1%;
+  padding-bottom: 50px;
+}
+
+.comment ul li p {
+  font-size: 16px;
+  margin-left: 35%;
+  line-height: 1.8em;
+}
+
+@media (max-width: 767px) {
+  .comment ul li p {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 320px) {
+  .comment ul li p {
+    margin-left: 35%;
+  }
+}
+
+.comment ul li span {
+  margin-top: 20px;
+  float: right;
+  color: rgba(72, 31, 16, 0.75);
+}
+
+@media (max-width: 767px) {
+  .comment ul li span {
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .comment ul li {
+    max-width: 97%;
+    float: none;
+    margin-left: 1%;
+    margin-right: 2%;
+    padding-bottom: 50px;
+  }
+}
+
+.comment ul li img {
+  float: left;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.comment ul li h4 {
+  font-size: 18px;
+  margin-left: 35%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .comment ul li h4 {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 320px) {
+  .comment ul li h4 {
+    margin-left: 35%;
+  }
+}
 /*# sourceMappingURL=all.css.map */
