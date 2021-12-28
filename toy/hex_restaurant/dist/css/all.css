@@ -1066,4 +1066,139 @@ li {
     margin-bottom: 30px;
   }
 }
+
+.register {
+  background-color: #efe9e7;
+  padding-bottom: 40px;
+}
+
+.register__logo {
+  max-width: 240px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 35px;
+}
+
+.register__logo h3 {
+  color: #3D1101;
+  margin-top: 10px;
+}
+
+.register__main {
+  max-width: 620px;
+  margin: 0 auto;
+  background: #efe9e7;
+  -webkit-box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+  border-top: 4px solid #ff5e45;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  color: #3D1101;
+}
+
+.register__main h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 414px) {
+  .register__main h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+}
+
+.register__main .policy {
+  max-width: 49%;
+  margin-left: 2%;
+  float: left;
+  padding: 10px;
+  line-height: 1.5em;
+}
+
+.register__main .policy p {
+  font-size: 12px;
+}
+
+.register__main .policy h4 {
+  font-size: 16px;
+}
+
+@media (max-width: 414px) {
+  .register__main .policy {
+    max-width: 98%;
+    margin: 2%;
+    float: none;
+    text-align: center;
+  }
+}
+
+.register__main form {
+  max-width: 49%;
+  float: left;
+}
+
+.register__main form input {
+  display: block;
+  width: 100%;
+  height: 32px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  padding-right: 120px;
+  padding-left: 35px;
+  background: #fff;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ececec;
+          box-shadow: inset 0px 1px 0px 0px #ececec;
+  border-radius: 3px;
+}
+
+.register__main form input[type=email] {
+  background-image: url(../../pic/icon_mail.svg);
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
+  background-size: 20px 20px;
+}
+
+.register__main form input[type=password] {
+  background-image: url(../../pic/icon_lock.svg);
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
+  background-size: 20px 20px;
+}
+
+.register__main form span {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #ff5e45;
+}
+
+.register__main form button {
+  float: right;
+  color: #fff;
+  padding: 6px 28px;
+  background: #f56c23;
+  border-radius: 3px;
+  margin-top: 55px;
+  cursor: pointer;
+}
+
+.register__main form button:hover {
+  background-color: #e68bd5;
+}
+
+@media (max-width: 414px) {
+  .register__main form {
+    max-width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    float: none;
+  }
+}
 /*# sourceMappingURL=all.css.map */
