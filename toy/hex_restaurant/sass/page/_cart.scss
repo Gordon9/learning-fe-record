@@ -134,3 +134,114 @@
     margin-top: 25px;
   }
 }
+
+// product list
+.product__list {
+  max-width: 100%;
+
+  li {
+    float: left;
+    max-width: 31.33333%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 30px;
+    color: #3D1101;
+    text-align: center;
+    position: relative;
+    background: #efe9e7;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, .16);
+
+    h4,
+    p {
+      font-size: 20px;
+    }
+
+    h4 {
+      @include small-ipad {
+        font-size: 24px;
+      }
+    }
+
+    p {
+      span {
+        font-style: italic;
+        font-weight: bold;
+      }
+    }
+
+    h5 {
+      font-size: 12px;
+      margin-bottom: 32px;
+      position: relative;
+      line-height: 1.5;
+
+      @include small-ipad {
+        font-size: 16px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: 25%;
+        height: 1px;
+        background-color: #3D1101;
+        width: 100px;
+
+        @include small-ipad {
+          display: none;
+        }
+      }
+    }
+
+    .btn__cart {
+      display: block;
+      text-decoration: none;
+      color: #FF5E45;
+      background-color: transparent;
+      border: 2px solid #FF5E45;
+      border-radius: 3px;
+      margin: 13px 10px 10px 20px;
+      padding: 3px;
+
+      @include small-ipad {
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      &:focus,
+      &:hover {
+        color: #fff;
+        background-color: #FF5E45;
+      }
+    }
+
+    .heart {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    @include small-ipad {
+      max-width: 98%;
+      float: none;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+
+    img {
+      margin-bottom: 12px;
+
+      @include small-ipad {
+        width: 100%;
+        max-height: none;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+}
