@@ -377,6 +377,10 @@ img {
   height: auto;
 }
 
+li {
+  list-style: none;
+}
+
 .feature {
   width: 100%;
   background-color: #efe9e7;
@@ -790,6 +794,106 @@ img {
   .container .aside {
     float: none;
     margin: 0 10px;
+  }
+}
+
+.product__section {
+  float: right;
+  margin-right: 3%;
+  max-width: 70%;
+}
+
+@media (max-width: 767px) {
+  .product__section {
+    float: none;
+    max-width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+}
+
+.toolbar {
+  max-width: 100%;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.toolbar form {
+  width: 70%;
+  position: relative;
+  float: left;
+}
+
+.toolbar form input[type=text] {
+  background: #efe9e7;
+  width: 100%;
+  height: 34px;
+  padding-right: 250px;
+  border: 2px solid #3D1101;
+  outline: none;
+}
+
+.toolbar form button {
+  font-size: 20px;
+  background: #3D1101;
+  color: #fff;
+  width: 36px;
+  height: 32px;
+  position: absolute;
+  right: 0;
+  top: 1px;
+  border-color: transparent;
+}
+
+.toolbar form button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .toolbar form {
+    width: 100%;
+  }
+}
+
+.toolbar .check {
+  float: right;
+}
+
+.toolbar .check p {
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+
+.toolbar .check p::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  right: 0;
+  background-color: #3D1101;
+}
+
+.toolbar .check button {
+  float: left;
+  font-size: 30px;
+  border-color: transparent;
+  background: transparent;
+}
+
+.toolbar .check button :hover {
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .toolbar .check {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .toolbar {
+    margin-top: 25px;
   }
 }
 /*# sourceMappingURL=all.css.map */
