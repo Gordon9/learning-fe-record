@@ -11,5 +11,15 @@
 @import 'components/app';
 
 h1 {
-  font-family: 'Airbnb Cereal App Black', 'Montserrat';
+  color: var(--first-color);
+  color: var(--first-color-light);
+  color: var(--first-color-lighten);
+  color: var(--first-color-alt);
+  color: var(--title-color);
+  color: var(--text-color);
+  color: var(--text-color-light);
+  color: var(--body-color);
+  color: var(--container-color);
+  color: var(--scroll-bar-color);
+  color: var(--scroll-thumb-color);
 }
