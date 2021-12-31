@@ -11,4 +11,14 @@
   &__header {
     display: none;
   }
+
+  &-link {
+    background: none;
+    padding: 0;
+    color: var(--title-color);
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
 }
