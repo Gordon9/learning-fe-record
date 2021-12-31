@@ -301,3 +301,53 @@ img {
   font-weight: initial;
   color: var(--text-color);
 }
+
+.footer {
+  background-color: var(--first-color);
+  padding-bottom: 2rem;
+}
+
+.footer__container {
+  row-gap: 2rem;
+}
+
+.footer__logo, .footer__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.footer__logo {
+  display: inline-block;
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.footer__description, .footer__link {
+  font-size: var(--small-font-size);
+}
+
+.footer__link {
+  color: var(--title-color);
+}
+
+.footer__links {
+  display: grid;
+  row-gap: .5rem;
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.footer__social-link {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+.footer__copy {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
