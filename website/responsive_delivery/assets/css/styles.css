@@ -202,3 +202,11 @@ img {
 .button__header {
   display: none;
 }
+
+.about__container {
+  gap: 2.5rem;
+}
+
+.about__data {
+  text-align: center;
+}
