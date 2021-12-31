@@ -210,3 +210,11 @@ img {
 .about__data {
   text-align: center;
 }
+
+.security__container {
+  gap: 2.5rem;
+}
+
+.security__description {
+  text-align: center;
+}
