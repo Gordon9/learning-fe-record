@@ -175,6 +175,21 @@ img {
   top: calc(var(--header-height) + 1rem);
 }
 
+.active-link {
+  position: relative;
+}
+
+.active-link::before {
+  position: absolute;
+  content: '';
+  bottom: -.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--title-color);
+}
+
 .home__container {
   row-gap: 3rem;
 }
