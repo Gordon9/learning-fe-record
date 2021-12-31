@@ -5,8 +5,6 @@ const showMenu = (toggleId, navId) => {
 
   // Validate that variables exist
   if (toggle && nav) {
-    console.log("hello sherlock holmes");
-
     toggle.addEventListener("click", () => {
       nav.classList.toggle("show-menu");
     });
@@ -48,3 +46,24 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+// CHANGE BACKGROUND HEADER
+function scrollHeader() {
+  const nav = document.querySelector("#header");
+  if (this.scrollY >= 80) {
+    nav.classList.add("scroll-header");
+  } else {
+    nav.classList.remove("scroll-header");
+  }
+}
+
+window.addEventListener("scroll", scrollHeader);
+
+// /*=============== CHANGE BACKGROUND HEADER ===============*/
+// function scrollHeader() {
+//   const nav = document.getElementById("header");
+//   // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
+//   if (this.scrollY >= 80) nav.classList.add("scroll-header");
+//   else nav.classList.remove("scroll-header");
+// }
+// window.addEventListener("scroll", scrollHeader);
