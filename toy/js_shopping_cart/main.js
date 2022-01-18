@@ -44,8 +44,6 @@ function onLoadCartNumbers() {
   }
 }
 
-onLoadCartNumbers();
-
 function cartNumbers(product) {
   let productNumbers = localStorage.getItem("cartNumbers");
   productNumbers = parseInt(productNumbers);
@@ -91,3 +89,58 @@ function totalCost(product) {
     localStorage.setItem("totalCost", cartCost + product.price);
   }
 }
+
+function displayCart() {
+  let cartItems = JSON.parse(localStorage.getItem("productsInCart"));
+  let productContainer = document.querySelector(".products");
+  let cartCost = parseInt(localStorage.getItem("totalCost"));
+
+  if (!cartItems && productContainer) {
+    productContainer.innerHTML = `<div>Cart is empty!!</div>`;
+    return;
+  }
+
+  if (cartItems && productContainer) {
+    productContainer.innerHTML = "";
+    Object.values(cartItems).map((item) => {
+      productContainer.innerHTML += `
+      <div class="product">
+        <div class="title">
+          <img src='pic/${item.tag}.png'>
+          <span>${item.name}</span>
+        </div>
+        <div class="price">
+          $${item.price},00
+        </div>
+        <div class="quantity">
+          <ion-icon name="remove-outline"></ion-icon>
+          ${item.inCart}
+          <ion-icon name="add-outline"></ion-icon>
+        </div>
+        <div class="total">
+          ${item.price * item.inCart}
+        </div>
+        <div class='remove'>
+         <ion-icon name="close-outline"></ion-icon>
+        </div>
+      </div>
+    `;
+    });
+    productContainer.innerHTML += `
+      <div class='basketTotalContainer'>  
+        <div class='basketTotalTitle'>
+         Subtotal <span>$${cartCost}</span>
+        </div>
+        <div>
+          <button type='submit' name='checkout' class='btn'>
+            <ion-icon name="cart-outline"></ion-icon>
+            Checkout
+          </button>
+        </div>
+      </div>
+    `;
+  }
+}
+
+onLoadCartNumbers();
+displayCart();

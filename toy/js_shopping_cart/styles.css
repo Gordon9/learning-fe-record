@@ -79,7 +79,8 @@ li a {
 }
 
 /* container */
-.container {
+.container,
+.products-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -134,4 +135,135 @@ a {
   cursor: pointer;
   text-align: center;
   bottom: 50px;
+}
+
+/* CART PAGE */
+.products-container {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 50px auto 0;
+}
+
+.product-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+  margin: 0 auto;
+}
+
+.product-header > h5 {
+  display: flex;
+  align-items: center;
+}
+
+.product > div {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  width: 35%;
+}
+
+.title > span {
+  margin-left: 10px;
+}
+
+.price {
+  width: 15%;
+}
+
+.quantity {
+  width: 30%;
+}
+
+.quantity ion-icon {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.total {
+  width: 10%;
+}
+
+.remove {
+  width: 10%;
+}
+
+.products {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.product {
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+}
+
+.product:first-child {
+  margin-top: 0;
+  border-top: none;
+}
+
+.products img {
+  width: 75px;
+  height: 75px;
+}
+
+.product ion-icon {
+  background-color: #dcdcdc;
+  color: #585858;
+  border-radius: 19px;
+  height: 19px;
+  line-height: 19px;
+  width: 19px;
+  font-size: 9px;
+  text-align: center;
+  border: 0 none;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+}
+
+.product ion-icon:hover {
+  background-color: #cfcfcf;
+}
+
+.basketTotalContainer {
+  width: 100%;
+}
+
+.basketTotalContainer > div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+
+.basketTotalTitle > span {
+  margin-left: 10px;
+}
+
+.btn {
+  padding: 8px 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #233721;
+  color: #fff;
+  transition: background-color 0.2s ease-out;
+  border-radius: 2px;
+  text-transform: uppercase;
+  line-height: 1.42;
+}
+
+.btn:hover {
+  background-color: #192717;
+}
+
+.btn ion-icon {
+  vertical-align: middle;
+  font-size: 20px;
 }
