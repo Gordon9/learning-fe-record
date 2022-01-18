@@ -8,7 +8,7 @@
 
 body {
   font-family: "Montserrat";
-  color: #fff;
+  background: #f5e8cb;
 }
 
 header {
@@ -43,6 +43,7 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 50px 60px 0 60px;
+  color: #fff;
 }
 
 nav li {
@@ -75,4 +76,58 @@ li a {
   vertical-align: bottom;
   font-size: 20px;
   padding-right: 5px;
+}
+
+/* container */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 5px #777;
+}
+
+.image {
+  background-color: rgba(0, 0, 0, 0.02);
+  border: 1px solid #ececec;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4 {
+  opacity: 1;
+  bottom: 50px;
+  text-decoration: none;
+}
+
+.image:hover {
+  box-shadow: 0 0 5px #888;
+  transition: all 0.4s ease;
+}
+
+.image img {
+  width: 12rem;
+  height: 180px;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+}
+
+.add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: darkgray;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+  bottom: 50px;
 }
