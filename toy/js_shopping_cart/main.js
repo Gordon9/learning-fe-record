@@ -1,6 +1,6 @@
 const carts = document.querySelectorAll(".add-cart");
 
-const producst = [
+const product = [
   {
     name: "Book 1",
     tag: "book1",
@@ -28,7 +28,9 @@ const producst = [
 ];
 
 for (let i = 0; i < carts.length; i++) {
-  carts[i].addEventListener("click", () => cartNumbers());
+  carts[i].addEventListener("click", () => {
+    cartNumbers(product[i]), totalCost(product[i]);
+  });
 }
 
 function onLoadCartNumbers() {
@@ -44,7 +46,7 @@ function onLoadCartNumbers() {
 
 onLoadCartNumbers();
 
-function cartNumbers() {
+function cartNumbers(product) {
   let productNumbers = localStorage.getItem("cartNumbers");
   productNumbers = parseInt(productNumbers);
 
@@ -56,5 +58,36 @@ function cartNumbers() {
     document.querySelector(".cart span").textContent = productNumbers + 1;
   }
 
-  console.log(productNumbers);
+  setItems(product);
+}
+
+function setItems(product) {
+  let cartItems = JSON.parse(localStorage.getItem("productsInCart"));
+
+  if (!cartItems) {
+    product.inCart = 1;
+    cartItems = {
+      [product.tag]: product,
+    };
+  } else {
+    if (cartItems[product.tag] === undefined) {
+      cartItems = {
+        ...cartItems,
+        [product.tag]: product,
+      };
+    }
+    cartItems[product.tag].inCart += 1;
+  }
+
+  localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+}
+
+function totalCost(product) {
+  let cartCost = parseInt(localStorage.getItem("totalCost"));
+
+  if (!cartCost) {
+    localStorage.setItem("totalCost", product.price);
+  } else {
+    localStorage.setItem("totalCost", cartCost + product.price);
+  }
 }
