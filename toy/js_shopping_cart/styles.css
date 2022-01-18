@@ -100,13 +100,17 @@ li a {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .image:hover .cart1,
 .image:hover .cart2,
 .image:hover .cart3,
 .image:hover .cart4 {
   opacity: 1;
   bottom: 50px;
-  text-decoration: none;
 }
 
 .image:hover {
