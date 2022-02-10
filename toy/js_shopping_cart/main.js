@@ -91,6 +91,8 @@ function totalCost(product) {
 }
 
 function displayCart() {
+  console.log("update cart");
+
   let cartItems = JSON.parse(localStorage.getItem("productsInCart"));
   let productContainer = document.querySelector(".products");
   let cartCost = parseInt(localStorage.getItem("totalCost"));
@@ -113,9 +115,9 @@ function displayCart() {
           $${item.price},00
         </div>
         <div class="quantity">
-          <ion-icon name="remove-outline"></ion-icon>
+          <ion-icon name="remove-outline" class="decrease"></ion-icon>
           ${item.inCart}
-          <ion-icon name="add-outline"></ion-icon>
+          <ion-icon name="add-outline" class='increase'></ion-icon>
         </div>
         <div class="total">
           ${item.price * item.inCart}
@@ -142,5 +144,38 @@ function displayCart() {
   }
 }
 
+function initListen() {
+  let allIncrease = document.querySelectorAll(".increase");
+  let allDecrease = document.querySelectorAll(".decrease");
+  let 
+  for (let i = 0; i < allIncrease.length; i++) {
+    allIncrease[i].addEventListener("click", (e) => addToCart(e));
+    allDecrease[i].addEventListener("click", () => removeFromCart());
+  }
+}
+
+function addToCart(e) {
+  console.log("Added!");
+
+
+
+
+
+  // if (product === "Book 1") {
+  //   let current = (cartItems.book1.inCart += 1);
+  //   cartItems.book1.inCart = current;
+  // }
+
+  // localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+  // console.log(product);
+
+  // displayCart();
+}
+
+function removeFromCart() {
+  console.log("Remove!");
+}
+
 onLoadCartNumbers();
 displayCart();
+initListen();
