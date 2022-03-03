@@ -1,9 +1,16 @@
-function Page() {
+function Header() {
+  return (
+    <header>
+      <nav>
+        <img src="./3500.jpg" width="200px" alt="" />
+      </nav>
+    </header>
+  );
+}
+
+function MainContent() {
   return (
     <div>
-      <header>
-        <img src="./3500.jpg" width="200px" alt="" />
-      </header>
       <h1>Brothers mind</h1>
       <ul>
         <li>221b</li>
@@ -11,7 +18,24 @@ function Page() {
         <li>No flowers.</li>
         <li>My request</li>
       </ul>
-      <footer>&copy; 2022 BugBugGoaway</footer>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <small>&copy; 2022 BugBugGoaway</small>
+    </footer>
+  );
+}
+
+function Page() {
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
     </div>
   );
 }
