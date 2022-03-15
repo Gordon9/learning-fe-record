@@ -9,23 +9,61 @@
   </head>
   <body>
     <div class="container">
-      <h1></h1>
-      <p></p>
-      <p></p>
-      <div id="alerts"></div>
+      <h1>Simple JS Shopping Cart</h1>
+      <p>
+        Simplified 'add to cart' functionality. Uses Javascript and WebStorage
+        API/Cookies to remember cart data converted to JSON format.
+      </p>
+      <p>Click 'Empty Cart' button to remove session cookies from browser.</p>
+      <div id="alerts">something added to cart</div>
 
       <div class="productcont">
         <div class="product">
-          <h3></h3>
-          <p></p>
-          <p></p>
+          <h3 class="productname">The Joker And The Queen</h3>
+          <p>Ed Sheeran, Taylor Swift</p>
+          <p class="price">$5.05</p>
+          <button class="'addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+          <h3 class="productname">Who You Are</h3>
+          <p>Jessie J</p>
+          <p class="price">$10.05</p>
+          <button class="'addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+          <h3 class="productname">abcdefu</h3>
+          <p>GAYLE</p>
+          <p class="price">$15.05</p>
+          <button class="'addtocart">Add To Cart</button>
         </div>
       </div>
 
       <div class="cart-container">
-        <h2></h2>
-        <table></table>
-        <div class="cart-buttons"></div>
+        <h2>Cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+          </thead>
+          <tbody id="carttable"></tbody>
+        </table>
+        <hr />
+        <table id="carttotals">
+          <tr>
+            <td><strong>Items</strong></td>
+            <td><strong>Total</strong></td>
+          </tr>
+          <tr>
+            <td>x <span id="itemsquantity">0</span></td>
+            <td>$ <span id="otal">0</span></td>
+          </tr>
+        </table>
+        <div class="cart-buttons">
+          <button id="emptycart">Empty Cart</button>
+          <button id="checkout">Checkout</button>
+        </div>
       </div>
     </div>
 
