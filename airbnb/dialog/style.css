@@ -72,3 +72,78 @@ body {
   color: rgb(34, 34, 34);
   max-height: 300px;
 }
+
+.privacy_footer {
+  /* TODO */
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 auto;
+  border-top: 1px solid rgb(235, 235, 235);
+  padding: 16px 24px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.privacy_disagree {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  /* TODO */
+  touch-action: manipulation;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(34, 34, 34);
+  outline: none;
+  padding: 13px 23px;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  /* TODO */
+  -webkit-tap-highlight-color: transparent;
+  background: rgb(255, 255, 255) !important;
+  color: rgb(34, 34, 34);
+}
+
+.privacy_disagree:hover {
+  border-color: rgb(0, 0, 0) !important;
+  background: rgb(247, 247, 247) !important;
+}
+
+.privacy_agree {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  /* TODO */
+  touch-action: manipulation;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 24px;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  background: rgb(34, 34, 34) !important;
+  color: rgb(255, 255, 255) !important;
+  /* TODO */
+  contain: paint;
+}
+
+.privacy_agree:hover {
+  background: rgb(0, 0, 0) !important;
+}
