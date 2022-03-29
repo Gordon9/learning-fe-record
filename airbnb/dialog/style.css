@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+a {
+  color: #006c70;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 body {
   background: #eee;
   font-family: "Montserrat", sans-serif;
@@ -48,4 +57,18 @@ body {
 
 .privacy_header h1 {
   font-size: 1em;
+}
+
+.privacy_content {
+  padding: 24px;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  outline: none;
+}
+
+.privacy_content_wrap {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(34, 34, 34);
+  max-height: 300px;
 }
