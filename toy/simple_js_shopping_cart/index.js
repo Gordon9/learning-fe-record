@@ -19,8 +19,9 @@ function addToCart(elem) {
   let cart = [];
   let stringCart = [];
 
+  // TODO
   while ((elem = elem.previousSibling)) {
-    console.log(elem);
+    // console.log(elem);
     if (elem.className === "price") {
       getprice = elem.innerText;
     }
@@ -30,21 +31,62 @@ function addToCart(elem) {
 
     sibs.push(elem);
   }
-  console.log(sibs);
+  // console.log(sibs);
 
   let product = {
     productname: getproductName,
     price: getprice,
   };
   console.log(product);
-
+  // convert product data to JSON for storage
   let stringProduct = JSON.stringify(product);
 
-  console.log(stringProduct);
+  if (!sessionStorage.getItem("cart")) {
+    cart.push(stringProduct);
+    stringCart = JSON.stringify(cart);
+    sessionStorage.setItem("cart", stringCart);
+    updateCartTotal();
+  } else {
+    cart = JSON.parse(sessionStorage.getItem("cart"));
+    cart.push(stringProduct);
+    stringCart = JSON.stringify(cart);
+    sessionStorage.setItem("cart", stringCart);
+    updateCartTotal();
+  }
+
+  console.log(stringCart);
 }
 
 // Calculate Cart total
-function updateCartTotal() {}
+function updateCartTotal() {
+  let items = 0;
+  let productname = "";
+  let price = 0;
+  let total = 0;
+  let item;
+  let carttable = "";
+  ``;
+  if (sessionStorage.getItem("cart")) {
+    let cart = JSON.parse(sessionStorage.getItem("cart"));
+    items = cart.length;
+    for (let i = 0; i < items; i++) {
+      item = JSON.parse(cart[i]);
+      price = parseFloat(item.price.split("$")[1]);
+      productname = item.productname;
+      carttable +=
+        "<tr><td>" +
+        productname +
+        "</td><td>$" +
+        price.toFixed(2) +
+        "</td></tr>";
+      total += price;
+    }
+  }
+
+  document.getElementById("carttable").innerHTML = carttable;
+  document.getElementById("itemsquantity").innerHTML = items;
+  document.getElementById("total").innerHTML = total.toFixed(2);
+}
 
 // user feedback on successful add
 function addedToCart(pname) {}
