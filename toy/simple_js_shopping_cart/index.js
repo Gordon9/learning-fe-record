@@ -22,6 +22,7 @@ function addToCart(elem) {
   // TODO
   while ((elem = elem.previousSibling)) {
     // console.log(elem);
+    if (elem.nodeType === 3) continue;
     if (elem.className === "price") {
       getprice = elem.innerText;
     }
@@ -45,12 +46,14 @@ function addToCart(elem) {
     cart.push(stringProduct);
     stringCart = JSON.stringify(cart);
     sessionStorage.setItem("cart", stringCart);
+    addedToCart(getproductName);
     updateCartTotal();
   } else {
     cart = JSON.parse(sessionStorage.getItem("cart"));
     cart.push(stringProduct);
     stringCart = JSON.stringify(cart);
     sessionStorage.setItem("cart", stringCart);
+    addedToCart(getproductName);
     updateCartTotal();
   }
 
@@ -71,7 +74,12 @@ function updateCartTotal() {
     items = cart.length;
     for (let i = 0; i < items; i++) {
       item = JSON.parse(cart[i]);
+      // console.log(item.price);
+      // var x = JSON.parse(cart[i]);
+      // price = parseFloat(x.price.split('$')[1]);
+      // price = parseFloat(price.split("$")[1]);
       price = parseFloat(item.price.split("$")[1]);
+      console.log(price);
       productname = item.productname;
       carttable +=
         "<tr><td>" +
@@ -83,13 +91,49 @@ function updateCartTotal() {
     }
   }
 
+  // var total = 0;
+  // var price = 0;
+  // var items = 0;
+  // var productname = "";
+  // var carttable = "";
+  // if (sessionStorage.getItem("cart")) {
+  //   //get cart data & parse to array
+  //   var cart = JSON.parse(sessionStorage.getItem("cart"));
+  //   //get no of items in cart
+  //   items = cart.length;
+  //   //loop over cart array
+  //   for (var i = 0; i < items; i++) {
+  //     //convert each JSON product in array back into object
+  //     var x = JSON.parse(cart[i]);
+  //     //get property value of price
+  //     console.log(x);
+  //     price = parseFloat(x.price.split("$")[1]);
+  //     productname = x.productname;
+  //     //add price to total
+  //     carttable +=
+  //       "<tr><td>" +
+  //       productname +
+  //       "</td><td>$" +
+  //       price.toFixed(2) +
+  //       "</td></tr>";
+  //     total += price;
+  //   }
+  // }
+
   document.getElementById("carttable").innerHTML = carttable;
   document.getElementById("itemsquantity").innerHTML = items;
   document.getElementById("total").innerHTML = total.toFixed(2);
 }
 
 // user feedback on successful add
-function addedToCart(pname) {}
+function addedToCart(pname) {
+  let message = pname + " was added to the cart";
+  let alerts = document.getElementById("alerts");
+  alerts.innerHTML = message;
+  if (!alerts.classList.contains("message")) {
+    alerts.classList.add("message");
+  }
+}
 
 // User Manually empty cart
 function emptyCart() {}

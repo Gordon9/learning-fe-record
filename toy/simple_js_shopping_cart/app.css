@@ -102,7 +102,43 @@ input[type="submit"]:active {
 
 table {
   margin-bottom: 1em;
-  /* border-collapse: collapse; */
+  border-collapse: collapse;
 }
 
+table th,
+table td {
+  text-align: left;
+  padding: 0.25em 1em;
+  border-bottom: 1px solid #e0e4cc;
+}
 
+#carttotals {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.cart-buttons {
+  width: auto;
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 0;
+}
+
+#emptycart {
+  margin-right: 1em;
+}
+
+table td:nth-last-child(1) {
+  text-align: right;
+}
+
+.message {
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #a7dbd8;
+  color: #679996;
+  padding: 0.5em 0;
+  margin: 1em 0;
+}
