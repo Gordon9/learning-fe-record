@@ -138,6 +138,16 @@ class UI {
     clearBtn.addEventListener("click", () => {
       this.clearCart();
     });
+
+    cartContent.addEventListener("click", (event) => {
+      if (event.target.classList.contains("remove-item")) {
+        console.log("remove?");
+        let removeItem = event.target;
+        let id = removeItem.dataset.id;
+        cartContent.removeChild(removeItem.parentElement.parentElement);
+        this.removeItem(id);
+      }
+    });
   }
   clearCart() {
     let cartItems = cart.map((item) => item.id);
@@ -147,6 +157,7 @@ class UI {
     while (cartContent.children.length > 0) {
       cartContent.removeChild(cartContent.children[0]);
     }
+    this.hideCart();
   }
   removeItem(id) {
     cart = cart.filter((item) => item.id !== id);
@@ -154,10 +165,10 @@ class UI {
     Storage.saveCart(cart);
     let button = this.getSingleButton(id);
     button.disabled = false;
-    button.innerHTML = `<i class="fas fa-shopping-cart"></i> add to cart`;
+    button.innerHTML = `<i class="fa fa-shopping-cart"></i>add to bag`;
   }
   getSingleButton(id) {
-    return buttonsDOM.find((button) => button.dataset);
+    return buttonsDOM.find((button) => button.dataset.id === id);
   }
 }
 
