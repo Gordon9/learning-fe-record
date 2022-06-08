@@ -20,6 +20,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- navbar -->
@@ -46,6 +51,45 @@
       </div>
     </nav>
 
+    <!-- header -->
+    <header id="home">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="pic/header1.jpg" alt="" />
+            <div class="swiper-desc">
+              <h1>
+                Discover Your <br />
+                Own Style
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur aspernatur nam maxime esse magnam aliquid inventore,
+                omnis nihil velit et.
+              </p>
+              <button class="siwper-btn">Check Now</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="pic/header2.jpg" alt="" />
+            <div class="swiper-desc desc2">
+              <h1>
+                Shopping The Way <br />
+                You Like It
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur aspernatur nam maxime esse magnam aliquid inventore,
+                omnis nihil velit et.
+              </p>
+              <button class="siwper-btn">Check Now</button>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </header>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

@@ -80,3 +80,62 @@ nav {
   color: var(--fontColor);
   background: var(--spanColor);
 }
+
+header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 60px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--whiteColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide > img {
+  display: block;
+  width: 100%;
+  /* height: 660px; */
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-desc {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 30%;
+  text-align: left;
+}
+
+.swiper-desc h1,
+.swiper-desc p {
+  line-height: 1.5;
+}
+
+.swiper-btn {
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+  background: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+  color: var(--whiteColor);
+  cursor: pointer;
+}
+
+.swiper-btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+
+.desc2 {
+  color: var(--whiteColor);
+}
