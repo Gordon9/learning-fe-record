@@ -139,3 +139,33 @@ header {
 .desc2 {
   color: var(--whiteColor);
 }
+
+.guarantee {
+  width: 100%;
+  background: var(--greyColor);
+  padding: 4% 5% 4% 5%;
+}
+
+.guarantee-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.guarantee-card {
+  display: flex;
+  gap: 1rem;
+}
+
+.guarantee-icon {
+  font-size: 40px;
+  color: var(--spanColor);
+}
+
+.guarantee-text h3 {
+  margin-bottom: 1rem;
+}
+
+.guarantee-text p {
+  line-height: 1.5;
+}
