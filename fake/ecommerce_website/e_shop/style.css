@@ -169,3 +169,61 @@ header {
 .guarantee-text p {
   line-height: 1.5;
 }
+
+.collection {
+  width: 100%;
+  padding: 4% 2% 2% 2%;
+  scroll-margin-top: 3rem;
+}
+
+.collection-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.collection-left {
+  width: 100%;
+}
+
+.collection-right {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.collection-card {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.collection-card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection-detail {
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+  line-height: 1;
+  color: var(--whiteColor);
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.collection-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.collection-card:hover .collection-detail {
+  bottom: 80px;
+}
+
+.collection-detail > span {
+  color: var(--whiteColor);
+}
