@@ -227,3 +227,119 @@ header {
 .collection-detail > span {
   color: var(--whiteColor);
 }
+
+.product {
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  text-align: center;
+  scroll-margin-top: 3rem;
+}
+
+.product-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.product-filter {
+  bottom: none;
+  padding: 0.3rem 1rem;
+  margin: 0.3rem;
+  cursor: pointer;
+}
+
+.product-filter:active,
+.product-filter.is-checked {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+.product-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card {
+  position: relative;
+  text-align: left;
+  height: 350px;
+  width: 24%;
+  min-width: 250px;
+  margin: 0.3rem;
+  cursor: pointer;
+}
+
+.product-label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--whiteColor);
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+.label-red {
+  background: var(--primaryColor);
+}
+.label-yellow {
+  background: var(--yellowColor);
+}
+.label-blue {
+  background: skyblue;
+}
+
+.product-detail {
+  padding: 1rem;
+  width: 100%;
+  position: absolute;
+}
+
+.product-detail > span {
+  color: var(--spanColor);
+}
+
+.fa-heart {
+  float: right;
+}
+
+.fa-heart:hover {
+  color: var(--primaryColor);
+}
+
+.product-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.35s ease;
+  background: transparent;
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  cursor: pointer;
+}
+
+.product-card:hover .product-button {
+  opacity: 1;
+}
+
+.product-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.product-card:hover .product-detail {
+  bottom: 40px;
+}
+
+.product-card:hover .product-image {
+  height: 240px;
+  filter: brightness(80%);
+}
