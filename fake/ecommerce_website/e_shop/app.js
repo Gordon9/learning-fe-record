@@ -28,9 +28,12 @@ filtersElem.addEventListener("click", function (event) {
 
 // change is-checked class on buttons
 let buttonGroups = document.querySelector(".filter-group");
+
+// todo(why clientHeight)
 let len = buttonGroups.clientHeight;
 for (let i = 0; i < len; i++) {
   let buttonGroup = buttonGroups[i];
+
   radioButtonGroup(buttonGroup);
 }
 
