@@ -147,7 +147,6 @@ function displayCart() {
 function initListen() {
   let allIncrease = document.querySelectorAll(".increase");
   let allDecrease = document.querySelectorAll(".decrease");
-  let 
   for (let i = 0; i < allIncrease.length; i++) {
     allIncrease[i].addEventListener("click", (e) => addToCart(e));
     allDecrease[i].addEventListener("click", () => removeFromCart());
@@ -156,10 +155,6 @@ function initListen() {
 
 function addToCart(e) {
   console.log("Added!");
-
-
-
-
 
   // if (product === "Book 1") {
   //   let current = (cartItems.book1.inCart += 1);
