@@ -4,11 +4,11 @@ const nav = document.querySelector(".nav-sections");
 const menu = nav.querySelector(".menu");
 const links = nav.querySelectorAll(".menu-item-link");
 const activeLine = nav.querySelector(".active-line");
-const sectionOff = nav.offsetHeight + 24;
+const sectionOffSet = nav.offsetHeight + 24;
 const activeClass = "active";
 let activeIndex = 0;
 let isScrolling = true;
-let useScroll = true;
+let userScroll = true;
 
 const setActiveClass = () => {
   links[activeIndex].classList.add(activeClass);
@@ -43,9 +43,28 @@ const init = () => {
 
 links.forEach((link, index) =>
   link.addEventListener("click", () => {
-    useScroll = false;
+    userScroll = false;
     handleActiveLinkUpdate(index);
   })
 );
+
+window.addEventListener("scroll", () => {
+  // const currentIndex =
+  //   sectionsContainer.getBoundingClientRect().top < 0
+  //     ? sections.length -
+  //       1 -
+  //       [...sections]
+  //         .reverse()
+  //         .findIndex(
+  //           (section) => window.screenY >= section.offsetTop - sectionOffSet * 2
+  //         )
+  //     : 0;
+  // if (userScroll && activeIndex !== currentIndex) {
+  //   handleActiveLinkUpdate(currentIndex);
+  // } else {
+  //   window.clearTimeout(currentIndex);
+  //   isScrolling = setTimeout(() => (userScroll = true), 100);
+  // }
+});
 
 init();
