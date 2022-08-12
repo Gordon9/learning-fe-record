@@ -4,7 +4,7 @@ const nav = document.querySelector(".nav-sections");
 const menu = nav.querySelector(".menu");
 const links = nav.querySelectorAll(".menu-item-link");
 const activeLine = nav.querySelector(".active-line");
-const sectionOffSet = nav.offsetHeight + 24;
+const sectionOffset = nav.offsetHeight + 24;
 const activeClass = "active";
 let activeIndex = 0;
 let isScrolling = true;
@@ -38,7 +38,7 @@ const handleActiveLinkUpdate = (current) => {
 
 const init = () => {
   moveActiveLine(links[0]);
-  document.documentElement.style.setProperty("--section-offset", sectionOffSet);
+  document.documentElement.style.setProperty("--section-offset", sectionOffset);
 };
 
 links.forEach((link, index) =>
@@ -49,22 +49,23 @@ links.forEach((link, index) =>
 );
 
 window.addEventListener("scroll", () => {
-  // const currentIndex =
-  //   sectionsContainer.getBoundingClientRect().top < 0
-  //     ? sections.length -
-  //       1 -
-  //       [...sections]
-  //         .reverse()
-  //         .findIndex(
-  //           (section) => window.screenY >= section.offsetTop - sectionOffSet * 2
-  //         )
-  //     : 0;
-  // if (userScroll && activeIndex !== currentIndex) {
-  //   handleActiveLinkUpdate(currentIndex);
-  // } else {
-  //   window.clearTimeout(currentIndex);
-  //   isScrolling = setTimeout(() => (userScroll = true), 100);
-  // }
+  const currentIndex =
+    sectionsContainer.getBoundingClientRect().top < 0
+      ? sections.length -
+        1 -
+        [...sections]
+          .reverse()
+          .findIndex(
+            (section) => window.scrollY >= section.offsetTop - sectionOffset * 2
+          )
+      : 0;
+
+  if (userScroll && activeIndex !== currentIndex) {
+    handleActiveLinkUpdate(currentIndex);
+  } else {
+    window.clearTimeout(isScrolling);
+    isScrolling = setTimeout(() => (userScroll = true), 100);
+  }
 });
 
 init();
