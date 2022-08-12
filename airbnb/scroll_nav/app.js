@@ -29,9 +29,30 @@ const moveActiveLine = () => {
   activeLine.style.width = `${link.offsetWidth}px`;
 };
 
+const setMenuLeftPosition = (position) => {
+  menu.scrollTo({
+    left: position,
+    behavior: "smooth",
+  });
+};
+
+const checkMenuOverflow = () => {
+  const activeLink = links[activeIndex].getBoundingClientRect();
+  const offset = 30;
+
+  if (Math.floor(activeLink.right) > window.innerWidth) {
+    setMenuLeftPosition(
+      menu.scrollLeft + activeLink.right - window.innerWidth + offset
+    );
+  } else if (activeLink.left < 0) {
+    setMenuLeftPosition(menu.scrollLeft + activeLink.left - offset);
+  }
+};
+
 const handleActiveLinkUpdate = (current) => {
   removeActiveClass();
   activeIndex = current;
+  checkMenuOverflow();
   setActiveClass();
   moveActiveLine();
 };
