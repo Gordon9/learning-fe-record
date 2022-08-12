@@ -6,6 +6,10 @@ const links = nav.querySelectorAll(".menu-item-link");
 const activeLine = nav.querySelector(".active-line");
 const sectionOffset = nav.offsetHeight + 24;
 const activeClass = "active";
+const buttons = document.querySelectorAll(".btn");
+const standard = buttons[0];
+const curVersion = document.querySelector("#version");
+
 let activeIndex = 0;
 let isScrolling = true;
 let userScroll = true;
@@ -90,3 +94,57 @@ window.addEventListener("scroll", () => {
 });
 
 init();
+
+[...buttons][0].classList.remove("on");
+
+buttons.forEach((button) =>
+  button.addEventListener("click", () => hasClass(button))
+);
+
+function hasClass(button) {
+  if (button.classList.contains("standard")) {
+    curVersion.classList.remove(
+      "micro",
+      "floating",
+      "bordered",
+      "shadows",
+      "rounded",
+      "highlight-bar"
+    );
+    buttons.forEach((button) => button.classList.remove("on"));
+    moveActiveLine(links[0]);
+  }
+
+  if (button.classList.contains("micro")) {
+    button.classList.toggle("on");
+    standard.classList.remove("on");
+    curVersion.classList.toggle("micro");
+  }
+
+  if (button.classList.contains("floating")) {
+    button.classList.toggle("on");
+    standard.classList.remove("on");
+    curVersion.classList.toggle("floating");
+  }
+  if (button.classList.contains("bordered")) {
+    button.classList.toggle("on");
+    standard.classList.remove("on");
+    curVersion.classList.toggle("bordered");
+  }
+  if (button.classList.contains("shadows")) {
+    button.classList.toggle("on");
+    standard.classList.remove("on");
+    curVersion.classList.toggle("shadows");
+  }
+  if (button.classList.contains("rounded")) {
+    button.classList.toggle("on");
+    standard.classList.remove("on");
+    curVersion.classList.toggle("rounded");
+  }
+  if (button.classList.contains("highlight-bar")) {
+    button.classList.toggle("on");
+    standard.classList.remove("on");
+    curVersion.classList.toggle("highlight-bar");
+    moveActiveLine(links[0]);
+  }
+}
