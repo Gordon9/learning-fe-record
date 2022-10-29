@@ -1,0 +1,6 @@
+.header {
+  background-image: url("https://images.unsplash.com/photo-1611143669185-af224c5e3252?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3432&q=80");
+  height: 504px;
+  position: center center;
+  background-size: cover;
+}
