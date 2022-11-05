@@ -1,0 +1,53 @@
+.quotes {
+
+  --spacer: 2rem;
+
+  li {
+    &:nth-child(2) {
+      transform: translateY(3rem);
+    }
+
+    &:nth-child(3) {
+      transform: translateY(6rem);
+    }
+  }
+
+  blockquote {
+    background: var(--clr-primary-700);
+    color: var(--clr-neutral-200);
+    text-align: left;
+    border-radius: var(--br);
+    padding: var(--spacer);
+    max-width: 25rem;
+    margin: 0 auto;
+    height: 100%;
+
+    &>.split {
+      flex-direction: row;
+    }
+
+
+  }
+
+  img {
+    width: 3rem;
+    border-radius: 50%;
+
+    @media (min-width: 50em) {
+      margin-right: var(--spacer);
+    }
+  }
+
+  .name {
+    font-weight: 800;
+  }
+
+  .status {
+    color: var(--clr-primary-300);
+  }
+
+  .quote {
+    margin-top: var(--spacer);
+  }
+
+}

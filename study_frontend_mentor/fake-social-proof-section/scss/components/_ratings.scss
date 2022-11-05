@@ -3,9 +3,59 @@
     color: var(--clr-primary-700);
     background: var(--clr-neutral-200);
     font-weight: 800;
-    padding: 0.5rem;
-    margin: 2em 0;
+    padding: .75rem 2rem;
+    border-radius: var(--br);
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    // &::before {
+    //   content: "";
+    //   width: 100px;
+    //   height: 1rem;
+    //   margin: 0 auto;
+    //   display: block;
+    //   background-image: url(../../images/icon-star.svg);
+    //   margin-bottom: 0.5rem;
+    //   background-repeat: space;
+    // }
+
+    @media (min-width: 50em) {
+      display: flex;
+      align-content: center;
+
+      &::before {
+        margin: 0 1.5rem 0 0;
+      }
+
+      &:first-of-type {
+        transform: translateX(-3rem);
+      }
+
+      &:last-of-type {
+        transform: translateX(3rem);
+      }
+    }
+
+    img {
+      margin: 0 .5rem .5rem;
+
+      @media (min-width: 50em) {
+        margin: -.25rem .5rem 0 0;
+      }
+
+    }
   }
 
+  .stars {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 50em) {
+      margin-right: 2.4rem;
+    }
+
+    // margin-right: 2.4rem;
+  }
 
 }
