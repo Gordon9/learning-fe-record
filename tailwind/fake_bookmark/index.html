@@ -6,18 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fake Bookmark</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./input.css" />
   </head>
   <body class="overflow-x-hidden">
     <!-- Nav -->
     <nav class="conntainer relative mx-auto p-6">
-      <div>
-        <div>
-          <img src="images/logo-bookmark.svg" alt="logo" id="logo" />
+      <!-- Flex Container For Nav Items -->
+      <div class="flex items-center justify-between space-x-20 my-6">
+        <!-- Logo -->
+        <div class="z-30">
+          <a href="/"
+            ><img src="images/logo-bookmark.svg" alt="logo" id="logo"
+          /></a>
         </div>
-        <div>
-          <a href="#features">Features</a>
-          <a href="#download">Download</a>
-          <a href="#faq">FAQ</a>
+
+        <!-- Menu Items -->
+        <div
+          class="
+            hidden
+            sitems-center
+            space-x-10
+            items-center
+            uppercase
+            text-grayishBlue
+            md:flex
+          "
+        >
+          <a href="#features" class="tracking-widest hover:text-red-300"
+            >Features</a
+          >
+          <a href="#download" class="tracking-widest hover:text-red-300"
+            >Download</a
+          >
+          <a href="#faq" class="tracking-widest hover:text-red-300">FAQ</a>
+
+          <a
+            href="#"
+            class="
+              px-8
+              py-2
+              text-white
+              bg-red-500
+              border-2
+              rounded-ed
+              shadow-md
+              hover:text-red-500 hover:bg-white hover:border-red-500
+            "
+          >
+            Login
+          </a>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="z-30 block md:hidden focus:outline-none hamburger "
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="
+          hidden
+          fiexed
+          inset-0
+          z-20
+          flex-col
+          items-center
+          self-end
+          w-full
+          h-full
+          m-h-screen
+          px-6
+          py-1
+          pb-4
+          tracking-widest
+          text-white
+          uppercase
+          divide-y divide-gray-500
+          opacity-90
+          bg-cyan-800
+        "
+      >
+        <div class="w-full py-3 text-center">
+          <a href="#features" class="block" hover:text-red-500>Features</a>
+        </div>
+        <div class="w-full py-3 text-center"">
+          <a href="#download" class="block" hover:text-red-500>Download</a>
+        </div>
+        <div class="w-full py-3 text-center"">
+          <a href="#faq" class="block" hover:text-red-500>Faq</a>
+        </div>
+        <div class="w-full py-3 text-center"">
+          <a href="#" class="block" hover:text-red-500>Login</a>
         </div>
       </div>
     </nav>
