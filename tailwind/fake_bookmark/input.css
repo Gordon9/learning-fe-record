@@ -50,3 +50,7 @@
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
   background-color: #000;
 }
+
+.bg-dots {
+  background-image: url(images/bg-dots.svg);
+}
