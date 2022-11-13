@@ -11,7 +11,7 @@
   </head>
   <body class="overflow-x-hidden">
     <!-- Nav -->
-    <nav class="conntainer relative mx-auto p-6">
+    <nav class="container relative mx-auto p-6">
       <!-- Flex Container For Nav Items -->
       <div class="flex items-center justify-between space-x-20 my-6">
         <!-- Logo -->
@@ -180,11 +180,14 @@
             >
           </div>
         </div>
+
         <!-- Image -->
-        <div>
-          <div class="bg-hero"></div>
+        <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+          <div
+            class="bg-hero lg:absolute rounded-l-full top-52 bg-blue-500"
+          ></div>
           <img
-            class="relative z-10 lg:top-24 xl:top-0 over-flow-x-visbile"
+            class="relative z-10 lg:top-24 xl:top-0 overflow-x-visbile"
             src="images/illustration-hero.svg"
             alt=""
           />
@@ -208,8 +211,9 @@
     <section id="tabs">
       <!-- Tabs/Panels Container -->
       <div class="container relative mx-auto my-6 mb-32 mt-12 px-6">
-        <!-- ??? -->
-        <div class="bg-tabs"></div>
+        <div
+          class="bg-tabs lg:absolute rounded-r-full top-60 bg-blue-500"
+        ></div>
         <!-- Tabs Flex Container-->
         <div
           class="
@@ -281,14 +285,14 @@
             <div class="py-5" data-target="panel-3">Easy Sharing</div>
           </div>
         </div>
-        <!-- Panels Panels -->
+        <!-- Tab Panels -->
         <div id="panels" class="container mx-auto">
           <!-- Panes 1 -->
           <div
-            class="panel flex flex-col panel-1 py-5 md:flex-row md:space-x-7"
+            class="flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1"
           >
             <!-- Panel Image -->
-            <div>
+            <div class="flex justify-center md:w-1/2">
               <img
                 src="images/illustration-features-tab-1.svg"
                 alt=""
@@ -492,7 +496,7 @@
             flex flex-col
             w-full
             py-6
-            space-y4
+            space-y-4
             text-center
             rounded-lg
             shadow-lg
@@ -528,85 +532,90 @@
           </div>
         </div>
         <!-- Box 2 -->
-        <div
-          class="
-            flex flex-col
-            w-full
-            py-6
-            space-y4
-            text-center
-            rounded-lg
-            shadow-lg
-            md:w-1/3
-          "
-        >
-          <!-- Image -->
-          <div class="flex justify-center">
-            <img src="images/logo-firefox.svg" alt="" />
-          </div>
-          <!-- Text -->
-          <h5 class="pt-6 text-xl font-bold">Add to Firefox</h5>
-          <p class="text-gray-400">Minimum Version 55</p>
-          <!-- Dots -->
-          <div class="bg-dots bg-repeat-x px-6 py-6 capitalize">
-            <a
-              href="#"
-              class="
-                block
-                w-full
-                py-3
-                text-white
-                duration-200
-                border-2
-                rounded-lg
-                bg-blue-500
-                hover:text-blue-500 hover:bg-white
-                border-blue-500
-              "
-            >
-              Add & Install Extension
-            </a>
+
+        <div class="w-full md:w-1/3">
+          <div
+            class="
+              flex flex-col
+              w-full
+              py-6
+              space-y-4
+              text-center
+              rounded-lg
+              shadow-lg
+              md:mt-8
+            "
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="images/logo-firefox.svg" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">Add to Firefox</h5>
+            <p class="text-gray-400">Minimum Version 55</p>
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 py-6 capitalize">
+              <a
+                href="#"
+                class="
+                  block
+                  w-full
+                  py-3
+                  text-white
+                  duration-200
+                  border-2
+                  rounded-lg
+                  bg-blue-500
+                  hover:text-blue-500 hover:bg-white
+                  border-blue-500
+                "
+              >
+                Add & Install Extension
+              </a>
+            </div>
           </div>
         </div>
         <!-- Box 3 -->
-        <div
-          class="
-            flex flex-col
-            w-full
-            py-6
-            space-y4
-            text-center
-            rounded-lg
-            shadow-lg
-            md:w-1/3
-          "
-        >
-          <!-- Image -->
-          <div class="flex justify-center">
-            <img src="images/logo-opera.svg" alt="" />
-          </div>
-          <!-- Text -->
-          <h5 class="pt-6 text-xl font-bold">Add to Opera</h5>
-          <p class="text-gray-400">Minimum Version 46</p>
-          <!-- Dots -->
-          <div class="bg-dots bg-repeat-x px-6 py-6 capitalize">
-            <a
-              href="#"
-              class="
-                block
-                w-full
-                py-3
-                text-white
-                duration-200
-                border-2
-                rounded-lg
-                bg-blue-500
-                hover:text-blue-500 hover:bg-white
-                border-blue-500
-              "
-            >
-              Add & Install Extension
-            </a>
+        <div class="w-full md:w-1/3">
+          <div
+            class="
+              flex flex-col
+              w-full
+              py-6
+              space-y-4
+              text-center
+              rounded-lg
+              shadow-lg
+              md:mt-16
+            "
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="images/logo-opera.svg" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">Add to Opera</h5>
+            <p class="text-gray-400">Minimum Version 46</p>
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 py-6 capitalize">
+              <a
+                href="#"
+                class="
+                  block
+                  w-full
+                  py-3
+                  text-white
+                  duration-200
+                  border-2
+                  rounded-lg
+                  bg-blue-500
+                  hover:text-blue-500 hover:bg-white
+                  border-blue-500
+                "
+              >
+                Add & Install Extension
+              </a>
+            </div>
           </div>
         </div>
       </div>
