@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display&display=swap');
+
+// Create SCSS variables
+$white: #ffffff;
+$black: #000000;
+$primary:#3b5d50;
+$secondary: #f9bf29;
+$dark: #2f2f2f;
+$light: #dce5e4;
+$body_color: #6a6a6a;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$font-family: 'Inter',
+sans-serif;
+
+body {
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: 28px;
+  color: $body_color;
+}
+
+.custom-navbar {
+  background: $primary !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .navbar-brand {
+    font-size: 32px;
+    font-weight: 600;
+
+    >span {
+      opacity: .4;
+    }
+  }
+
+  .navbar-toggle {
+    border-color: transparent;
+
+    &:active,
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+
+
+  .custom-navbar-nav {
+    li {
+      a {
+        font-weight: 500;
+        color: $white !important;
+        opacity: .5;
+        transition: .3s all ease;
+        position: relative;
+
+        &::before {
+          @media (min-width: $md) {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 8px;
+            right: 8px;
+            background: $secondary;
+            height: 5px;
+            opacity: 1;
+            visibility: visible;
+            width: 0;
+            transition: .15s all ease-out;
+          }
+        }
+
+        &:hover {
+          opacity: 1;
+
+          &::before {
+            width: calc(100% - 16px);
+          }
+        }
+      }
+
+      &.active {
+        a {
+          opacity: 1;
+
+          &::before {
+            width: calc(100% - 16px);
+          }
+        }
+      }
+    }
+  }
+
+  .custom-navbar-cta {
+    margin-left: 0 !important;
+    flex-direction: row;
+
+    @media (min-width: $md) {
+      margin-left: 40px !important;
+    }
+
+    li {
+      margin-left: 0px;
+      margin-right: 0px;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+
+}
