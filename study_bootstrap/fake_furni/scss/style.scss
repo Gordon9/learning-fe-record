@@ -348,3 +348,61 @@ body {
     }
   }
 }
+
+// Why Choose us section
+.why-choose-section {
+  padding: 7rem 0;
+
+  .img-wrap {
+    position: relative;
+
+    // svg not showing, fix me when winter is coming!!!!
+    &::before {
+      position: absolute;
+      content: "";
+      width: 255px;
+      height: 217px;
+      background-image: url('../images/dots-yellow.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: translate(-40%, -40%);
+      z-index: -1;
+    }
+
+    img {
+      border-radius: 20px;
+    }
+  }
+}
+
+.feature {
+  margin-bottom: 30px;
+
+  .icon {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      width: 33px;
+      height: 33px;
+      position: absolute;
+      background: rgba($color: $primary, $alpha: .2);
+      border-radius: 50%;
+      right: -8px;
+      bottom: 0;
+    }
+  }
+
+  h3 {
+    font-size: 14px;
+    color: $dark;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    color: $body_color;
+  }
+}
