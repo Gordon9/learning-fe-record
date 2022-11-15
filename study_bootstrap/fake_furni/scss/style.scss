@@ -17,6 +17,12 @@ $xxl: 1400px;
 $font-family: 'Inter',
 sans-serif;
 
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
 body {
   font-family: $font-family;
   font-weight: 400;
@@ -111,6 +117,138 @@ body {
       &:first-child {
         margin-right: 20px;
       }
+    }
+  }
+}
+
+.hero {
+  background: $primary;
+  padding: calc(4rem - 30px) 0 0rem 0;
+
+  @media (min-width: $lg) {
+    // padding: calc(8rem - 30px) 0 0rem 0;
+  }
+
+  .intro-excerpt {
+    max-width: 450px;
+    position: relative;
+    z-index: 4;
+  }
+
+  h1 {
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 30px;
+
+    @media (min-width: $xxl) {
+      font-size: 54px;
+    }
+  }
+
+  p {
+    color: rgba($white, .5);
+    margin-bottom: 30px;
+  }
+
+  .hero-img-wrap {
+    position: relative;
+
+    img {
+      position: relative;
+      top: 0px;
+      right: 0px;
+      z-index: 2;
+      max-width: 780px;
+      left: -20px;
+
+      @media (min-width: $md) {
+        right: 0px;
+        left: -100px;
+      }
+
+      @media (min-width: $lg) {
+        left: 0px;
+        top: -80px;
+        position: absolute;
+        right: -50px;
+      }
+
+      @media (min-width: $xl) {
+        left: 0px;
+        top: -80px;
+        right: -100px;
+      }
+
+
+    }
+
+    // svg not showing, fix me when winter is coming!!!!
+    &::after {
+      content: "";
+      position: absolute;
+      width: 255px;
+      height: 217px;
+      background-image: url('../images/dots-light.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      right: -100px;
+      top: -0px;
+
+      @media (min-width: $xl) {
+        top: -40px;
+      }
+    }
+  }
+}
+
+.btn {
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: $white;
+  background: $dark;
+  border-color: $dark;
+
+  &:hover {
+    color: $white;
+    background: darken($color: $dark, $amount: 5%);
+    border-color: darken($color: $dark, $amount: 5);
+  }
+
+  &:active,
+  &:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  &.btn-primary {
+    background: $primary;
+    border-color: $primary;
+
+    &:hover {
+      background: darken($color: $primary, $amount: 5%);
+      border-color: $primary;
+    }
+  }
+
+  &.btn-secondary {
+    background: $secondary;
+    border-color: $secondary;
+
+    &:hover {
+      background: darken($color: $secondary, $amount: 5%);
+      border-color: $secondary;
+    }
+  }
+
+  &.btn-white-outline {
+    background: transparent;
+    border-color: rgba($color: $white, $alpha: .3);
+    border-width: 2px;
+
+    &:hover {
+      border-color: rgba($color: $white, $alpha: 1);
+      color: white;
     }
   }
 
