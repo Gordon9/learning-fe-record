@@ -32,6 +32,21 @@ body {
   background-color: $light;
 }
 
+a {
+  transition: .3s all ease;
+  color: $dark;
+  text-decoration: underline;
+
+  &:hover {
+    color: $dark;
+    text-decoration: none;
+  }
+
+  &.more {
+    font-weight: 600;
+  }
+}
+
 // Header
 .custom-navbar {
   background: $primary !important;
@@ -654,6 +669,56 @@ body {
       &.tns-nav-active {
         &::before {
           background-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+// Blog Section
+.blog-section {
+  padding: 7rem 0 12rem 0;
+
+  .post-entry {
+    a {
+      text-decoration: none;
+    }
+
+    .post-thumbnail {
+      display: block;
+      margin-bottom: 20px;
+
+      img {
+        border-radius: 20px;
+        transition: .3s all ease;
+      }
+    }
+
+    .post-content-entry {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      h3 {
+        font-size: 16px;
+        margin-bottom: 0;
+        font-weight: 600;
+        margin-bottom: 7px;
+      }
+
+      .meta {
+        font-size: 14px;
+
+        a {
+          font-weight: 600;
+        }
+      }
+    }
+
+    &:hover,
+    &:focus {
+      .post-thumbnail {
+        img {
+          opacity: .7;
         }
       }
     }
