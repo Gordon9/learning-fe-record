@@ -724,3 +724,131 @@ a {
     }
   }
 }
+
+// Footer Section 
+.footer-section {
+  padding: 80px 0;
+  background: $white;
+  .relative {
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: $dark;
+    transition: .3s all ease;
+
+    &:hover {
+      color: rgba($dark, .5)
+    }
+  }
+
+  .subscription-form {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+
+    @media (min-width: $lg) {
+      margin-top: 0px;
+      margin-bottom: 80px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      color: $primary;
+    }
+
+    .form-control {
+      height: 50px;
+      border-radius: 10px;
+      font-family: $font-family;
+
+      &:active,
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: $primary;
+        box-shadow: 0 1px 4px 0 rgba($color: $black, $alpha: .2);
+      }
+
+      &::-webkit-input-placeholder {
+        font-size: 14px;
+      }
+
+      &::-moz-placeholder {
+        font-size: 14px;
+      }
+
+      &::-ms-input-placeholder {
+        font-size: 14px;
+      }
+
+      &::-moz-placeholder {
+        font-size: 14px;
+      }
+    }
+
+    .btn {
+      border-radius: 10px !important;
+    }
+  }
+
+  .sofa-img {
+    position: absolute;
+    top: -200px;
+    z-index: 1;
+    right: 0;
+
+    img {
+      max-width: 380px;
+    }
+  }
+
+  .links-wrap {
+    margin-top: 0px;
+
+    @media (min-width: $lg) {
+      margin-top: 64px;
+    }
+
+    ul {
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .footer-logo-wrap {
+    .footer-logo {
+      font-size: 32px;
+      font-weight: 500;
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+
+  .custom-social {
+    li {
+      margin: 2px;
+      display: inline-block;
+
+      a {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        display: inline-block;
+        background: $light;
+        color: $primary;
+        border-radius: 50%;
+
+        &:hover {
+          background: $primary;
+          color: $white;
+        }
+      }
+    }
+  }
+}
