@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  background-color: #110034;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 30px 25px;
+}
+
+.nav-title {
+  display: flex;
+}
+
+.nav-title li {
+  padding: 2px 12px;
+}
+
+.nav-title a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.nav-title a:hover {
+  text-decoration: underline;
+}
