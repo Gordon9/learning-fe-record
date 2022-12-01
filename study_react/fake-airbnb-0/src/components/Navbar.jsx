@@ -1,5 +1,9 @@
+import logo from '../assets/images/logo.png';
+
 export default function Navbar() {
   return (
-    <h1>winter is coming!!!</h1>
+    <div>
+      <nav><img src={logo} alt="logo" className='nav--logo'/></nav>
+    </div>
   )
 }
