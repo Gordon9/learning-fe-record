@@ -3,3 +3,21 @@
   margin: 0;
   padding: 0;
 }
+
+.Header_Wrapper {
+  height: 55px;
+  background-color: #f55a5a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header_Wrapper img {
+  /* max-width: 100%; */
+  margin-right: 8px;
+}
+
+.Header_Wrapper h1 {
+  color: #fff;
+  font-size: 18px;
+}
