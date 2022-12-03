@@ -21,17 +21,14 @@ function App() {
   // })
 
   // console.log(jokeElements);
+  // Fix our components！ 😱
 
 
-  const cards = data.map(card => {
+  const cards = data.map(item => {
     return (
       <Card 
-      img={card.coverImg}
-      rating={card.stats.rating}
-      reviewCount={card.stats.reviewCount}
-      country={card.location}
-      title={card.location}
-      price={card.price}
+      key = {item.id}
+      {...item}
       />
     )
   })
@@ -40,7 +37,9 @@ function App() {
     <div className="App">
       <Navbar /> 
       <Hero />
-      {cards}
+      <section className='cards-list'>
+        {cards}
+      </section>
 
       {/* <div className='contacts'>
         <Contact
