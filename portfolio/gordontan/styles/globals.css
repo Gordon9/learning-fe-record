@@ -13,3 +13,8 @@ body {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
+
+footer {
+  background: #eee;
+  text-align: center;
+}

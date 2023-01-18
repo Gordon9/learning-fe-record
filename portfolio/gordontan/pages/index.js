@@ -2,10 +2,13 @@ import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import Image from "next/image";
 import profilePic from "../public/images/self.JPG";
+import { useState } from "react";
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <>
+    <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>GORDONTAN</title>
         <meta name="description" content="GORDONTAN" />
@@ -18,7 +21,7 @@ export default function Home() {
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
-                  onClick={() => console.log("BsFillMoonStarsFill clicked")}
+                  onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer text-2xl"
                 />
               </li>
@@ -53,8 +56,8 @@ export default function Home() {
       </main>
 
       <footer>
-        <p className="flex items-center">&copy;gordontan 2023</p>
+        <p>&copy;gordontan 2023</p>
       </footer>
-    </>
+    </div>
   );
 }
