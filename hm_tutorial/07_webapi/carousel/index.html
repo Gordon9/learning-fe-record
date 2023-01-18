@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <style>
+      .wrapper {
+        width: 700px;
+        height: 320px;
+        margin: 50px auto 0;
+        background: #000;
+        position: relative;
+      }
+
+      .wrapper .tip {
+        width: 700px;
+        height: 53px;
+        line-height: 53px;
+        position: absolute;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 10;
+      }
+
+      .wrapper .tip h3 {
+        width: 82%;
+        margin: 0;
+        margin-right: 20px;
+        padding-left: 20px;
+        color: #98e404;
+        font-size: 28px;
+        float: left;
+        font-weight: 500;
+        font-family: "Microsoft Yahei", Tahoma, Geneva;
+      }
+
+      .wrapper .tip a {
+        width: 30px;
+        height: 29px;
+        display: block;
+        float: left;
+        margin-top: 12px;
+        margin-right: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img class="pic" src="images/book_1.avif" alt="" />
+      <div class="tip">
+        <h3>挑战云歌单，欢迎你来</h3>
+      </div>
+    </div>
+
+    <script>
+      let data = [
+        {
+          imgSrc: "images/book_1.avif",
+          title: "挑战云歌单，欢迎你来",
+        },
+        {
+          imgSrc: "images/book_2.avif",
+          title: "田园日记，上演上京记",
+        },
+        {
+          imgSrc: "images/book_3.avif",
+          title: "甜蜜攻势再次回归",
+        },
+        {
+          imgSrc: "images/book_4.avif",
+          title: "我为歌狂，生为歌王",
+        },
+      ];
+
+      const picEle = document.querySelector(".pic");
+      const content = document.querySelector(".tip h3");
+      let index = -1;
+
+      const carouselTimer = setInterval(() => {
+        index++;
+        picEle.src = data[index].imgSrc;
+        content.innerHTML = data[index].title;
+
+        console.log(data[index].title);
+
+        if (index === 3) {
+          index = -1;
+        }
+      }, 1000);
+
+      carouselTimer();
+    </script>
+  </body>
+</html>
