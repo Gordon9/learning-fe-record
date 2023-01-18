@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Name</title>
+    <style>
+      div {
+        display: inline-block;
+        width: 150px;
+        height: 30px;
+        border: 1px solid pink;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    Name:
+    <div></div>
+    <script>
+      const div = document.querySelector("div");
+      const getRandom = (min, max) =>
+        Math.floor(Math.random() * (max - min + 1)) + min;
+      const nameArr = ["mozart", "bach", "taylor", "ed shereen", "adele"];
+      const random = getRandom(0, nameArr.length - 1);
+
+      div.innerHTML = nameArr[random];
+      nameArr.splice(random, 1);
+    </script>
+  </body>
+</html>
