@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weibo Release</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="w">
+      <!-- 操作的界面 -->
+      <div class="controls">
+        <img src="./images/9.6/tip.png" alt="" /><br />
+        <!-- maxlength 可以用来限制表单输入的内容长度 -->
+        <textarea
+          placeholder="说点什么吧..."
+          id="area"
+          cols="30"
+          rows="10"
+          maxlength="200"
+        ></textarea>
+        <div>
+          <span class="useCount" id="useCount">0</span>
+          <span>/</span>
+          <span>200</span>
+          <button id="send">发布</button>
+        </div>
+      </div>
+      <!-- 微博内容列表 -->
+      <div class="contentList">
+        <ul id="list">
+          <!-- <li>hello world</li>
+          <li>
+            <div class="info">
+              <img class="userpic" src="./images/03.jpg" />
+              <span class="username">死数据:百里守约</span>
+              <p class="send-time">死数据:发布于 2020年12月05日 00:07:54</p>
+            </div>
+            <div class="content">死数据:111</div>
+            <span class="the_del">X</span>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
