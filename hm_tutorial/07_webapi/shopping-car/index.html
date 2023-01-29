@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Car</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="car">
@@ -106,6 +107,19 @@
           </tr>
         </tbody>
       </table>
+      <div class="controls clearfix">
+        <a href="javascript:" class="del-all">删除所选商品</a>
+        <a href="javascript:" class="clear">清理购物车</a>
+        <a href="javascript:" class="pay">去结算</a>
+        <p>
+          已经选中<span id="totalCount">0</span>件商品;总价：<span
+            id="totalPrice"
+            class="total-price"
+            >0￥</span
+          >
+        </p>
+      </div>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
