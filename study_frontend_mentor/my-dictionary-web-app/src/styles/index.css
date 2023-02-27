@@ -89,6 +89,12 @@ select {
   --font_family: "Inconsolata";
 }
 
+[data-theme="dark-theme"] {
+  --body_background: #050505;
+  --body_color: white;
+  --moon_color: #a445ed;
+}
+
 #root {
   max-width: 738px;
   margin: 0 auto;

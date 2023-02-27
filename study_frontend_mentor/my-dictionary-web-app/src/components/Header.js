@@ -1,6 +1,5 @@
 import "../styles/Header.css";
 import "../styles/icons-font.css";
-import "../styles/DarkMode.css";
 import DarkMode from "./DarkMode";
 import FontSelect from "./FontSelect";
 
