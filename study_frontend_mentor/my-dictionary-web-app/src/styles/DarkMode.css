@@ -1,0 +1,55 @@
+.dark_mode {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark_mode_input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.dark_mode_label {
+  margin-left: -20px;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  display: block;
+  background: var(--moon_color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dark_mode_label::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background: white;
+  border-radius: 180px;
+  transition: 0.3s;
+}
+
+.icon-icon_half-moon::before {
+  color: var(--moon_color);
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.dark_mode_input:checked + .dark_mode_label {
+  background: var(--moon_color);
+}
+
+.dark_mode_input:checked + .dark_mode_label::after {
+  left: 9px;
+  transform: translateX(100%);
+}
+
+.dark_mode_label:active::after {
+  width: 14px;
+}

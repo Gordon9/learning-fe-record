@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 36px;
+  align-items: center;
+  margin: 55px auto;
+}
+
+.header__actions {
+  display: flex;
+  width: 251px;
+}
+
+.line {
+  width: 1px;
+  height: 32px;
+  background-color: #e9e9e9;
+  margin: 0 26px;
+}
+
+.icon-icon_book::before {
+  color: #757575;
+  content: "icon";
+  font-size: 36px;
+}
+
+@media (max-width: 480px) {
+  header {
+    margin: 24px auto;
+  }
+  .line {
+    margin: 0 16px;
+  }
+}
