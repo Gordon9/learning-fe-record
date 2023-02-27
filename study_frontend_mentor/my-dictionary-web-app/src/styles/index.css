@@ -82,6 +82,13 @@ select {
   --search_background: #f4f4f4;
 }
 
+[data-font="font-serif"] {
+  --font_family: "Lora";
+}
+[data-font="font-mono"] {
+  --font_family: "Inconsolata";
+}
+
 #root {
   max-width: 738px;
   margin: 0 auto;
