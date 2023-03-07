@@ -93,6 +93,7 @@ select {
   --body_background: #050505;
   --body_color: white;
   --moon_color: #a445ed;
+  --search_background: #1f1f1f;
 }
 
 #root {
