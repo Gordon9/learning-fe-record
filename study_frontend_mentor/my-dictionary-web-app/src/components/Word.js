@@ -1,4 +1,11 @@
-const Word = ({ word, phonetic }) => {
+const Word = ({ word, phonetic, audio }) => {
+  const playAudio = (e) => {
+    let audio = new Audio();
+    audio.valume = 0.25;
+    audio.src = e.target.getAttribute("data-url");
+    audio.play();
+  };
+
   return (
     <div className="word__container">
       <div id="word" className="word__title">
@@ -7,7 +14,12 @@ const Word = ({ word, phonetic }) => {
       <div id="phonetic" className="word__phonetic">
         {phonetic}
       </div>
-      <div id="play" className="word__audio icon-icon_play"></div>
+      <div
+        id="play"
+        className="word__audio icon-icon_play"
+        data-url={audio}
+        onClick={playAudio}
+      ></div>
     </div>
   );
 };

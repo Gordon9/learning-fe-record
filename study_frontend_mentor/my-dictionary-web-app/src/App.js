@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Header from "./components/Header";
+import Meanings from "./components/Meanings";
 import Search from "./components/Search";
 import Word from "./components/Word";
 import "./styles/App.css";
@@ -63,7 +64,26 @@ function App() {
               <Word
                 word={searchResult.map((item) => item.word)[0]}
                 phonetic={searchResult.map((item) => item.phonetic)[0]}
+                audio={
+                  searchResult
+                    .filter((item) => item.phonetics.length)
+                    .map(
+                      (item) =>
+                        item.phonetics
+                          .map((item) => item.audio)
+                          .filter((item) => item !== "")[0]
+                    )[0]
+                }
               />
+              {searchResult.map((item) =>
+                item.meanings.map((item) => (
+                  <Meanings
+                    partOfSpeech={item.partOfSpeech}
+                    definitions={item.definitions}
+                    synonyms={item.synonyms}
+                  />
+                ))
+              )}
             </div>
           ) : (
             <div>{found === null ? <div></div> : <div>error 404</div>}</div>
