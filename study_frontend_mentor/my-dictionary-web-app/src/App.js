@@ -1,8 +1,10 @@
 import { useState } from "react";
+import Error404 from "./components/Error404";
 
 import Header from "./components/Header";
 import Meanings from "./components/Meanings";
 import Search from "./components/Search";
+import Source from "./components/Source";
 import Word from "./components/Word";
 import "./styles/App.css";
 
@@ -17,6 +19,11 @@ const fetchResults = async (query) => {
     throw new Error(e);
   }
 };
+
+let id = 0;
+export function getUniqueId(i) {
+  return id++ + i;
+}
 
 function App() {
   const [query, setQuery] = useState("");
@@ -76,17 +83,31 @@ function App() {
                 }
               />
               {searchResult.map((item) =>
-                item.meanings.map((item) => (
+                item.meanings.map((item, i) => (
                   <Meanings
+                    key={getUniqueId(i)}
                     partOfSpeech={item.partOfSpeech}
                     definitions={item.definitions}
                     synonyms={item.synonyms}
                   />
                 ))
               )}
+              <Source
+                link={searchResult.map((item) => item.sourceUrls[0])[0]}
+              />
             </div>
           ) : (
-            <div>{found === null ? <div></div> : <div>error 404</div>}</div>
+            <div>
+              {found === null ? (
+                <div></div>
+              ) : (
+                <Error404
+                  title={searchResult.title}
+                  message={searchResult.message}
+                  resolution={searchResult.resolution}
+                />
+              )}
+            </div>
           )}
         </div>
       ) : (
